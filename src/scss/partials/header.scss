@@ -1,0 +1,53 @@
+@import '../variables.scss';
+
+header {
+	background: rgba(#fff, 0.7);
+	height: 15vh;
+	width: 100%;
+	z-index: 20;
+
+	nav {
+		display: none;
+	}
+}
+
+.site-logo {
+	display: flex;
+	justify-content: center;
+	float: left;
+	height: 15vh;
+	padding: 15px;
+	width: 80%;
+
+	div {
+		height: 100%;
+		max-width: 100%;
+	}
+
+	a {
+		height: 100%;
+		max-width: 100%;
+
+		svg {
+			height: auto;
+			max-height: 100%;
+			width: 95vw;
+			max-width: 100%;
+
+			.cls-1 {
+				fill: $blue;
+			}
+			.cls-2 {
+				fill: $aqua;
+			}
+		}
+	}
+}
+
+@media (min-width: 46rem) {
+	.site-logo {
+		float: unset;
+		height: calc(15vh - 2em);
+		width: 100%;
+	}
+}
