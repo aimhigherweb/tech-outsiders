@@ -7,8 +7,8 @@ import {Meta} from '../../components/parts/index.js';
 import './style.scss';
 
 const meta = {
-	name: 'AimHigher Web Design',
-	description: 'AimHigher Web Design bridges the gap between technology and business throughout Australia.',
+	name: 'Tech Outsiders',
+	description: 'It is our mission to solve that problem by highlighting all of the marvellous talent the Tech Industry has outside of the default.',
 	slug: '',
 };
 
@@ -17,7 +17,7 @@ class Home extends Component {
 		return (
 			<Fragment>
                 <Meta {...meta} />
-                <h1>This is the React Starter Kit</h1>
+                <h1>Tech Outsiders</h1>
             </Fragment>
 		);
 	}

@@ -1,11 +1,11 @@
 {
-	"name": "starter-react",
-	"version": "3.0.1",
-	"description": "React Starter Kit for AimHigher Web Design",
+	"name": "tech-outsiders",
+	"version": "2.0.0",
+	"description": "Tech Outsiders is a social enterprise based in WA that is raising awareness of all the cool people we have working in Tech who are outside the industry stereotype of the “straight white male”. It is our mission to solve that problem by highlighting all of the marvellous talent the Tech Industry has outside of the default.",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AimHigher-Web-Design/starter-kit-react.git"
+		"url": "git+https://github.com/AimHigher-Web-Design/tech-outsiders.git"
 	},
 	"scripts": {
 		"start": "webpack-dev-server --mode development --hot --open",
@@ -14,9 +14,9 @@
 	"author": "AimHigher Web Design",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/AimHigher-Web-Design/starter-kit-react/issues"
+		"url": "https://github.com/AimHigher-Web-Design/tech-outsiders/issues"
 	},
-	"homepage": "https://github.com/AimHigher-Web-Design/starter-kit-react#readme",
+	"homepage": "https://github.com/AimHigher-Web-Design/tech-outsiders#readme",
 	"dependencies": {
 		"@amykate/react-svg": "^4.0.18",
 		"history": "^4.7.2",
