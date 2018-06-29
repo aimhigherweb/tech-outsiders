@@ -1,8 +1,9 @@
 //Fonts
-$font_light: 300 1em Arial, sans-serif;
-$font_regular: 400 1em Arial, sans-serif;
-$font_bold: 700 1em Arial, sans-serif;
-$font_headings: 700 1.5em Arial, sans-serif;
+$font_light: 300 1em 'Roboto', Arial, sans-serif;
+$font_regular: 400 1em 'Roboto', Arial, sans-serif;
+$font_bold: 700 1em 'Roboto', Arial, sans-serif;
+$font_headings: 700 1.5em 'Space Mono', monospace;
+$font_code: 400 1em 'Space Mono', monospace;
 
 //Colours
 $blue: #1c75bc;
@@ -32,14 +33,14 @@ $aqua: #16a6b1;
   $aqua_dark_10: #021112;
 
 $grey: #5b5b5b;
-$grey_light_90: #6b6b6b;
-$grey_light_75: #848484;
-$grey_light_50: #adadad;
-$grey_light_25: #d6d6d6;
-$grey_light_10: #eeeeee;
+  $grey_light_90: #6b6b6b;
+  $grey_light_75: #848484;
+  $grey_light_50: #adadad;
+  $grey_light_25: #d6d6d6;
+  $grey_light_10: #eeeeee;
 
-$grey_dark_90: #525252;
-$grey_dark_75: #444444;
-$grey_dark_50: #2e2e2e;
-$grey_dark_25: #171717;
-$grey_dark_10: #090909;
+  $grey_dark_90: #525252;
+  $grey_dark_75: #444444;
+  $grey_dark_50: #2e2e2e;
+  $grey_dark_25: #171717;
+  $grey_dark_10: #090909;

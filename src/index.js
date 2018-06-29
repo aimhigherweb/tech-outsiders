@@ -1,28 +1,27 @@
-import React, { Component, Fragment } from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-//Import components
-import { Header } from './js/partial/header.js';
-import { App } from './js/partial/app.js';
-import { Footer } from './js/partial/footer.js';
-import ScrollToTop from './js/partial/scrollToTop.js';
+//Components
+import Header from './components/header/index.js';
+import App from './components/app/index.js';
+import Footer from './components/footer/index.js';
 
 //Resources
-import './scss/global.scss';
+// import './global.scss';
 
-class Main extends React.Component {
+class Root extends React.Component {
 	render() {
 		return (
-			<Router>
-				<ScrollToTop>
-					<header id="header">{<Header />}</header>
-					<div id="main">{<App />}</div>
-					<footer id="footer">{<Footer />}</footer>
-				</ScrollToTop>
+			<Router basename="/">
+					<Fragment>
+						<header>{<Header />}</header>
+						<main>{<App />}</main>
+						<footer>{<Footer />}</footer>
+					</Fragment>
 			</Router>
 		);
 	}
 }
 
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
