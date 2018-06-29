@@ -3,5 +3,5 @@
 This is the AimHigher Web Design starter kit for React websites
 
 - React
-- Parcel.js builder
-- Sass stylesheets
+- Webpack 4
+- Sass Stylesheets
