@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 //Resources
 import {Github} from 'react-feather';
 import {legalItems} from '../app/index.js';
-// import './style.scss';
+import './style.scss';
 
 const menuItems = [
 	{

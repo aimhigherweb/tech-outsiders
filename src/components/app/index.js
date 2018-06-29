@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../../layouts/home/index.js';
 
 //Resources
-// import './style.scss';
+import './style.scss';
 
 export const menuItems = [
   {

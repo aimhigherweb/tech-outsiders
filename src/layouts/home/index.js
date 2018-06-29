@@ -4,7 +4,7 @@ import React, { Component, Fragment } from 'react';
 import {Meta} from '../../components/parts/index.js';
 
 //Resources
-// import './style.scss';
+import './style.scss';
 
 const meta = {
 	name: 'AimHigher Web Design',

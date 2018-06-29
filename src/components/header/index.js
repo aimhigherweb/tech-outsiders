@@ -5,7 +5,7 @@ import Media from 'react-media';
 import ReactSVG from '@amykate/react-svg';
 
 //Resources
-// import './style.scss';
+import './style.scss';
 import {menuItems} from '../app/index.js';
 import { Menu, X } from 'react-feather';
 import Favicon from '../../img/favicon.png';

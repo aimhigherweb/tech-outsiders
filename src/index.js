@@ -8,7 +8,7 @@ import App from './components/app/index.js';
 import Footer from './components/footer/index.js';
 
 //Resources
-// import './global.scss';
+import './global.scss';
 
 class Root extends React.Component {
 	render() {
