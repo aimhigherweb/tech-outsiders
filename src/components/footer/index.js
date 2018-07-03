@@ -2,7 +2,7 @@ import React, {Component, Fragment} from 'react';
 import { NavLink } from 'react-router-dom';
 
 //Resources
-import {Github} from 'react-feather';
+import {Github, Linkedin, Twitter} from 'react-feather';
 import {legalItems} from '../app/index.js';
 import './style.scss';
 
@@ -10,7 +10,17 @@ const menuItems = [
 	{
 		name: 'github',
 		icon: <Github />,
-		url: 'https://github.com/AimHigher-Web-Design/starter-kit-react',
+		url: 'https://github.com/AimHigher-Web-Design/tech-outsiders',
+	},
+	{
+		name: 'linkedin',
+		icon: <Linkedin />,
+		url: 'https://www.linkedin.com/company/techoutsiders/',
+	},
+	{
+		name: 'twitter',
+		icon: <Twitter />,
+		url: 'https://twitter.com/TechOutsiders',
 	},
 ];
 

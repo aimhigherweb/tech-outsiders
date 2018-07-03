@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+footer {
+    display: flex;
+        justify-content: space-between;
+    font-size: 1.2em;
+    padding: $padding_desktop;
+}
+
+nav {
+    svg {
+        height: 2.5em;
+        width: 2.5em;
+    }
+}

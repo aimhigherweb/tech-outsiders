@@ -10,7 +10,8 @@ import {menuItems} from '../app/index.js';
 import { Menu, X } from 'react-feather';
 import Favicon from '../../img/favicon.png';
 import Logo from '../../img/logo.svg';
-
+import Background from '../../img/hero.jpg';
+import Content from '../../data/content.js';
 
 
 const Meta = () => {
@@ -20,8 +21,8 @@ const Meta = () => {
             <link rel="shortcut icon" href={Favicon} />
             <link rel="icon" sizes="192x192" href={Favicon} />
             <link rel="apple-touch-icon" href={Favicon} />
-            <meta name="theme-color" content="#1C75BC" />
-            <link rel="mask-icon" href={Favicon} color="#1C75BC" />
+            <meta name="theme-color" content="#b21e6f" />
+            <link rel="mask-icon" href={Favicon} color="#b21e6f" />
             <base href="/" />
         </Helmet>
     );
@@ -33,15 +34,18 @@ class Header extends Component {
         return (
             <Fragment>
                 <Meta />
+                <div className="background">
+                    <img src={Background} />
+                </div>
                 <SiteTitle />
-                <MainMenu />
+                <Hero />
             </Fragment>
         );
     };
 };
 
 const SiteTitle = () => (
-    <a aria-label="Logo linked to homepage" href="/">
+    <a className="site-logo" aria-label="Logo linked to homepage" href="/">
         <ReactSVG path={Logo} />
     </a>
 );
@@ -73,5 +77,16 @@ const MainMenu = () => {
         </nav>
     );
 }
+
+const Hero = () => (
+    <div className="hero">
+        <blockquote className="full">
+            {Content.heroContent.full}
+        </blockquote>
+        <blockquote className="short">
+            {Content.heroContent.short}
+        </blockquote>
+    </div>
+);
 
 export default Header;

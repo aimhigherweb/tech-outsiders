@@ -1,0 +1,68 @@
+@import '../../variables.scss';
+
+header {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+    height: 40vh;
+    padding: $padding_desktop;
+    position: relative;
+
+    .background {
+        overflow: hidden;
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        z-index: -1;
+
+        &:before {
+            background: $neutral;
+            content: '';
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        img {
+            height: auto;
+                max-height: unset;
+            width: 100%;
+        }
+    }
+}
+
+.site-logo {
+    display: block;
+    flex-shrink: 0;
+    width: 20vw;
+
+    svg {
+        max-width: 100%;
+
+        g {
+            &.neutral {
+                fill: #fff;
+            }
+
+            &.primary {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.hero {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: right;
+
+    .short {
+        display: none;
+    }
+}
