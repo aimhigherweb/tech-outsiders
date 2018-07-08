@@ -2,18 +2,12 @@ import React, { Component, Fragment } from 'react';
 
 //Components
 import {Meta} from '../../components/parts/index.js';
+import {Socials} from '../home/index.js';
 
 //Resources
-// import './style.scss';
-
-//Importing Images
-function importAll(r) {
-    let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-    return images;
-}
-  
-const images = importAll(require.context('../../img/profiles/', false, /\.(jpg)$/));
+import './style.scss';
+import speakers from '../../data/speakers.js';
+import {images} from '../home/index.js';
 
 const meta = {
 	name: 'Tech Outsiders',
@@ -21,10 +15,80 @@ const meta = {
 	slug: '',
 };
 
-const Speaker = ({details}) => {
-	return (
-        <h1>This is a speaker</h1>
+const SpeakerProfile = ({location}) => {
+    let pageSlug = location.pathname,
+        speaker = '',
+        noPage = false,
+        socials = [];
+
+        pageSlug = pageSlug.replace(/^\//, '');
+
+    for(let i = 0; i < speakers.length; i++) {
+        if(speakers[i].slug == pageSlug) {
+            speaker = speakers[i];
+            socials = Object.keys(speaker.social);
+        };
+    }
+
+    if(speaker == '') {
+        pageSlug = '404';
+    };
+
+    let image = speaker.slug + '.jpg';
+
+    let talks = speaker.talks.map((talk) => (
+        <Talk talk={talk} key={talk.name} />
+    ));
+
+    let socialLinks = socials.map((profile) => {
+		if(profile != 'featured') {
+            return (
+                <Socials type={profile} link={speaker.social[profile]} key={profile} />
+            );
+        }
+	});
+    return (
+        <Fragment>
+            <div className="details">
+                <h1>{speaker.name}</h1>
+                <img src={images[image]} alt={'Speaker Profile Photo of ' + speaker.name} />
+                <p className="tagline">{speaker.tagline}</p>
+                <div className="socials">
+                    {socialLinks}
+                </div>
+            </div>
+            {speaker.bio &&
+                <Fragment>
+                    <h2>Bio</h2>
+                    <div className="bio">{speaker.bio}</div>
+                </Fragment>
+            }
+            <h2>Speaker Experience</h2>
+            <div className="talks">
+                {talks}
+            </div>
+        </Fragment>
     );
 };
 
-export default Speaker;
+const Talk = ({talk}) => (
+    <div className="talk" key={talk.title}>
+        <p className="date">{talk.date}</p>
+        <p className="event">
+            {talk.eventLink ? 
+                <a href={talk.eventLink} target="_blank" title={'Link to ' + talk.event}>{talk.event}</a>
+            :
+                talk.event
+            } 
+        </p>
+        <p className="title">
+            {talk.link ? 
+                <a href={talk.link} target="_blank" title={'Link to presentation for ' + talk.title}>{talk.title}</a>
+            :
+                talk.title
+            } 
+        </p>
+    </div>
+);
+
+export default SpeakerProfile;

@@ -5,6 +5,8 @@
 }
 
 body {
+    --links: #{$primary_dark_90};
+    
     color: $neutral_light_90;
     font: $font_regular;
     font-size: 14px;
@@ -17,10 +19,12 @@ body {
 }
 
 a {
-    color: $primary_dark_90;
+    color: var(--links);
 
     &:active, &:hover, &:focus {
-        color: $secondary;
+        --links: #{$secondary};
+
+        background: $primary_light_10;
     }
 }
 

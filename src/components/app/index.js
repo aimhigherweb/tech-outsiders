@@ -58,7 +58,6 @@ class App extends Component {
       <Switch>
           {pages}
           {subPages}
-          {/* <Route component={StandardPage} /> */}
       </Switch>
     );
   }

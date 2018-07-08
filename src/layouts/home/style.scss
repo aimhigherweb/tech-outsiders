@@ -1,54 +1,54 @@
 @import '../../variables.scss';
 
+.speaker {
+    --background: #{$primary_light_10};
+    --border: #{$primary_dark_75};
+
+    background: var(--background);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: $neutral_light_75;
+    display: block;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+
+    img {
+        border-radius: 20px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    h2 {
+        color: $neutral_light_90;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin: 5px;
+    }
+
+    svg {
+        $size: 35px;
+
+        color: var(--border);
+        height: $size;
+        width: $size;
+    }
+
+    &:active, &:hover, &:focus {
+        --background: #{$secondary_light_10};
+        --border: #{$secondary_dark_75};
+
+        border-color: var(--border);
+    }
+}
+
 @supports (grid-template-areas: none) {
     .speakers-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-auto-rows: 420px;
         grid-gap: 20px;
-    }
-
-    .speaker {
-        --background: #{$primary_light_10};
-        --border: #{$primary_dark_75};
-
-        background: var(--background);
-        border: 2px solid transparent;
-        border-radius: 20px;
-        color: $neutral_light_75;
-        display: block;
-        padding: 20px;
-        text-align: right;
-        text-decoration: none;
-
-        img {
-            border-radius: 20px;
-            height: auto;
-            max-width: 100%;
-        }
-
-        h2 {
-            color: $neutral_light_90;
-            margin-bottom: 0;
-        }
-
-        p {
-            margin: 5px;
-        }
-
-        svg {
-            $size: 35px;
-
-            color: var(--border);
-            height: $size;
-            width: $size;
-        }
-
-        &:active, &:hover, &:focus {
-            --background: #{$secondary_light_10};
-            --border: #{$secondary_dark_75};
-
-            border-color: var(--border);
-        }
     }
 }

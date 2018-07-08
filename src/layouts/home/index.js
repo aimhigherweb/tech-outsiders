@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import {Link} from 'react-router-dom';
 
 //Components
 import {Meta} from '../../components/parts/index.js';
@@ -15,7 +16,7 @@ function importAll(r) {
     return images;
 }
   
-const images = importAll(require.context('../../img/profiles/', false, /\.(jpg)$/));
+export const images = importAll(require.context('../../img/profiles/', false, /\.(jpg)$/));
 
 const meta = {
 	name: 'Tech Outsiders',
@@ -66,19 +67,19 @@ const Speaker = ({details}) => {
 	};
 
 	return (
-		<a href="#facebook" className="speaker">
-			<img src={images[image]} />
+		<Link to={details.slug} className="speaker">
+			<img src={images[image]} alt={'Speaker Profile Photo of ' + speaker.name} />
 			<h2>{details.name}</h2>
 			{tagline}
 			<div className="socials">
 				{socialLinks}
 			</div>
-		</a>
+		</Link>
 	);
 };
 
 
-const Socials = ({type, link}) => {
+export const Socials = ({type, link}) => {
 	let icon;
 	
 	switch (type) {
