@@ -68,7 +68,7 @@ const Speaker = ({details}) => {
 
 	return (
 		<Link to={details.slug} className="speaker">
-			<img src={images[image]} alt={'Speaker Profile Photo of ' + speaker.name} />
+			<img src={images[image]} alt={'Speaker Profile Photo of ' + details.name} />
 			<h2>{details.name}</h2>
 			{tagline}
 			<div className="socials">
