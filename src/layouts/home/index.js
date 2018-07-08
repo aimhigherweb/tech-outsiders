@@ -32,7 +32,6 @@ class Home extends Component {
 		return (
 			<Fragment>
                 <Meta {...meta} />
-                <h1>Tech Outsiders</h1>
 				<div className="speakers-list">
 					{speakersList}
 				</div>
@@ -43,9 +42,13 @@ class Home extends Component {
 
 const Speaker = ({details}) => {
 	let image = details.slug + '.jpg',
-		socials;
+		socials,
+		tagline = '';
 	
-	if (details.social.length > 3 || details.social.featured) {
+	if (!details.social) {
+		socials = [];
+	}
+	else if (details.social.length > 3 || details.social.featured) {
 		socials = details.social.featured;
 	}
 	else {
@@ -58,10 +61,15 @@ const Speaker = ({details}) => {
 		);
 	});
 
+	if (details.tagline) {
+		tagline = (<p className="tagline">{details.tagline}</p>);
+	};
+
 	return (
 		<a href="#facebook" className="speaker">
 			<img src={images[image]} />
 			<h2>{details.name}</h2>
+			{tagline}
 			<div className="socials">
 				{socialLinks}
 			</div>

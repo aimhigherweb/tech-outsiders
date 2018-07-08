@@ -2,6 +2,7 @@ const speakers = [
     {
         name: 'Amy Kapernick',
         slug: 'amy-kapernick',
+        tagline: 'Front End Jedi, Tech Evagelist, Dog Lover',
         social: {
             blog: 'https://amygoestoperth.com.au/',
             blog2: 'http://thefreelance.guide',
@@ -27,6 +28,18 @@ const speakers = [
                 link: 'https://slides.com/amykapernick/so-you-think-you-know-html/'
             }
         ],
+    },
+    {
+        name: 'Julie Grundy',
+        slug: 'julie-grundy',
+    },
+    {
+        name: 'Michelle Sandford',
+        slug: 'michelle-sandford',
+    },
+    {
+        name: 'Ming Johanson',
+        slug: 'ming-johanson',
     },
 ];
 
