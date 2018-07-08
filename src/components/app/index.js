@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 //Components
 import Home from '../../layouts/home/index.js';
+import SpeakerProfile from '../../layouts/speaker/index.js';
 
 //Resources
 import './style.scss';
@@ -12,20 +13,13 @@ export const menuItems = [
 		slug: '/',
 		title: 'Home',
 		component: Home,
+  },
+  {
+    slug: '/:speaker',
+    title: 'Speaker Profile',
+    component: SpeakerProfile,
+    hideNav: true
   }
-  // {
-	// 	slug: '/blog',
-	// 	title: 'Blog',
-  //   component: Feed,
-  //   subPages: [
-  //     {
-  //       slug: '/:id',
-  //       title: 'Article',
-  //       component: Article,
-  //       hideNav: true
-  //     }
-  //   ]
-  // }
 ];
 
 export const legalItems = [];
