@@ -10,6 +10,9 @@ const speakers = [
                 <p>Amy is a freelance developer, <a href="https://aimhigherwebdesign.com.au/" target="_blank">starting her own business</a>, working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.</p><p>Amy also spends her time helping out as a co-organiser for <a href="https://fenders.co/" target="_blank">Fenders</a> (a community group of front-end developers in Perth), other community events (such as Perth Web Girls) and works as an evangelist for YOW! Conference. She <a href="https://amygoestoperth.com.au/" target="_blank">blogs in her spare time</a> (about tech, the web and life), and volunteers as a reviewer for the Fringe World Festival in Perth. Amy has also started <a href="https://thefreelance.guide/" target="_blank">The Freelance Guide</a> to help other freelancers.</p>
             </Fragment>
         ),
+        mentoring: (
+            <p>Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.</p>
+        ),
         social: {
             blog: 'https://amygoestoperth.com.au/',
             blog2: 'http://thefreelance.guide',
