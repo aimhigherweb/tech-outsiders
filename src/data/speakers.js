@@ -52,6 +52,44 @@ const speakers = [
     {
         name: 'Julie Grundy',
         slug: 'julie-grundy',
+        tagline: 'Accessibility Consultant',
+        bio: (
+            <p>Julie is an accessibility expert with over 15 years experience as a front-end web developer in the health and education sectors. She believes in the democratic web and helps organisations make their websites inclusive of everyone. In her spare time, she knits very slowly and chases very quickly after her two whippets.</p>
+        ),
+        social: {
+            codepen: 'https://codepen.io/stringyland/',
+            github: 'https://github.com/stringyland',
+            linkedin: 'https://www.linkedin.com/in/julie-grundy-620551a/',
+            twitter: 'https://twitter.com/stringy',
+            website: 'http://www.juliegrundy.id.au/',
+            featured: [
+                'website',
+                'twitter',
+                'github'
+            ]
+        },
+        talks: [
+            {
+                name: 'Accessiblity Basics',
+                date: '21 March 2018',
+                event: 'Junior Dev meetup, Melbourne',
+                eventLink: 'http://juniordev.io/',
+                link: 'http://juliegrundy.id.au/links/basics.html'
+            },
+            {
+                name: 'Can You See That OK?',
+                date: '20 March 2018',
+                event: 'CSS Conf AU',
+                eventLink: 'https://2018.cssconf.com.au/',
+                link: 'https://noti.st/stringy/KMVouj/can-you-see-that-ok'
+            },
+            {
+                name: 'Inclusive JavaScript',
+                date: '5 August 2017',
+                event: 'Camp JS',
+                eventLink: 'http://viii.campjs.com/'
+            }
+        ],
     },
     {
         name: 'Michelle Sandford',
@@ -60,6 +98,21 @@ const speakers = [
     {
         name: 'Ming Johanson',
         slug: 'ming-johanson',
+        tagline: 'Mother of Unicorns + Social Nerd',
+        bio: (
+            <p>Ming takes a unique approach to deconstruct complex technologies and couple them with an in-depth understanding of social media tools. She is able to create and integrate this knowledge into a palatable change management training program for all levels of business, to transform the future focus for organisations. Ming is an elected board member of the WA branch of the Australian Computer Society. She is also a spokesperson for Mental Health and an Ambassador for R U OK? Day. Ming can speak on a range of topics including dealing with mental health, diversity, rising above adversity, social media and leadership.</p>
+        ),
+        social: {
+            twitter: 'http://twitter.com/@MingJohanson',
+            linkedin: 'https://au.linkedin.com/in/mingjohanson',
+            facebook: 'https://facebook.com/MingJohansonPage',
+            website: 'https://mingjohanson.com.au/',
+            featured: [
+                'twitter',
+                'linkedin',
+                'facebook'
+            ]
+        }
     },
 ];
 
