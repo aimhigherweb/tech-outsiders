@@ -44,6 +44,10 @@ header {
     flex-shrink: 0;
     width: 50vw;
 
+    &:active, &:hover, &:focus {
+        background: none;
+    }
+
     svg {
         max-width: 100%;
 
