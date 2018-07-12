@@ -63,6 +63,12 @@ const SpeakerProfile = ({location}) => {
                     <div className="bio">{speaker.bio}</div>
                 </Fragment>
             }
+            {speaker.mentoring &&
+                <Fragment>
+                    <h2>Mentoring</h2>
+                    <div className="mentor">{speaker.mentoring}</div>
+                </Fragment>
+            }
             <h2>Speaker Experience</h2>
             <div className="talks">
                 {talks}

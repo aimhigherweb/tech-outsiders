@@ -6,7 +6,7 @@
     display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
     height: $height;
     margin-bottom: 20px;
@@ -17,7 +17,13 @@
     }
 
     h1, p, .socials {
-        margin: 30px;
+        --margins: 30px;
+
+        margin: var(--margins);
+    }
+
+    .tagline {
+        margin: 0 var(--margins);
     }
 
     .socials {
@@ -39,7 +45,7 @@
     }
 }
 
-.bio {
+.bio, .mentor {
     font-size: 18px;
 
     a {
