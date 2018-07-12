@@ -1,20 +1,21 @@
 @import '../../variables.scss';
 
 header {
+    --padding: #{$padding_mobile};
+
+    flex-direction: column;
     display: flex;
         align-items: center;
         justify-content: space-between;
-    height: 40vh;
-    padding: $padding_desktop;
+    padding: var(--padding);
     position: relative;
 
     .background {
         overflow: hidden;
         position: absolute;
             top: 0;
-            right: 0;
             bottom: 0;
-            left: 0;
+            left: calc(-1 * var(--padding));
         z-index: -1;
 
         &:before {
@@ -31,7 +32,9 @@ header {
         img {
             height: auto;
                 max-height: unset;
-            width: 100%;
+            width: auto;
+                min-width: calc(100vw + var(--padding));
+                max-width: none;
         }
     }
 }
@@ -39,7 +42,7 @@ header {
 .site-logo {
     display: block;
     flex-shrink: 0;
-    width: 20vw;
+    width: 50vw;
 
     svg {
         max-width: 100%;
@@ -58,11 +61,60 @@ header {
 
 .hero {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.1em;
     font-weight: 600;
     text-align: right;
 
-    .short {
+    blockquote {
+        margin: 0;
+    }
+
+    .full {
         display: none;
+    }
+}
+
+@media (min-width: 30em) {
+    header {
+        flex-direction: row;
+    }
+
+    .site-logo {
+        width: 30vw;
+    }
+}
+
+@media (min-width: 50em) {
+    header {
+        --padding: #{$padding_desktop};
+
+        height: 40vh;
+    }
+
+    .hero {
+        font-size: 1.5em;
+
+        .full {
+            display: block;
+        }
+
+        .short {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 70em) {
+    header {
+        flex-direction: row;
+        height: 40vh;
+    }
+
+    .site-logo {
+        width: 20vw;
+    }
+
+    .hero {
+        font-size: 2em;
     }
 }
