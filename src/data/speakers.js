@@ -168,14 +168,14 @@ const speakers = [
              {
                 title: 'Panel on CSS',
                 date: '3-4 Aug 2017',
-                event: 'Web Directions Code 2017',
+                event: 'Web Directions Code',
                 eventLink: 'https://www.webdirections.org/code/',
                 link: 'https://www.youtube.com/watch?v=lKRdfw4xcGo',
             },
             {
                 title: 'Traditional CSS at Scale',
                 date: '3-4 Aug 2017',
-                event: 'Web Directions Code 2017',
+                event: 'Web Directions Code',
                 eventLink: 'https://www.youtube.com/watch?v=lKRdfw4xcGo',
             },
             {
@@ -219,7 +219,7 @@ const speakers = [
             {
                 title: 'The Freedom and Constraints of Virtual Design',
                 date: '28 - 29 Nov 2008',
-                event: 'Australasian Virtual Worlds Workshop (AVWW)',
+                event: 'Australasian Virtual Worlds Workshop',
             },
         ],
     },
