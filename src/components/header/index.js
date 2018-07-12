@@ -2,7 +2,7 @@ import React, {Fragment, Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import Media from 'react-media';
-import ReactSVG from '@amykate/react-svg';
+import ReactSVG from 'react-svg';
 
 //Resources
 import './style.scss';

@@ -1,10 +1,12 @@
 import React, {Component, Fragment} from 'react';
+import ReactSVG from 'react-svg';
 import { NavLink } from 'react-router-dom';
 
 //Resources
 import {Github, Linkedin, Twitter} from 'react-feather';
 import {legalItems} from '../app/index.js';
 import './style.scss';
+import AimHigher from '../../img/aimhigher.svg';
 
 const menuItems = [
 	{
@@ -30,6 +32,9 @@ class Footer extends Component {
             <Fragment>
 				<FooterNav />
 				<FooterSocial />
+				<a href="https://aimhigherwebdesign.com.au" target="_blank" rel="nofollow" className="aimhigher" title="Made and Developed by AimHigher Web Design">
+					<ReactSVG path={AimHigher} />
+				</a>
             </Fragment>
         );
     };

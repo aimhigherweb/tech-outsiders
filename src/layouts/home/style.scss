@@ -29,6 +29,10 @@
         margin: 5px;
     }
 
+    a {
+        display: block;
+    }
+
     svg {
         $size: 35px;
 
@@ -37,10 +41,16 @@
         width: $size;
     }
 
+    .socials {
+        display: flex;
+            justify-content: flex-end;
+    }
+
     &:active, &:hover, &:focus {
         --background: #{$secondary_light_10};
         --border: #{$secondary_dark_75};
 
+        background: var(--background);
         border-color: var(--border);
     }
 }

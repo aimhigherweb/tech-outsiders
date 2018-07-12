@@ -35,6 +35,7 @@ const speakers = [
                 date: '20 Jun 2018',
                 event: 'Fenders',
                 eventLink: 'https://fenders.co',
+                link: 'http://talks.amygoestoperth.com.au/',
             },
             {
                 title: 'CSS Grid - What is this magic?!',
@@ -73,25 +74,153 @@ const speakers = [
         },
         talks: [
             {
-                name: 'Accessiblity Basics',
+                title: 'Accessiblity Basics',
                 date: '21 March 2018',
-                event: 'Junior Dev meetup, Melbourne',
+                event: 'JuniorDev Melbourne',
                 eventLink: 'http://juniordev.io/',
                 link: 'http://juliegrundy.id.au/links/basics.html'
             },
             {
-                name: 'Can You See That OK?',
+                title: 'Can You See That OK?',
                 date: '20 March 2018',
                 event: 'CSS Conf AU',
                 eventLink: 'https://2018.cssconf.com.au/',
                 link: 'https://noti.st/stringy/KMVouj/can-you-see-that-ok'
             },
             {
-                name: 'Inclusive JavaScript',
+                title: 'Inclusive JavaScript',
                 date: '5 August 2017',
                 event: 'Camp JS',
                 eventLink: 'http://viii.campjs.com/'
             }
+        ],
+    },
+    {
+        name: 'Mandy Michael',
+        slug: 'mandy-michael',
+        tagline: 'Front End Developer, Manager and Speaker',
+        bio: (
+            <p>Mandy is a community organiser, speaker, and developer working as a Development Manager at Seven West Media in Western Australia.  She is a co-organiser and Director of <a href="http://mixinconf.com/" target="_blank" rel="nofollow">Mixin Conf</a>, and the founder and co-organiser of <a href="http://www.fenders.co" target="_blank" rel="nofollow">Fenders</a>, a local meetup for front end developers providing events, mentoring and support to the Perth web community.
+            Mandy’s passion is CSS, HTML and JS and hopes to inspire that passion in others. She loves the supportive and collaborative nature of the web and strives to encourage this environment through the community groups she is a part of. Her aim is to create a community of web developers who can share, mentor, learn and grow together.</p>
+        ),
+        mentoring: (
+            <p>Ultimately Mandy believes the best way to contribute to the web is by helping and supporting others. Through Fenders Mandy provides opportunities, mentoring, guidance and support to help people with their technical skills, career progression, public speaking and wellbeing. She has been involved in organising and mentoring at events including Perth&#123;Web&#125;Girls.</p>
+        ),
+        social: {
+            blog: 'https://medium.com/@mandy.michael',
+            codepen: 'https://codepen.io/mandymichael/',
+            instagram: 'https://www.instagram.com/batmandy/',
+            linkedin: 'https://www.linkedin.com/in/mandykerr/',
+            twitter: 'https://twitter.com/mandy_kerr',
+            website: 'https://mandymichael.com/',
+            featured: [
+                'codepen',
+                'twitter',
+                'blog'
+            ],
+        },
+        talks: [
+            {
+                title: 'Creative Text Effects with CSS',
+                date: '29 Jun 2018',
+                event: 'Ampersand',
+                eventLink: 'http://ampersandconf.com/',
+                link: 'https://slides.com/mandymichael/creative-text-effects-with-css-7'
+            },
+            {
+                title: 'Becoming a Front End Developer',
+                date: '26 May 2018',
+                event: 'Bankwest Code Orange',
+            },
+            {
+                title: 'Workshop: Creative Text Effects with CSS',
+                date: '23 Mar 2018',
+                event: 'Decompress',
+                eventLink: 'https://2018.decompress.com.au/',
+            },
+            {
+                title: 'Panel: How important are Role Models for women in STEM?',
+                date: '18 Feb 2018',
+                event: 'WiTWA',
+                eventLink: 'http://www.witwa.org.au/events/2018/2/21/techxchange-event-leadership-in-tech-the-importance-of-role-models',
+            },
+            {
+                title: 'CSS is Awesome',
+                date: '29 Jun 2018',
+                event: 'DDDPerth By Night',
+                eventLink: 'http://dddperth.com/',
+                link: 'https://www.youtube.com/watch?v=oT7Ihsh10x4'
+            },
+             {
+                title: 'Creative Text Effects with CSS',
+                date: '23 Jan 2018',
+                event: 'Singapore CSS Max.Content',
+                eventLink: 'https://singaporecss.github.io/24/',
+                link: 'https://engineers.sg/video/creative-text-effects-with-css-talk-css-24-max-content-edition-singaporecss--2244'
+            },
+             {
+                title: 'Creative Text Effects with CSS',
+                date: '18 Jan 2018',
+                event: 'Fenders',
+                eventLink: 'https://fenders.co',
+                link: 'https://www.youtube.com/watch?v=lKRdfw4xcGo'
+            },
+             {
+                title: 'Panel on CSS',
+                date: '3-4 Aug 2017',
+                event: 'Web Directions Code 2017',
+                eventLink: 'https://www.webdirections.org/code/',
+                link: 'https://www.youtube.com/watch?v=lKRdfw4xcGo',
+            },
+            {
+                title: 'Traditional CSS at Scale',
+                date: '3-4 Aug 2017',
+                event: 'Web Directions Code 2017',
+                eventLink: 'https://www.youtube.com/watch?v=lKRdfw4xcGo',
+            },
+            {
+                title: 'My Journey into Tech',
+                date: '20 Jun 2017',
+                event: 'Code Like a Girl Melbourne',
+                eventLink: 'https://www.meetup.com/codelikeagirlau/',
+            },
+            {
+                title: 'Sharpen Up Your Text with The Power of Three',
+                date: '8 - 9 May 2017',
+                event: 'Web Directions Respond Melbourne',
+                eventLink: 'http://www.webdirections.org/respond/',
+                link: 'https://www.webdirections.org/blog/video-ristretto-sharpen-text-mandy-michael/'
+            },
+           {
+                title: 'Sharpen Up Your Text with The Power of Three',
+                date: '4 - 5 May 2017',
+                event: 'Web Directions Respond Melbourne',
+                eventLink: 'http://www.webdirections.org/respond/',
+                link: 'https://www.webdirections.org/blog/video-ristretto-sharpen-text-mandy-michael/'
+            },
+            {
+                title: 'Google I/O Conference Download',
+                date: '21 Jul 2016',
+                event: 'Fenders',
+                eventLink: 'http://fenders.co/',
+            },
+             {
+                title: 'Animating SVG',
+                date: '28 Jun 2015',
+                event: 'Fenders',
+                eventLink: 'http://fenders.co/',
+            },
+            {
+                title: 'Introduction to Web Performance',
+                date: '14 May 2015',
+                event: 'Fenders',
+                eventLink: 'http://fenders.co/',
+            },
+            {
+                title: 'The Freedom and Constraints of Virtual Design',
+                date: '28 - 29 Nov 2008',
+                event: 'Australasian Virtual Worlds Workshop (AVWW)',
+            },
         ],
     },
     {
