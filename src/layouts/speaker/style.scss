@@ -49,6 +49,56 @@
     }
 }
 
+.talk {
+    --border: #{$primary_dark_75};
+
+    background: $primary_light_10;
+    border-radius: 20px;
+    color: $neutral_light_75;
+    display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    padding: 20px;
+    text-decoration: none;
+
+    p {
+        margin-top: 0;
+    }
+
+    .date {
+        color: $neutral_light_50;
+        font-size: 0.9em;
+        width: 14ch;
+    }
+
+    .event {
+        text-align: right;
+        width: calc(100% - 14ch);
+    }
+
+    .event, .title {
+        color: var(--border);
+
+        a {
+            color: var(--border);
+
+            &:active, &:hover, &:focus {
+                --border: #{$secondary_dark_75};
+                text-decoration: none; 
+            }
+        }
+    }
+
+    .title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 15px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
 h2 {
     clear: both;
     font-size: 25px;
@@ -63,50 +113,29 @@ h2 {
         grid-gap: 20px;
     }
 
+    p {
+        margin: 0;
+    }
+
     .talk {
-        --border: #{$primary_dark_75};
-
-        background: $primary_light_10;
-        border-radius: 20px;
-        color: $neutral_light_75;
-        display: flex;
-            align-items: space-between;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        padding: 20px;
-        text-decoration: none;
-
-        p {
-            margin-top: 0;
-        }
+        display: grid;
+            grid-gap: 5px;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 4.8em 1fr;
 
         .date {
-            color: $neutral_light_50;
+            width: auto;
         }
 
         .event {
-            text-align: right;
+            justify-content: end;
+            width: auto;
         }
-
-        .event, .title {
-            color: var(--border);
-
-            a {
-                color: var(--border);
-
-                &:active, &:hover, &:focus {
-                    --border: #{$secondary_dark_75};
-                    text-decoration: none; 
-                }
-            }
-        }
-
+        
         .title {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 15px;
-            text-align: center;
-            width: 100%;
+            align-content: center;
+            grid-column: span 2;
+            margin-top: 0;
         }
     }
 }
