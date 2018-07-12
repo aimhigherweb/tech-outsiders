@@ -69,6 +69,14 @@
         margin-top: 0;
     }
 
+    a {
+        padding: 0.1em;
+
+        &:active, &:hover, &:focus {
+            background: $secondary_light_10;
+        }
+    }
+
     .date {
         color: $neutral_light_50;
         font-size: 0.9em;
