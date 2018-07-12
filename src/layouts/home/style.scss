@@ -16,19 +16,24 @@
     img {
         border-radius: 20px;
         display: block;
+        max-height: unset;
         margin: 0 auto;
         position: relative;
-            max-width: 100%;
+        width: 70%;
+            min-width: 150px;
+            max-width: 300px;
     }
 
     h2 {
         color: $neutral_light_90;
+        font-size: 17px;
         margin-bottom: 0;
     }
 
     p {
         color: $neutral_light_75;
         color: rgba($neutral, 0.6);
+        font-size: 0.9em;
         margin: 5px;
     }
 
@@ -68,6 +73,14 @@
 
 @media (min-width: 50em) {
     .speaker {
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
         img {
             width: 100%;
         }
