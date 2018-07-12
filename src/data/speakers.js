@@ -224,10 +224,6 @@ const speakers = [
         ],
     },
     {
-        name: 'Michelle Sandford',
-        slug: 'michelle-sandford',
-    },
-    {
         name: 'Ming Johanson',
         slug: 'ming-johanson',
         tagline: 'Mother of Unicorns + Social Nerd',
