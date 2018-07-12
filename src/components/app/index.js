@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 //Components
 import Home from '../../layouts/home/index.js';
+import About from '../../layouts/about/index.js';
 import SpeakerProfile from '../../layouts/speaker/index.js';
 
 //Resources
@@ -22,7 +23,13 @@ export const menuItems = [
   }
 ];
 
-export const legalItems = [];
+export const legalItems = [
+  {
+    slug: '/about',
+    title: 'About',
+    component: About
+  }
+];
 
 const routeItems = menuItems.concat(legalItems);
 

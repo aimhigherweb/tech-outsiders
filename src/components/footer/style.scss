@@ -10,6 +10,8 @@ footer {
 
 nav {
     display: flex;
+        justify-content: space-between;
+    min-width: 120px;
 
     a {
         display: block;
