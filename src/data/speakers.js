@@ -240,7 +240,8 @@ const speakers = [
                 'linkedin',
                 'facebook'
             ]
-        }
+        },
+        talks: []
     },
 ];
 

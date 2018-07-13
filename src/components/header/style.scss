@@ -70,11 +70,38 @@ header {
     text-align: right;
 
     blockquote {
+        border: none;
         margin: 0;
+
+        p {
+            font-size: inherit;
+        }
+
+        &:before {
+            content: normal;
+        }
     }
 
     .full {
         display: none;
+    }
+}
+
+#root {
+    &.scrolled, &.profile {
+        header {
+            height: auto;
+        }
+
+        .hero {
+            .full {
+                display: none;
+            }
+    
+            .short {
+                display: block;
+            }
+        }
     }
 }
 

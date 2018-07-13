@@ -15,12 +15,6 @@ export const menuItems = [
 		title: 'Home',
 		component: Home,
   },
-  {
-    slug: '/:speaker',
-    title: 'Speaker Profile',
-    component: SpeakerProfile,
-    hideNav: true
-  }
 ];
 
 export const legalItems = [
@@ -31,7 +25,15 @@ export const legalItems = [
   }
 ];
 
-const routeItems = menuItems.concat(legalItems);
+const hiddenItems = [
+  {
+    slug: '/:speaker',
+    title: 'Speaker Profile',
+    component: SpeakerProfile,
+  }
+];
+
+const routeItems = menuItems.concat(legalItems).concat(hiddenItems);
 
 class App extends Component {
   render() {

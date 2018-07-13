@@ -29,7 +29,8 @@
 		"react-router": "^4.2.0",
 		"react-router-dom": "^4.2.2",
 		"react-svg": "^4.1.6",
-		"react-twitter-widgets": "^1.7.1"
+		"react-twitter-widgets": "^1.7.1",
+		"react-waypoint": "^8.0.3"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",

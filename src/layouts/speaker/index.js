@@ -49,6 +49,7 @@ const SpeakerProfile = ({location}) => {
 	});
     return (
         <Fragment>
+            <Meta {...meta} />
             <div className="details">
                 <h1>{speaker.name}</h1>
                 <img src={images[image]} alt={'Speaker Profile Photo of ' + speaker.name} />

@@ -123,15 +123,15 @@ h2 {
         grid-gap: 20px;
     }
 
-    p {
-        margin: 0;
-    }
-
     .talk {
         display: grid;
             grid-gap: 5px;
             grid-template-columns: auto 1fr;
             grid-template-rows: auto 1fr;
+
+        p {
+            margin: 0;
+        }
 
         .date {
             width: auto;
