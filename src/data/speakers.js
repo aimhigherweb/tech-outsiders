@@ -4,6 +4,7 @@ const speakers = [
     {
         name: 'Amy Kapernick',
         slug: 'amy-kapernick',
+        location: 'perth',
         tagline: 'Front End Jedi, Tech Evangelist, Dog Lover',
         bio: (
             <Fragment>
@@ -56,6 +57,7 @@ const speakers = [
     {
         name: 'Julie Grundy',
         slug: 'julie-grundy',
+        location: 'perth',
         tagline: 'Accessibility Consultant',
         bio: (
             <p>Julie is an accessibility expert with over 15 years experience as a front-end web developer in the health and education sectors. She believes in the democratic web and helps organisations make their websites inclusive of everyone. In her spare time, she knits very slowly and chases very quickly after her two whippets.</p>
@@ -98,6 +100,7 @@ const speakers = [
     {
         name: 'Mandy Michael',
         slug: 'mandy-michael',
+        location: 'perth',
         tagline: 'Front End Developer, Manager and Speaker',
         bio: (
             <p>Mandy is a community organiser, speaker, and developer working as a Development Manager at Seven West Media in Western Australia.  She is a co-organiser and Director of <a href="http://mixinconf.com/" target="_blank" rel="nofollow">Mixin Conf</a>, and the founder and co-organiser of <a href="http://www.fenders.co" target="_blank" rel="nofollow">Fenders</a>, a local meetup for front end developers providing events, mentoring and support to the Perth web community.
@@ -226,6 +229,7 @@ const speakers = [
     {
         name: 'Ming Johanson',
         slug: 'ming-johanson',
+        location: 'perth',
         tagline: 'Mother of Unicorns + Social Nerd',
         bio: (
             <p>Ming takes a unique approach to deconstruct complex technologies and couple them with an in-depth understanding of social media tools. She is able to create and integrate this knowledge into a palatable change management training program for all levels of business, to transform the future focus for organisations. Ming is an elected board member of the WA branch of the Australian Computer Society. She is also a spokesperson for Mental Health and an Ambassador for R U OK? Day. Ming can speak on a range of topics including dealing with mental health, diversity, rising above adversity, social media and leadership.</p>

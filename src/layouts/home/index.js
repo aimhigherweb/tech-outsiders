@@ -26,9 +26,20 @@ const meta = {
 
 class Home extends Component {
 	render() {
-		let speakersList = speakers.map((speaker) => (
+		let filterList;
+
+		if(location.hash) {
+			let filters = location.hash.replace(/^\#/, '');
+			filterList = speakers.filter(speaker => speaker.location == filters);
+		}
+		else {
+			filterList = speakers;
+		}
+
+		let speakersList = filterList.map((speaker) => (
 			<Speaker details={speaker} key={speaker.slug} />
 		));
+
 
 		return (
 			<Fragment>
