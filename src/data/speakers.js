@@ -1,5 +1,9 @@
 import React, {Fragment} from 'react';
 
+export const locations = {
+    perth: 'Perth, Western Australia',
+};
+
 const speakers = [
     {
         name: 'Amy Kapernick',

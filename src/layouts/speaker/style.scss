@@ -24,6 +24,10 @@
         margin: 20px var(--margins) 0;
     }
 
+    .location {
+        display: none;
+    }
+
     .socials {
         svg {
             $size: 40px;
@@ -165,8 +169,13 @@ h2 {
             --margins: 30px;
         }
 
-        .tagline {
+        .tagline, .location {
             margin: 0 var(--margins);
+        }
+
+        .location {
+            display: block;
+            margin-top: 10px;
         }
     }
 
