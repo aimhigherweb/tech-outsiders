@@ -35,7 +35,7 @@ const speakers = [
                 date: '20 Jun 2018',
                 event: 'Fenders',
                 eventLink: 'https://fenders.co',
-                link: 'http://talks.amygoestoperth.com.au/',
+                link: 'https://talks.amygoestoperth.com.au/so-you-think-you-know-html',
             },
             {
                 title: 'CSS Grid - What is this magic?!',
