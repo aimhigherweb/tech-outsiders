@@ -45,6 +45,10 @@ const Speaker = ({details}) => {
 	let image = details.slug + '.jpg',
 		socials,
 		tagline = '';
+
+	if (images[image] == undefined) {
+		image = 'placeholder.jpg';
+	}
 	
 	if (!details.social) {
 		socials = [];
