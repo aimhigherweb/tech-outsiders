@@ -56,11 +56,13 @@ class Home extends Component {
 		return (
 			<Fragment>
                 <Meta {...meta} />
-				<label htmlFor="locations">Filter by Location</label>
-				<select id="locations" onChange={this.filterLocation}>
-					<option value="">Filter by Location</option>
-					{cities}
-				</select>
+				<div className="filter">
+					<label htmlFor="locations">Filter by Location</label>
+					<select id="locations" onChange={this.filterLocation}>
+						<option value="">Filter by Location</option>
+						{cities}
+					</select>
+				</div>
 				<div className="speakers-list">
 					{speakersList}
 				</div>

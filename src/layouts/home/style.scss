@@ -63,6 +63,16 @@
     }
 }
 
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+
+    label {
+        position: absolute;
+            left: -200vw;
+    }
+}
+
 @supports (grid-template-areas: none) {
     .speakers-list {
         display: grid;
