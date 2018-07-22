@@ -2,6 +2,31 @@ import React, {Fragment} from 'react';
 
 const speakers = [
     {
+        name: 'Alison Nicholson',
+        slug: 'alison-nicholson',
+        location: 'perth',
+        bio: (
+            <p>An experienced PRINCE2 and Agile Project Manager with over 11 years of proven project management and delivery, together with over 22 years IT experience, both managerial and technical, in the banking (26 years) and social housing sector. Business focused and committed to providing effective management, with excellent communication skills, change management skills and stakeholder/relationship management skills across all levels of an organization. Proven leadership skills involving managing, developing and motivating teams to achieve their objectives. Dedicated to maintaining high standards, ensuring the smooth development and implementation of improved business processes and information systems to meet identified business needs, bringing projects in within agreed parameters of cost, timescales and quality.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183623/https:/au.linkedin.com/in/alison-nicholson-msc-50ab2b22'
+        },
+        talks: [],
+    },
+    {
+        name: 'Amy Dix',
+        slug: 'amy-dix',
+        location: 'perth',
+        bio: (
+            <p>As an IT Professional I have worked on a number of projects for global resources, oil and gas and government clients. Specialising in Project Delivery, I have worked on major projects within Western Australia and overseas. I am an ambassador for the South 32 Woman in IT program, and strong believer in promoting Diversity in IT.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183608/https:/au.linkedin.com/in/amy-dix-12170323',
+            facebook: 'https://web.archive.org/web/20180312183608/https:/www.facebook.com/amylaurendix',
+        },
+        talks: [],
+    },
+    {
         name: 'Amy Kapernick',
         slug: 'amy-kapernick',
         tagline: 'Front End Jedi, Tech Evangelist, Dog Lover',
@@ -54,6 +79,220 @@ const speakers = [
         ],
     },
     {
+        name: 'Anle Pretorius',
+        slug: 'anle-pretorius',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>A passionate Technologist specializing in strategic IT Leadership with a passion for demystifying organizations through Business Analysis and Project Management, leading passionate teams to deliver fit for purpose solutions.</p>
+                <p>In her own words: “Technology is a great industry, it drives innovation, not only in all industries, but in our own world and own lives. Technology is personal, and the future is amazing. Now to get in balanced!”</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183534/https:/au.linkedin.com/in/anlepretorius',
+        },
+        talks: [],
+    },
+    {
+        name: 'Anna Burchfield',
+        slug: 'anna-burchfield',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Anna Burchfield wandered off the ‘career path’ before she started on it; she is a little bit of everything.</p>
+                <p>With a distinct ability to ‘rock a frock’ – this only just falls second her love of Current Affairs and the Digital world. (Both of these fall far behind her love of Doctor Who) Her public and private industry experiences have been characterised by her love of all forms of communication (verbal, written and online) Brand Development, Social Media and Government.</p>
+                <p>Anna is an Alumni of both Curtin University (B.A, 2011) and the University of Western Australia (M.A, 2013). She interned for 14 months, unpaid, before securing her first job, and into her current role which has more to do with her passions and interests more than her Tertiary Degrees(!)</p>
+                <p>A distinct advocate for ‘Gen Y’ and their experiences in the workplace and the world, she currently works as a Digital Account Co-ordinator at ALYKA in Subiaco.</p>
+                <p>She has 9 years working across many industries – Public Relations Consultancy, Image Consultancy and Brand Development, Retail, Digital Media, Marketing Research and Public Affairs.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183800/https:/au.linkedin.com/in/anna-burchfield-5610211b',
+            facebook: 'https://web.archive.org/web/20180312183800/http:/www.facebook.com/TheTangibleBlog/',
+            website: 'https://web.archive.org/web/20180312183800/https:/thetangibleblog.wordpress.com/',
+            instagram: 'https://web.archive.org/web/20180312183800/http:/www.instagram.com/thetangibleblog/',
+            featured: [
+                'linkedin',
+                'facebook',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Bhavneet Singh',
+        slug: 'bhavneet-singh',
+        bio: (
+            <p>Bhavneet Singh, a frustrated artist, a very proud mother, a challenging wife. Bhavneet is the Technologies Curriculum Consultant at AISWA. She is also the Primary coordinator for ECAWA. Bhavneet is passionate about changing the way we do school. She has been the key driver in bringing teachers from all sectors together under the TeachMeet banner. Her motto is #bethechange.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183346/http:/au.linkedin.com/in/bhavneet-singh-4a179725',
+            twitter: 'https://web.archive.org/web/20180312183346/http:/twitter.com/bhavneetsingh12',
+            facebook: 'https://web.archive.org/web/20180312183346/http:/www.facebook.com/singhbhav',
+            instagram: 'https://web.archive.org/web/20180312183346/http:/www.instagram.com/bhavneetsingh12',
+            youtube: 'https://web.archive.org/web/20180312183346/http:/m.youtube.com/channel/UCClq46aQEDBsdkzwMRAt2XQ',
+            website: 'https://web.archive.org/web/20180312183346/http:/bhavneetsingh12.wordpress.com/about/',
+            featured: [
+                'linkedin',
+                'website',
+                'twitter',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Daniela Mattheys',
+        slug: 'daniela-mattheys',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>A skilled industry specialist, strategist and thought leader with extensive experience in industry, business strategy and public policy development and a passion for innovation and the transformative nature of technology and the digital economy to deliver sustainable social and economic growth.</p>
+                <p>Her extensive relevant corporate knowledge and high level advocacy skills deliver sustainable organisational outcomes and support her clients in meeting the challenges of a rapidly transforming business environment.</p>
+                <p>Prior to starting edoCEO futures Daniela led the Industry and Innovation Division within the Western Australian State government. In this role she had strategic oversight of a broad spectrum of industry and economic development functions, including in the areas of Digital Economy, Innovation and Commercialisation, Marine and Defence, Oil and Gas Services and Local Industry Participation.</p>
+                <p>Some of the key initiatives she has overseen include:</p>
+                <ul>
+                    <li>Delivery of the Government’s obligations to secure the AUD2.4bn international Square Kilometre Array Project in Western Australia.</li>
+                    <li>Coordination of the State government obligations in response to the deployment of the AUD46bn National Broadband Network in WA.</li>
+                    <li>Secured AUD350m investment by Trident Subsea Communications in the Pilbara region of WA.</li>
+                    <li>Delivery of common-use and strategic infrastructure including the State Technology Precincts and the Australian Marine Complex.</li>
+                    <li>AUD 45m Regional Mobile Communications Project.</li>
+                    <li>Concept design and project implementation of the Powerhouse City project.</li>
+                </ul>
+                <p>Her extensive established network at senior level, across a wide range of industries, academia and at all levels of government is a sought after commodity, that provides access to decision makers and an insight into what is needed to succeed. She has significant experience in government relations through her roles on the WA Planning Commission Infrastructure Coordination Committee, the Asian Science Parks Association board and as a member of the Commonwealth States and Territories Advisory Committee on Innovation.</p>
+                <p>Daniela champions diversity in industry through her position on the board of Women in Technology Western Australia (WiTWA).</p>
+                <p>in addition she holds a range of executive committee and board positions, including with the WA IT and Telecommunications Alliance and NIT Australia.</p>
+                <p>Before moving to Perth she held senior roles in the South African Foreign Trade Organisation, as well as in the private sector, is fluent in 3 languages and has a strong track record in international trade and investment facilitation in Africa and the Middle East.</p>
+                <p>Daniela holds a Master’s degree in International Political Economics.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183645/https:/au.linkedin.com/in/daniela-mattheys-6a848714',
+            twitter: 'https://web.archive.org/web/20180312183645/https:/twitter.com/DMattheys',
+        },
+        talks: [],
+    },
+    {
+        name: 'Donna Edwards',
+        slug: 'donna-edwards',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Donna Edwards is the General Manager, Organisational Development at Ignia – an IT solutions provider with 86 employees across Australia. She is a passionate HR professional with 16 years’ experience in the IT industry focusing on recruitment, employee engagement, talent management and business growth.</p>
+                <p>Donna has an MBA and MHRM and has played a pivotal role in the past 4 years in earning Ignia the #6 place in APAC’s BRW best places to work.</p>
+                <p>Donna is passionate about helping women gain an equal foothold in the ICT industry especially in leadership roles. She has presented at a range of events including HR Connected, ACS Women and ACS Young IT events.</p>
+                <p>She is a member of the philanthropy group <a href="www.100women.com.au" target="_blank" rel="nofollow">100women</a>, a committee member of HR Connected, an AHRI mentor, Curtin mentor and President of the Central Communicators Toastmasters club. In her spare time Donna sings and plays the electric violin and has performed in a range of bands and musical theatre.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183638/https:/au.linkedin.com/in/edwardsdonna',
+        },
+        talks: [],
+    },
+    {
+        name: 'Elizabeth Wilson',
+        slug: 'elizabeth-wilson',
+        bio: (
+            <Fragment>
+                <p>Elizabeth is an innovative leader in utilising technology as a transformation agent for business change through the development and implementation of strategies, business and technology architectures and governance.</p>
+                <p>In her current role as CIO at Edith Cowan University, Elizabeth has initiated a transformation program to uplift the University’s technology capability to support current and future teaching, learning and research needs. She is the WA representative to the AARNet Advisory Committee and is President of the Council of Australian Directors of IT (CAUDIT)</p>
+            </Fragment>
+
+        ),
+        social: {
+            linkedin: 'https:/au.linkedin.com/in/elizabeth-wilson-91479115',
+        },
+        talks: [],
+    },
+    {
+        name: 'Ella Ganfield',
+        slug: 'ella-ganfield',
+        location: 'perth',
+        bio: (
+            <p>Ella Ganfield launched her Perth based nanny agency, Gecko Steps, at the end of 2014, focusing on the three core values of supporting the children’s individual interests, positive wellbeing and educational development. Recognising educational development as a key area of importance, she then launched Geckos Discover, which is a technology program focused on teaching primary and high school students coding and programming skills. Through the school workshops, the program teaches project based learning to encourage the students to apply their knowledge to investigate how they can use technology to solve world issues. Ella’s passion for youth development has seen her serve as the 2013 World Vision Youth Ambassador for WA and act as the COO for Teach Learn Grow, a non for profit rural tutoring program.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183358/https:/au.linkedin.com/in/ella-ganfield-648bb1b0',
+            twitter: 'https://web.archive.org/web/20180312183358/https:/twitter.com/geckosteps',
+            facebook: 'https://web.archive.org/web/20180312183358/https:/www.facebook.com/geckosteps/',
+            website: 'https://web.archive.org/web/20180312183358/http:/www.geckosteps.com.au/',
+            instagram: 'https://web.archive.org/web/20180312183358/https:/www.instagram.com/geckosteps/?hl=en',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Gry Stene',
+        slug: 'gry-stene',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>With an enthusiasm to deliver positive outcomes, a love for technology innovation and a belief that entrepreneurship is the path of the future, Gry always looks for interesting opportunities where she can apply and share her experience as a “chick” in the software and other tech industries.</p>
+                <p>After almost 30 years delivering solutions across industries, cultures and continents, Gry’s experience spans organisations with in-house, outsourced, offshore, virtual, and geographically separated teams, requiring a blend of intimate tactical and strategic engagement.</p>
+                <p>She feels she has found her niche and thrives when streamlining organisations for successful product innovation and development in organisations that strive encourage social change.</p>
+                <p>As co-founder and director of KinChip Systems, she is immersed in developing consumer facing technology and apps that help parents stay on top of their children’s health and development. At Telstra Health, Gry is driving the development of the Primary Care product, Communicare, that is used extensively to improve health outcomes in remote and rural Australia and in particular for indigenous communities.</p>
+                <p>Gry’s experience spans organisations with in-house, outsourced, offshore, virtual, and geographically separated teams, requiring a blend of intimate tactical and strategic engagement.</p>
+                <p>To complement her software background, Gry is a 2014 MBA graduate from UWA Business School, with focus on entrepreneurship & innovation, social impact, change & transformation, and leadership.</p>
+                <p>Gry’s flexibility, enthusiasm, adaptability, knowledge, accountability, and drive for results, allows me to think outside the box to define and develop organisations and processes that adapt to change.</p>
+                <p>Ever the willing mentor, Gry engages both at a personal and organisational level. She has been a mentor for WIMWA over several years, tutored at UWA, was part of the core team at Just Start IT, bringing entrepreneurship to high schools, is a member of Behind Closed Doors (a peer mentoring organisation) and is generally happy to sit down and have a yarn with anyone who needs a sounding board.</p>
+            </Fragment>
+        ),
+        mentoring: (
+            <p>I love to encourage and empower people to become the best they can be. I am in particular passionate about building up confidence in women and girls and I believe we need to bring the men and boys into the equation to do so…. Imagine if every young boy knew that his sister could do exactly what he can… and he would encourage her to be who she wants to be.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183820/https:/au.linkedin.com/in/grystene',
+            twitter: 'https://web.archive.org/web/20180312183820/https:/twitter.com/GrooveeFreo',
+            facebook: 'https://web.archive.org/web/20180312183820/https:/www.facebook.com/gry.stene',
+        },
+        talks: [],
+    },
+    {
+        name: 'Hannah Dodds',
+        slug: 'hannah-dodds',
+        bio: (
+            <Fragment>
+                <p>A young teacher with a zest for using technology as a tool for learning. Outside of school, my time is spent connecting through Hangouts with educators, blogging to spread ideas and positivity toward using tech as a tool in the classroom and beyond! My passion is to inspire others and show how easy it is for diverse educators to utilise technology for learning.</p>
+                <p>I love to blog ideas for educators and document challenges and solutions that have occurred on my journey.</p>
+            </Fragment>
+        ),
+        social: {
+            twitter: 'http:/twitter.com/misshdodds',
+            blog: 'http:/www.misshdodds.weebly.com/',
+        },
+        talks: [],
+    },
+    {
+        name: 'Jo Saunders',
+        slug: 'jo-saunders',
+        tagline: 'LinkedIn Demystifier',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Jo has been helping individuals connect and communicate since the early 90s, through pen and paper, events and now social media. She is an educator, strategist and ideas person, who thrives on inspiring people to identify their values, vision and voice. She is a LinkedIn expert and is often called the ‘LinkedIn Demystifier’ who helps professionals market themselves, communicate their brand message and showcase their talent.</p>
+                <p>Jo has collaborated on global social media projects with other social media and LinkedIn specialists around the world.</p>
+                <blockquote>Be unique not a sheep</blockquote>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183729/https:/au.linkedin.com/in/josaunders',
+            twitter: 'https://web.archive.org/web/20180312183729/http:/twitter.com/joatwildfire',
+            facebook: 'https://web.archive.org/web/20180312183729/http:/facebook.com/wildfiresocialmarketing',
+            website: 'https://web.archive.org/web/20180312183729/http:/jo-saunders.com/',
+            instagram: 'https://web.archive.org/web/20180312183729/http:/instagram.com/wildfiresm',
+            website: 'https://web.archive.org/web/20180312183729/http:/www.wildfiresocialmarketing.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
         name: 'Julie Grundy',
         slug: 'julie-grundy',
         tagline: 'Accessibility Consultant',
@@ -94,6 +333,49 @@ const speakers = [
                 eventLink: 'http://viii.campjs.com/'
             }
         ],
+    },
+    {
+        name: 'Kathy Bunce',
+        slug: 'kathy-bunce',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Kathy is a resources industry veteran. Before joining Unearthed, she was General Manager People, Innovation & Information at Iluka Resources, a leading international mineral sands mining company.</p>
+                <p>While at Iluka, Kathy was involved with developing a culture and practices to build capability and capacity, drive safe and proactive production, diversity and innovation to ultimately deliver Iluka’s strategy.</p>
+                <p>Her role was to find ways for people and technology to improve, grow and transform Iluka, the mineral sands industry and the resource sector. She is passionate about developing people to achieve their full potential.</p>
+            </Fragment>
+        ),
+        mentoring: (
+            <Fragment>
+                <p>Kathy is also a passionate supporter of creating opportunity for young people, and has brought a youth coding hackathon – We Connect The Dots (WCTD) to Australia.</p>
+                <p>The WCTD program supports digital literacy amongst high school students and drives the importance of science, technology, engineering, arts and math to match the demands of industry.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183905/https:/www.linkedin.com/in/kathy-bunce-473694a/',
+        },
+        talks: [],
+    },
+    {
+        name: 'Laura Boykin',
+        slug: 'laura-boykin',
+        location: 'perth',
+        bio: (
+            <p>I’m currently working to help smallholder farmers in sub-Saharan Africa to control whiteflies, which are devastating cassava, leaving many smallholder famers food insecure. Our team is using genomics and high performance computing to tackle the whitefly/cassava/food security issue.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183438/https:/au.linkedin.com/in/laura-boykin-b437954b',
+            twitter: 'https://web.archive.org/web/20180312183438/https:/twitter.com/laura_boykin',
+            youtube: 'https://web.archive.org/web/20180312183438/https:/youtu.be/YqcX2GcUY-o',
+            website: 'https://web.archive.org/web/20180312183438/http:/www.lauraboykinresearch.com/',
+            blog: 'https://web.archive.org/web/20180312183438/http:/www.lauraboykinresearch.com/news.html',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
     },
     {
         name: 'Mandy Michael',
@@ -224,6 +506,61 @@ const speakers = [
         ],
     },
     {
+        name: 'Megan Pusey',
+        slug: '',
+        tagline: 'Science Ninja Gal',
+        location: 'perth',
+        bio: (
+            <p>An educator, science communicator and video game enthusiast. Megan Pusey has worked in science museums and children’s museums communicating complex ideas through exhibits, hands-on activities, magazine articles and live action science shows.  Megan is a big proponent of digital game-based learning (in other words using video games in the classroom). So far she has managed to sneak Portal 2, Universe Sandbox, Minecraft Edu, Osmos and Contraption Maker into her science lessons.  Megan is also passionate about the use of any technology in the classroom and making learning more relevant for the 21st century.</p>
+        ),
+        social: {
+            twitter: 'https://web.archive.org/web/20180312183508/https:/twitter.com/scienceninjagal',
+            website: 'https://web.archive.org/web/20180312183508/https:/scienceninjagal.wordpress.com/',
+        },
+        talks: [],
+    },
+    {
+        name: 'Dr Michelle Ellis',
+        slug: 'michelle-ellis',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Dr Michelle Ellis is currently researching the understanding of, and aspirations for Higher Education in the Computer and Security Sciences by female students in year 9 and 10. In conjunction with Professor Trish Williams, the research has identified that these girls had limited knowledge about the Computer and Security Sciences and with more information would consider a career in these fields.</p>
+                <p>I am looking at establishing the Girls Programming Network at Edith Cowan University. This will be supported by the National Computer Science Society. Each term, year 7 to 12 girls will be invited to attend a one day workshop on different aspects of computer science and security science.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183411/https:/www.linkedin.com/in/dr-michelle-ellis-4bb72493',
+            twitter: 'https://web.archive.org/web/20180312183411/https:/twitter.com/mssgellis',
+        },
+        talks: [],
+    },
+    {
+        name: 'Michelle Sandford',
+        slug: 'michelle-sandford',
+        location: 'perth',
+        bio: (
+            <p>Tedx Speaker, Tech Girl Superhero, Microsoftie and 1 of MCV’s 100 Most Influential Women in Games 2016 – Michelle Sandford is a popular choice for speaking on diversity in Tech, women and young people into the Tech Industry, and the benefits of Games – all delivered with an inspirational and motivational flair. Michelle is the Vice Chair of the Australian Computer Society in WA, and one of their Executive Board Members. Michelle is also a member of the WAITTA Organising Committee. Her Tech Industry experience includes working for IBM Global Business Services and Microsoft.  Michelle lives life by running to stay one jump ahead of the Gameboy and by striving to think outside the Xbox. She surfs waves and webs. Michelle is the Founder and Global President of TechOutsiders.</p>
+        ),
+        mentoring: (
+            <p>I am a Mentor and Role Model in the <a href="https://web.archive.org/web/20180312183147/http:/www.techgirlsaresuperheroes.org/" target="_blank" rel="nofollow">Tech Girls are Superheroes</a> Program. I actively encourage young women and girls to pursue careers in tech and STEM.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183147/https:/au.linkedin.com/in/michellesandford',
+            twitter: 'https://web.archive.org/web/20180312183147/https:/twitter.com/msandfor',
+            facebook: 'https://web.archive.org/web/20180312183147/https:/www.facebook.com/michellesandfordSpeaker/',
+            instagram: 'https://web.archive.org/web/20180312183147/https:/www.instagram.com/msandfor/',
+            youtube: 'https://web.archive.org/web/20180312183147/https:/www.youtube.com/user/msandfor',
+            website: 'https://web.archive.org/web/20180312183147/http:/michellesandford.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
         name: 'Ming Johanson',
         slug: 'ming-johanson',
         tagline: 'Mother of Unicorns + Social Nerd',
@@ -234,7 +571,9 @@ const speakers = [
             twitter: 'http://twitter.com/@MingJohanson',
             linkedin: 'https://au.linkedin.com/in/mingjohanson',
             facebook: 'https://facebook.com/MingJohansonPage',
+            instagram: 'https://web.archive.org/web/20180312183253/http:/instagram.com/mingjohanson',
             website: 'https://mingjohanson.com.au/',
+            youtube: 'https://web.archive.org/web/20180312183253/https:/www.youtube.com/user/MingSocialNerd',
             featured: [
                 'twitter',
                 'linkedin',
@@ -242,6 +581,180 @@ const speakers = [
             ]
         },
         talks: []
+    },
+    {
+        name: 'Pia Turcinov',
+        slug: 'pia-turcinov',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>As an experienced business and innovation manager, as well as qualified Australian legal practitioner, Pia offers a deep understanding of the processes involved in successful strategic collaborations and embedding innovation processes into organisations. Leveraging a wealth of practical business knowledge gained over 25 years in the private, public and not for profit sectors in Western Australia and New South Wales, Pia is an accomplished commercial advisor, facilitator and innovation broker. She is passionate about sharing her expertise as a consultant, mentor and public speaker on topics relating to innovation, commercialisation, collaboration and capacity building across and within enterprises.</p>
+                <p>As a mother of three daughters, Pia is also an advocate of supporting and enabling female entrepreneurs and business owners. In addition to currently delivering advisory and facilitation support services to SMEs under the Federal Government’s Entrepreneurs’ Programme, Pia holds a number of non-executive and voluntary positions, including as Secretary and Committee member of Women in Technology WA; Chair of the WiTWA Techtrails STEM School Incursion Program; WA Sub-Committee member of Springboard Enterprises Australia Accelerator Program; Committee member of Regional Development Australia Perth; and as Non-executive Director of the Australian Energy and Resources Growth Centre.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143736/https:/au.linkedin.com/in/piaturcinov',
+            twitter: 'https://web.archive.org/web/20180319143736/https:/twitter.com/Pia_Turcinov'
+        },
+        talks: [],
+    },
+    {
+        name: 'Rebecca Platt',
+        slug: 'rebecca-platt',
+        location: 'perth',
+        bio: (
+            <p>Rebecca is a Developer who works at Bankwest and mentors for CoderDojo</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183559/https:/au.linkedin.com/in/rebecca-platt-a886aba7',
+        },
+        talks: [],
+    },
+    {
+        name: 'Rhonda Craig',
+        slug: 'rhonda-craig',
+        tagline: '',
+        bio: (
+            <p>Microsoftie, geeky chick, customer advocate, foodie, social promoter, passionate marketer and old fashioned sales person.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183339/https:/au.linkedin.com/in/rhondacraig',
+            twitter: 'https://web.archive.org/web/20180312183339/https:/twitter.com/rhondajcraig',
+        },
+        talks: [],
+    },
+    {
+        name: 'Samantha Hall',
+        slug: 'samantha-hall',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>After working in business development and marketing in Perth whilst completing my Commerce degree in 2001, I was awarded 1 of 5 global internships through the International Advertising Association to New York, where I worked at BBDO. I took some time off after this travelling through the US, Canada, Europe and Central America and then moved to London. I worked here  in marketing for Reed Exhibitions, managing major accounts, and eventually transitioned back to  Sydney with Reed.</p>
+                <p>I returned to Perth and worked for an engineering company managing marketing, and moved to Thailand when their head office relocated. I took over HR management for Thailand, Singapore  and Indonesia.</p>
+                <p>I’ve always been an entrepreneur at heart, it was in Thailand I could see the impacts of climate  change and felt compelled to make a difference. I went through a career shift, returning to  university to complete a Masters of Science (2010) and PhD (2014), through which I developed an  industry tool targeting commercial building performance improvements.</p>
+                <p>Through the PhD I discovered the linear nature of the construction industry. Buildings were  designed and delivered with limited feedback loops. In addition whilst assessing buildings during  my PhD I saw some terrible spaces that are not designed or maintained with consideration to  human needs. I believe there is so much potential to create healthier, more vibrant spaces.</p>
+                <p>Passionate about linking academic research and practice, I co-founded consultancy SimplyCarbon  in 2011 and recently Rate My Space. I am joining 77 other women from around the world in 2016 on a leadership bootcamp in Antarctica aimed at closing the leadership gap for women in STEM.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183839/https:/www.linkedin.com/in/samhall09/',
+            twitter: 'https://web.archive.org/web/20180312183839/https:/twitter.com/_SamanthaHall',
+            website: 'https://web.archive.org/web/20180312183839/http:/www.ratemyspace.com.au/',
+            instagram: 'https://web.archive.org/web/20180312183839/http:/instagram.com/ratemyspace',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Sara Henshall',
+        slug: 'sara-henshall',
+        location: 'perth',
+        bio: (
+            <p>Accomplished IT Professional with over 20 years’ industry experience and 12 years’ extensive experience managing and improving IT systems, projects, processes and services.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183657/https:/au.linkedin.com/in/sarahenshall',
+        },
+        talks: [],
+    },
+    {
+        name: 'Sarah Mitchell',
+        slug: 'sarah-mitchell',
+        bio: (
+            <Fragment>
+                <p>Sarah Mitchell is the Director of Content Strategy at Lush Digital Media. She develops and implements content marketing strategies for organisations all over the world. She’s fascinated with the idea of creating content that converts into long-term business assets.</p>
+                <p>Sarah is the Chief Editor of Traction News, the Australian editor of Chief Content Officer Magazine and a regular contributor to the Content Marketing Institute. Her writing has been published in five countries and received numerous awards, including the #1 spot on 20 of the Best Australian Business Blogs (January 2014) at SmartCompany. She’s the chief editor and contributor of the Lush Digital Media blog, named one of Australia’s 20 Best Business Blogs: 2015 by SmartCompany. Search Engine Journal named Sarah’s Global Copywriting blog one of the best marketing blogs in Australia (May 2014). Brand Newsroom, the podcast she co-hosts with James Lush and Nic Hayes, was shortlisted as a finalist for Best Podcast in the 2015 Content Marketing Awards in the USA.</p>
+                <p>Sarah’s career started in technology where she spent 15 years in software development moving through the ranks from operations, programming, systems analysis, testing, and project management. She then spent five years working in commission-based sales roles. She exceeded her quota every year, which led to her running large accounts and managing a sales team of 13 people. This experience, more than any other, informed her attitude towards the importance of results-based marketing activities.</p>
+                <p>Something of a professional vagabond, Sarah has lived and worked in corporate environments on five continents. The best place to track her down is on Twitter at @globalcopywrite. You can listen to her Brand Newsroom podcast on iTunes, or look her up on LinkedIn.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https:/au.linkedin.com/in/sarahcmitchell',
+            twitter: 'https:/twitter.com/globalcopywrite',
+            facebook: 'https:/www.facebook.com/GlobalCopywriting/',
+            website: 'http:/www.globalcopywriting.com/#sthash.plCL3IYT.dpbs',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Siobhan Avenell',
+        slug: 'siobhan-avenell',
+        location: 'perth',
+        bio: (
+            <p>Currently an Organisational Development Advisor with Ignia</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183547/https:/au.linkedin.com/in/siobhan-avenell-0095852b',
+        },
+        talks: [],
+    },
+    {
+        name: 'Tracey Joynson',
+        slug: 'tracey-joynson',
+        location: 'perth',
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183714/https:/au.linkedin.com/in/tracey-joynson-b5930826',
+        },
+        talks: [],
+    },
+    {
+        name: 'Vee Pendergrast',
+        slug: 'vee-prendergrast',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>After ties to the WA videogame industry since the mid-2000s, Vee Pendergrast co-founded Stirfire Studios in 2010. Vee has commerce degree and over 13 years experience in technology go-to-market from the mobile telecommunications sector having worked in and around every major telco in Australia, a mobile phone manufacturer and as a state manager for a telecom logistics company.</p>
+                <p>Vee’s passion in life has always been games and has loved games as medium since the age of four, so a career in games was always going to happen at some point. Vee has had experience designing tabletop games but works more in a support role as Managing Director for Stirfire. Vee’s philosophy is that the videogame is the medium of delivery and the game mechanics, story and content is the point of the exercise- the technology is just the facilitator.</p>
+                <p>Vee is currently involved in major capital raising to grow Stirfire Studios and tackle larger projects as well as the final stages of bringing their current title in production, Symphony of the Machine to market.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142539/http:/linkedin.com/in/garth-vee%E2%80%8B-pendergrast-b9458146',
+            twitter: 'https://web.archive.org/web/20180319142539/https:/twitter.com/V_garpend',
+            facebook: 'https://web.archive.org/web/20180319142539/https:/www.facebook.com/StirfireStudios/?fref=ts',
+            website: 'https://web.archive.org/web/20180319142539/https:/stirfire.net/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
+    },
+    {
+        name: 'Dr Vivienne Conway',
+        slug: 'vivienne-conway',
+        location: 'perth',
+        bio: (
+            <Fragment>
+                <p>Dr Vivienne Conway is the Director of Web Key IT Pty Ltd.</p>
+                <p>Vivienne completed her PhD in IT (website accessibility) at Edith Cowan University and is a Certified Professional (Snr) member of the Australian Computer Society.  Vivienne received the ACS “Australian Computer Society Prize” in 2009 for the graduating student with the highest Weighted Average Mark in an ACS accredited undergraduate course.  She was also the winner of a Google Student Award which allowed her to attend the WWW 2011 Conference in Hyderabad, India and the Twila Ann Janssen Herr Research Award for Disability Services from the Australian Library and Information Association.</p>
+                <p>Web Key IT is one of only ten Australian members of the World Wide Consortium (W3C).  Vivienne is active in the WCAG Working Group, Research & Development Working Group, Education & Outreach Working Group and the WCAG Evaluation Methodology Task Force.</p>
+                <p>Vivienne is also active in a number of conferences here in Australia and overseas.  In particular, she is involved with the Web 4 All international conference which is co-located with the WWW Conference, to be held in 2017 in Perth, WA.  This year, Vivienne is General Chair for that conference.</p>
+                <p>This year there has been a massive rise in awareness across the globe on the topics of accessibility and digital inclusion. Organisations are starting to realise that they cannot afford to exclude a large part of their market because they are unable to access their technology solution. Dr Vivienne Conway is at the forefront of the change that is coming – she is showing industry and government the way, helping, advising, directing and changing them. She has carried a storm of digital disruption in her hands and it will wash away the complacency that came before. #BeWhatsNext</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180312183852/https:/www.linkedin.com/in/vivienne-conway-92756a30/',
+            twitter: 'https://web.archive.org/web/20180312183852/https:/twitter.com/webkey_it',
+            facebook: 'https://web.archive.org/web/20180312183852/https:/www.facebook.com/webkeyit',
+            website: 'https://web.archive.org/web/20180312183852/http:/www.webkeyit.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+        talks: [],
     },
 ];
 
