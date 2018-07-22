@@ -31,6 +31,9 @@ class Home extends Component {
 		if(city != '') {
 			window.location.hash = "#" + city;
 		}
+		else {
+			window.location.hash = '';
+		}
 	}
 
 	render() {
