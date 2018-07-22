@@ -94,9 +94,16 @@ const Speaker = ({details}) => {
 	}
 
 	let socialLinks = socials.map((profile) => {
-		return (
-			<Socials type={profile} link={details.social[profile]} key={profile} />
-		);
+		if(details.social[profile].name) {
+			return (
+				<Socials type={profile} link={details.social[profile].link} key={profile} title={details.social[profile].name} />
+			);
+		}
+		else {
+			return (
+				<Socials type={profile} link={details.social[profile]} key={profile} />
+			);
+		}
 	});
 
 	if (details.tagline) {
@@ -116,8 +123,9 @@ const Speaker = ({details}) => {
 };
 
 
-export const Socials = ({type, link}) => {
-	let icon;
+export const Socials = ({type, link, title}) => {
+	let icon,
+		linkTitle = type.charAt(0).toUpperCase() + type.slice(1) + ' profile';
 	
 	switch (type) {
 		case 'blog':
@@ -156,8 +164,18 @@ export const Socials = ({type, link}) => {
 			icon = <Link2 />;
 	}
 
+	if(title) {
+		linkTitle = title;
+	} 
+	else if(type.includes('website')) {
+		linkTitle = 'website';
+	}
+	else if(type.includes('blog')) {
+		linkTitle = 'blog';
+	}
+
 	return (
-		<a href={link} className="social-link" target="_blank" title={'Link to ' + type + ' profile'}>
+		<a href={link} className="social-link" target="_blank" title={'Link to ' + linkTitle}>
 			{icon}
 		</a>
 	);

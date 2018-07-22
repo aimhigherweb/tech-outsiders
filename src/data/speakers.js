@@ -45,15 +45,21 @@ const speakers = [
             <p>Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.</p>
         ),
         social: {
-            blog: 'https://amygoestoperth.com.au/',
-            blog2: 'http://thefreelance.guide',
+            blog: {
+                name: 'Amy Goes to Perth',
+                link: 'https://amygoestoperth.com.au/',
+            },
+            blog2: {
+                name: 'The Freelance Guide',
+                link: 'http://thefreelance.guide',
+            },
             codepen: 'https://codepen.io/aimhigherwebdesign-amy/',
             facebook: 'https://www.facebook.com/aimhigherwebdesign',
             github: 'https://github.com/amykapernick/amygoestoperth',
             instagram: 'https://www.instagram.com/amys_kapers/',
             linkedin: 'https://www.linkedin.com/in/amykapernick/',
             twitter: 'https://twitter.com/amys_kapers',
-            website: 'https://aimhigherwebdesign.com.au/',
+            website: 'https://aimhigherweb.design',
             featured: [
                 'blog2',
                 'github',

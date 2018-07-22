@@ -56,9 +56,16 @@ const SpeakerProfile = ({location}) => {
 
     let socialLinks = socials.map((profile) => {
 		if(profile != 'featured') {
-            return (
-                <Socials type={profile} link={speaker.social[profile]} key={profile} />
-            );
+            if(speaker.social[profile].name) {
+                return (
+                    <Socials type={profile} link={speaker.social[profile].link} key={profile} title={speaker.social[profile].name} />
+                );
+            }
+            else {
+                return (
+                    <Socials type={profile} link={speaker.social[profile]} key={profile} />
+                );
+            }
         }
 	});
     return (
