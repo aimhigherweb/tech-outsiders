@@ -6,7 +6,7 @@ import {Socials} from '../home/index.js';
 
 //Resources
 import './style.scss';
-import speakers from '../../data/speakers.js';
+import speakers, {locations} from '../../data/speakers.js';
 import {images} from '../home/index.js';
 
 const meta = {
@@ -20,22 +20,27 @@ const SpeakerProfile = ({location}) => {
         speaker = '',
         noPage = false,
         socials = [],
+        locate,
+        city,
+        image,
+        talks,
         talksList = [];
 
-        pageSlug = pageSlug.replace(/^\//, '');
+    pageSlug = pageSlug.replace(/^\//, '');
 
-    for(let i = 0; i < speakers.length; i++) {
-        if(speakers[i].slug == pageSlug) {
-            speaker = speakers[i];
-            socials = Object.keys(speaker.social);
-        };
+    speaker = speakers.filter(peep => peep.slug == pageSlug);
+
+    if(speaker.length == 0) {
+        pageSlug = '404';
+    }
+    else {
+        speaker = speaker[0];
+        socials = Object.keys(speaker.social);
+        locate = speaker.location;
+        city = locations[locate];
     }
 
-    if(speaker == '') {
-        pageSlug = '404';
-    };
-
-    let image = speaker.slug + '.jpg';
+    image = speaker.slug + '.jpg';
 
     if (images[image] == undefined) {
 		image = 'placeholder.jpg';
@@ -45,7 +50,7 @@ const SpeakerProfile = ({location}) => {
         talksList = speaker.talks;
     }
 
-    let talks = talksList.map((talk) => (
+    talks = talksList.map((talk) => (
         <Talk talk={talk} key={talk.name} />
     ));
 
@@ -63,6 +68,7 @@ const SpeakerProfile = ({location}) => {
                 <h1>{speaker.name}</h1>
                 <img src={images[image]} alt={'Speaker Profile Photo of ' + speaker.name} />
                 <p className="tagline">{speaker.tagline}</p>
+                <p className="location">{city}</p>
                 <div className="socials">
                     {socialLinks}
                 </div>

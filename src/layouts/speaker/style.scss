@@ -3,15 +3,15 @@
 .details { 
     --height: auto;
 
-    display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
+    
     height: var(--height);
+
+    > * {
+        text-align: right;
+    }
 
     h1 {
         margin: 0;
-        width: 100%;
     }
 
     h1, p, .socials {
@@ -22,6 +22,11 @@
 
     .tagline {
         margin: 20px var(--margins) 0;
+    }
+
+    .location {
+        color: $neutral_light_50;
+        display: none;
     }
 
     .socials {
@@ -36,9 +41,11 @@
 
     img {
         border: 2px solid $secondary_dark_90;
+        display: block;
         height: auto;
+        margin: 0 auto;
         width: 80%;
-            max-width: var(--height);
+            max-width: 300px;
     }
 }
 
@@ -154,19 +161,33 @@ h2 {
     .details { 
         --height: 300px;
     
-        flex-direction: column;
+        
         margin-bottom: 20px;
 
-        img {
-            order: -1;
+        h1 {
+            display: inline-block;
+            margin-left: 0;
         }
 
-        h1, p, .socials {
+        h1, p, img, .socials {
             --margins: 30px;
+
+            text-align: left;
         }
 
-        .tagline {
+        img {
+            float: left;
+            margin-right: var(--margins);
+            max-width: var(--height);
+        }
+
+        .tagline, .location {
             margin: 0 var(--margins);
+        }
+
+        .location {
+            display: block;
+            margin-top: 10px;
         }
     }
 
@@ -179,8 +200,10 @@ h2 {
         margin-top: 30px;
     }
 
-    .talk {
-        grid-template-rows: 4.8em 1fr;
+    @supports (grid-template-areas: none) {
+        .talk {
+            grid-template-rows: 4.8em 1fr;
+        }
     }
 }
 

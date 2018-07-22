@@ -6,7 +6,7 @@ import {Meta} from '../../components/parts/index.js';
 
 //Resources
 import './style.scss';
-import speakers from '../../data/speakers.js';
+import speakers, {locations} from '../../data/speakers.js';
 import {BookOpen, Codepen, Facebook, Github, Gitlab, Globe, Instagram, Linkedin, Link2, Twitter, Youtube} from 'react-feather';
 
 //Importing Images
@@ -25,14 +25,44 @@ const meta = {
 };
 
 class Home extends Component {
+	filterLocation(event) {
+		let city = event.target.value;
+
+		if(city != '') {
+			window.location.hash = "#" + city;
+		}
+	}
+
 	render() {
-		let speakersList = speakers.map((speaker) => (
+		let filterList;
+
+		if(location.hash) {
+			let filters = location.hash.replace(/^\#/, '');
+			filterList = speakers.filter(speaker => speaker.location == filters);
+		}
+		else {
+			filterList = speakers;
+		}
+
+		let speakersList = filterList.map((speaker) => (
 			<Speaker details={speaker} key={speaker.slug} />
 		));
+
+		let cities = Object.entries(locations).map((city) => (
+			<option value={city[0]}>{city[1]}</option>
+		));
+
 
 		return (
 			<Fragment>
                 <Meta {...meta} />
+				<div className="filter">
+					<label htmlFor="locations">Filter by Location</label>
+					<select id="locations" onChange={this.filterLocation}>
+						<option value="">Filter by Location</option>
+						{cities}
+					</select>
+				</div>
 				<div className="speakers-list">
 					{speakersList}
 				</div>
