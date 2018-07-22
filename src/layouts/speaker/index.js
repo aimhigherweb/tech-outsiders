@@ -19,7 +19,8 @@ const SpeakerProfile = ({location}) => {
     let pageSlug = location.pathname,
         speaker = '',
         noPage = false,
-        socials = [];
+        socials = [],
+        talksList = [];
 
         pageSlug = pageSlug.replace(/^\//, '');
 
@@ -36,7 +37,15 @@ const SpeakerProfile = ({location}) => {
 
     let image = speaker.slug + '.jpg';
 
-    let talks = speaker.talks.map((talk) => (
+    if (images[image] == undefined) {
+		image = 'placeholder.jpg';
+	}
+
+    if(speaker.talks) {
+        talksList = speaker.talks;
+    }
+
+    let talks = talksList.map((talk) => (
         <Talk talk={talk} key={talk.name} />
     ));
 
@@ -70,10 +79,14 @@ const SpeakerProfile = ({location}) => {
                     <div className="mentor">{speaker.mentoring}</div>
                 </Fragment>
             }
-            <h2>Speaker Experience</h2>
-            <div className="talks">
-                {talks}
-            </div>
+            {speaker.talks &&
+                <Fragment>
+                    <h2>Speaker Experience</h2>
+                    <div className="talks">
+                        {talks}
+                    </div>
+                </Fragment>
+            }
         </Fragment>
     );
 };
