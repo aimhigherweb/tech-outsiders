@@ -116,6 +116,31 @@ const speakers = [
         },
     },
     {
+        name: 'Barbara Kerr',
+        slug: 'barbara-kerr',
+        location: 'melbourne',
+        bio: (
+            <Fragment>
+                <p>Barbara Kerr writes words for games. She used to do other things, but likes this best.</p>
+                <p>Prior to entering game development, Barbara was a project manager in government. Her expertise is not just in writing but in organisational development, grants management, networking and budgeting.</p>
+                <p>Her video games can be played at <a href="https://web.archive.org/web/20180319142710/http:/saint-barbara.tumblr.com/mygames" target="_blank" rel="nofollow">Saint-Barbara Games</a>.</p>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142710/https:/au.linkedin.com/in/barbara-kerr-639a378',
+            twitter: 'https://web.archive.org/web/20180319142710/https:/twitter.com/ms45',
+            facebook: 'https://web.archive.org/web/20180319142710/https:/www.facebook.com/ms45zine/',
+            website: 'https://web.archive.org/web/20180319142710/http:/saint-barbara.tumblr.com/',
+            youtube: 'https://web.archive.org/web/20180319142710/https:/www.youtube.com/user/tismselfstorage',
+            blog: 'https://web.archive.org/web/20180319142710/https:/saint-barbara.itch.io/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+    },
+    {
         name: 'Bhavneet Singh',
         slug: 'bhavneet-singh',
         bio: (
@@ -132,6 +157,25 @@ const speakers = [
                 'linkedin',
                 'website',
                 'twitter',
+            ],
+        },
+    },
+    {
+        name: 'Charlie Francis',
+        slug: 'charlie-francis',
+        location: 'melbourne',
+        bio: (
+            <p>Once described as the person with molten hair from the hip cyberpunk future that never was, Charlie Francis is a queer nb trans masc programmer and game developer. They currently work for Mighty Games in Melbourne on Shooty Skies. In their spare time they make every effort to work on games that further queer, trans and mental health representation. They’re currently working on a few games on bipolar, looking after yourself and other mental health themes. On top of this they are very outspoken about their mental health and take every opportunity to normalise speaking about it.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142933/https:/www.linkedin.com/in/charlie-francis-cassidy-61259135/',
+            twitter: 'https://web.archive.org/web/20180319142933/http:/twitter.com/charlietheGfish',
+            facebook: 'https://web.archive.org/web/20180319142933/http:/www.facebook.com/charliethegfish',
+            website: 'https://web.archive.org/web/20180319142933/http:/charliethegoldfish.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
             ],
         },
     },
@@ -255,6 +299,34 @@ const speakers = [
         },
     },
     {
+        name: 'Jenine Beekhuyzen',
+        slug: 'jenine-beekhuyzen',
+        location: 'brisbane',
+        bio: (
+            <Fragment>
+                <p>Dr Jenine Beekhuyzen is a Diversity Expert. She is one of Advance Queensland’s Digital Champions, was named by the Sydney Morning Herald as a female rising star in ICT, and is the winner of the 2014 Australian Information Industries Association (AIIA) iAward for Queensland ICT Woman of the Year.</p>
+                <p>Dr. Jenine Beekhuyzen is a social entrepreneur and academic, and an advocate for increasing the number of women in STEM. She is the Founder & CEO of the non-profit Tech Girls Movement (TGM), and runs her own research consulting company Adroit Research with her expertise in qualitative research. Dr. Beekhuyzen completed her Doctorate in Australia on unauthorised file sharing in 2010, and she has turned her research on gender into practice by producing the illustrative children’s books Tech Girls Are Superheroes (1 & 2) and Tech Girls are Chic! – free books which have received widespread success with 55 000 copies distributed to school girls across Australia.</p>
+                <p>Her advocacy for girls and women in STEM is based on more than a decade of internationally peer-reviewed research; she has more than 60 published peer reviewed papers. Dr. Beekhuyzen is also the Queensland Authorised Trainer for QSR’s NVivo software with more than 15 years of research experience.</p>
+            </Fragment>
+        ),
+        mentoring: (
+            <p>I am the Founder of the Tech Girls are Superheroes Program. I actively seek out women in tech to become mentors and superheroes in my program which encourages girls into careers in Tech.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143008/https:/au.linkedin.com/in/jeninebeek',
+            twitter: 'https://web.archive.org/web/20180319143008/https:/twitter.com/TGAsuperheroes',
+            website: 'https://web.archive.org/web/20180319143008/http:/www.techgirlsmovement.org/',
+            facebook: 'https://web.archive.org/web/20180319143008/https:/www.facebook.com/Techgirlsaresuperheroes/?fref=ts',
+            instagram: 'https://web.archive.org/web/20180319143008/https:/www.instagram.com/techgirlsaresuperheroes/?hl=en',
+            youtube: 'https://web.archive.org/web/20180319143008/https:/www.youtube.com/channel/UCADr4fgqH9KnF3_iXBUKUkQ',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+    },
+    {
         name: 'Jo Saunders',
         slug: 'jo-saunders',
         tagline: 'LinkedIn Demystifier',
@@ -273,6 +345,25 @@ const speakers = [
             website: 'https://web.archive.org/web/20180312183729/http:/jo-saunders.com/',
             instagram: 'https://web.archive.org/web/20180312183729/http:/instagram.com/wildfiresm',
             website: 'https://web.archive.org/web/20180312183729/http:/www.wildfiresocialmarketing.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+    },
+    {
+        name: 'Joshua Meadows',
+        slug: 'joshua-meadows',
+        location: 'melbourne',
+        bio: (
+            <p>Joshua Meadows is a writer, photographer, and video game developer originally from New York City but now living in Sydney, Australia. Some of his writing work has been featured on websites like Kotaku, GayGamer.net, and XY Magazine. His sci-fi/fantasy novella series, Iyetra, was a quarterfinalist in the 2012 “Amazon Breakthrough Novel Award” competition sponsored by Penguin Books.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142732/https:/au.linkedin.com/in/joshua-meadows-5b1533a2',
+            facebook: 'https://web.archive.org/web/20180319142732/https:/www.facebook.com/joshua.meadows',
+            twitter: 'https://web.archive.org/web/20180319142732/https:/twitter.com/joshuameadows',
+            website: 'https://web.archive.org/web/20180319142732/http:/www.joshuameadows.com/',
             featured: [
                 'linkedin',
                 'twitter',
@@ -344,6 +435,25 @@ const speakers = [
         },
     },
     {
+        name: 'Lain Mitterer',
+        slug: 'lain-mitterer',
+        location: 'melbourne',
+        bio: (
+            <p>Lain is a non-binary person who makes games about gender identity and mental illness.</p>
+        ),
+        social: {
+            twitter: 'https://web.archive.org/web/20180319142911/https:/twitter.com/exp_lain',
+            instagram: 'https://web.archive.org/web/20180319142911/https:/www.instagram.com/experimental.lain/',
+            facebook: 'https://web.archive.org/web/20180319142911/https:/www.facebook.com/profile.php?id=100009299777799',
+            linkedin: 'https://web.archive.org/web/20180319142911/https:/www.linkedin.com/in/lain-mitterer-b4612a12a',
+            featured: [
+                'twitter',
+                'facebook',
+                'linkedin',
+            ],
+        },
+    },
+    {
         name: 'Laura Boykin',
         slug: 'laura-boykin',
         location: 'perth',
@@ -361,6 +471,62 @@ const speakers = [
                 'twitter',
                 'website',
             ],
+        },
+    },
+    {
+        name: 'Leonie Yue',
+        slug: 'leonie-yue',
+        location: 'melbourne',
+        bio: (
+            <p>Quiet Character Designer, Illustrator & Concept/Games Artist</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142740/https:/www.linkedin.com/in/leonieyue',
+            twitter: 'https://web.archive.org/web/20180319142740/https:/twitter.com/leonieyue',
+            website: 'https://web.archive.org/web/20180319142740/http:/www.leonieyue.com/',
+            instagram: 'https://web.archive.org/web/20180319142740/https:/www.instagram.com/leonieyueart/',
+            youtube: 'https://web.archive.org/web/20180319142740/https:/www.youtube.com/user/jooinfin',
+            blog: 'https://web.archive.org/web/20180319142740/http:/blog.leonieyue.com/',
+            featured: [
+                'linkedin',
+                'website',
+                'blog',
+            ],
+        },
+    },
+    {
+        name: 'Liam Esler',
+        slug: 'liam-esler',
+        location: 'melbourne',
+        bio: (
+            <p>Liam Esler is a diversity advocate, game developer and event manager from Melbourne, Australia. He works with the Game Developers’ Association of Australia to manage Game Connect Asia Pacific, Australia’s premiere game development conference and is Co-Director of GX Australia, the first queer gaming convention to hit Australian shores. He’s involved with several other organisations including acting as Co-Director of the IGDA LBGTQI+ Special Interest Group, and member of the Games and Interactive Advisory Committee for the Australian Writers’ Guild. When he is not running events or encouraging the industry to become more diverse, he is a freelance games producer and writer who has worked at companies such as Beamdog, Obsidian Entertainment, Surprise Attack and Australian gaming news outlet and TV show Player Attack. In 2016 he was honoured to be named as one of MCV Pacific’s 30 Under 30 in Asia Pacific, as well as one of Develop’s 30 Under 30 worldwide.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142556/https:/www.linkedin.com/in/liamesler',
+            twitter: 'https://web.archive.org/web/20180319142556/http:/twitter.com/liamesler',
+            facebook: 'https://web.archive.org/web/20180319142556/https:/www.facebook.com/liam.esler.7',
+            instagram: 'https://web.archive.org/web/20180319142556/http:/instagram.com/liamesler/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'facebook',
+            ],
+        },
+    },
+    {
+        name: 'Maggie Hardy',
+        slug: 'maggie-hardy',
+        location: 'brisbane',
+        bio: (
+            <p>An internationally recognized leader in her field, Dr Maggie Hardy is an expert known for her contributions to chemistry and evidence-based policy. She is a Fellow of the Royal Entomological Society, and serves on the Executive Board for the International Branch of the Entomological Society of America, is a Director for the Tech Girls Movement Foundation, and is a member of the Executive Advisory Board of Bravehearts. Her research program is focused on the discovery, characterization, and commercialization of novel chemistries from the venom of Australian spiders. Her research is applied across a number of sectors, including drug discovery and delivery, public health, agriculture, biosecurity, export, and agribusiness. Dr Hardy is an advocate for equity and diversity in higher education and careers in research, and has a particular interest in open access discovery programs. Dr Hardy also provides digital communication training for research scientists and clinicians, and is particularly interested in altmetrics and novel ways to measure engagement. In addition to her research Dr Hardy is a wife and mother.</p>
+        ),
+        mentoring: (
+            <p>I am a Mentor and Role Model in the Tech Girls are SuperheroesProgram. I actively encourage young women and girls to pursue careers in tech and STEM.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143210/https:/au.linkedin.com/in/drmaggiehardy',
+            twitter: 'https://web.archive.org/web/20180319143210/https:/twitter.com/DrMaggieHardy',
+            website: 'https://web.archive.org/web/20180319143210/https:/muckrack.com/drmaggiehardy/portfolio',
         },
     },
     {
@@ -492,6 +658,26 @@ const speakers = [
         ],
     },
     {
+        name: 'Mathilde Desselle',
+        slug: 'mathilde-desselle',
+        location: 'brisbane',
+        bio: (
+            <Fragment>
+                <p>Mathilde Desselle is a program coordinator for outreach for the award-winning Community for Open Antimicrobial Drug Discovery, a global initiative of The University of Queensland’s Institute for Molecular Bioscience. She is leading the marketing and outreach strategy and team in accessing compounds collections from all over the world and setting up international partnerships.</p>
+                <p>She has over 8 years’ management experience driving engagement strategies for life sciences research programs and facilities in Europe and Australia, and the ambition to make a difference in the space of public health.</p>
+                <p>She is passionate with finding innovative approaches to drive transformational change and solutions to diagnose, track and treat infectious diseases.</p>
+                <p>She is also a science communicator and a board director for Women in Technology, the peak body association for women in science and ICT careers in Queensland, and for the Tech Girls Movement, promoting positive role models to encourage and raise awareness of STEM careers for girls.</p>
+            </Fragment>
+        ),
+        mentoring: (
+            <p>I am a Mentor and Role Model in the Tech Girls are Superheroes Program. I actively encourage young women and girls to pursue careers in tech and STEM.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143254/https:/au.linkedin.com/in/mathildedesselle/en',
+            twitter: 'https://web.archive.org/web/20180319143254/https:/twitter.com/mathildesselle',
+        },
+    },
+    {
         name: 'Megan Pusey',
         slug: 'megan-pusey',
         tagline: 'Science Ninja Gal',
@@ -565,6 +751,31 @@ const speakers = [
         },
     },
     {
+        name: 'Nicole Stark',
+        slug: 'nicole-stark',
+        location: 'brisbane',
+        bio: (
+            <Fragment>
+                <p>Nicole Stark is the proud owner of the inaugural ANZ Women in Games Award for Creative Inspiration. She’s held senior positions on a variety of shipped game titles with project sizes ranging from triple A console to indie mobile. She’s had her surfing animations praised by an Australian champion surfer and her Barbie costume designs praised by Mattel.</p>
+                <p> In 2012 Nicole formed Disparity Games with her husband and four daughters. Based in the heart of paradise, Noosa, they make serious games with silly names.</p> 
+            </Fragment>
+        ),
+        mentoring: (
+            <p>I mentor for CoderDojo, Tech Girls are Superheroes, Robogals, Digital Diva’s or a similar org</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143304/https:/www.linkedin.com/in/nicole-stark-61692720',
+            twitter: 'https://web.archive.org/web/20180319143304/https:/twitter.com/ColeStark',
+            facebook: 'https://web.archive.org/web/20180319143304/https:/www.facebook.com/disparitygames',
+            website: 'https://web.archive.org/web/20180319143304/http:/www.disparitygames.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+    },
+    {
         name: 'Pia Turcinov',
         slug: 'pia-turcinov',
         location: 'perth',
@@ -600,6 +811,25 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183339/https:/au.linkedin.com/in/rhondacraig',
             twitter: 'https://web.archive.org/web/20180312183339/https:/twitter.com/rhondajcraig',
+        },
+    },
+    {
+        name: 'Sally-Anne Kellaway',
+        slug: 'sally-anne-kellaway',
+        location: 'melbourne',
+        bio: (
+            <p>Sally-anne Kellaway is the Senior Audio Designer for Zero Latency, a Melbourne-based VR developer that hosts free-roam room scale VR games for 6+ players, with additional sites opening in Japan and in unannounced locations worldwide.  She also works closely with the Industry-standard Audio Middleware solution FMOD, is the Sound Supervisor for the 360 Uku VR Documentary series, and is a seasoned speaker at major Game Development conferences worldwide.   Sally is also the co-chair of the IGDA Special Interest Group for Virtual, Augmented and Mixed Realities, and speaks at conferences worldwide about the role of Audio in Virtual Reality.  Sally has worked for SEGA Studios Australia and has completed a Masters in Design Science with a specialisation in Audio and Acoustics, marrying industry and academic knowledge of Psychoacoustics to bring premium immersive audio technology to VR.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142636/https:/au.linkedin.com/in/sally-anne-kellaway-32705010',
+            twitter: 'https://web.archive.org/web/20180319142636/https:/twitter.com/soundsbysal',
+            facebook: 'https://web.archive.org/web/20180319142636/http:/facebook.com/soundsbysal/',
+            website: 'https://web.archive.org/web/20180319142636/http:/soundsbysal.weebly.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
         },
     },
     {
@@ -670,6 +900,50 @@ const speakers = [
         ),
         social: {
             linkedin: 'https://web.archive.org/web/20180312183547/https:/au.linkedin.com/in/siobhan-avenell-0095852b',
+        },
+    },
+    {
+        name: 'Sonia Cuff',
+        slug: 'sonia-cuff',
+        location: 'brisbane',
+        bio: (
+            <Fragment>
+                <p>Joining the IT industry straight out of high school, Sonia grew up doing Microsoft-focused Enterprise systems administration, support and architecture for large organisations & government. Moving into the SMB market in 2004, she brought Enterprise best practices to small businesses. Sonia is a a self-confessed Cloud ‘realist’ who is passionate about the right use of the right technology to achieve great business results.</p>
+                <p>Sonia has her own blog which doesn’t receive as much love as her other writing commitments. She’s a guest contributor at 24×7 IT Connection, a regular ambassador in Thwack the Solarwinds community and a guest writer for Tech Target. Sonia is often called upon for expert comment.</p>
+                <p>She’s spoken at Microsoft Ignite and Interop and is also a Pluralsight author.</p>
+                <p>And in her spare time, she tweets and runs a technical Facebook group.</p>
+                <blockquote>It’s not the technology that counts, it’s what you do with it.</blockquote>
+            </Fragment>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319143437/https:/au.linkedin.com/in/soniacuff',
+            twitter: 'https://web.archive.org/web/20180319143437/https:/twitter.com/Cuff_S',
+            instagram: 'https://web.archive.org/web/20180319143437/https:/www.instagram.com/cuff_s/?hl=en',
+            website: 'https://web.archive.org/web/20180319143437/http:/www.soniacuff.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
+        },
+    },
+    {
+        name: 'Creatrix Tiara',
+        slug: 'creatrix-tiara',
+        location: 'melbourne',
+        bio: (
+            <p>Creatrix Tiara has a philosophy of signing up for anything that looks interesting. This has led to multiple successful creative and online projects, including a White House LGBTIQ in Tech Fellowship, an invite to Al-Jazeera’s Media in Context Hackathon, leading blogs on alternative education and MH370, an international politically-sharp burlesque & performance arts career, and even virality through poking holes at Ello’s privacy problems.</p>
+        ),
+        social: {
+            linkedin: 'https://web.archive.org/web/20180319142600/http:/linkedin.com/in/tiaras',
+            twitter: 'https://web.archive.org/web/20180319142600/https:/twitter.com/creatrixtiara',
+            website: 'https://web.archive.org/web/20180319142600/http:/creatrixtiara.com/',
+            website2: 'https://web.archive.org/web/20180319142600/https:/creatrixtiara.contently.com/',
+            featured: [
+                'linkedin',
+                'twitter',
+                'website',
+            ],
         },
     },
     {
