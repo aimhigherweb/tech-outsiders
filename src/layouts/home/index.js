@@ -7,7 +7,7 @@ import {Meta} from '../../components/parts/index.js';
 //Resources
 import './style.scss';
 import speakers, {locations} from '../../data/speakers.js';
-import {BookOpen, Codepen, Facebook, Github, Gitlab, Globe, Instagram, Linkedin, Link2, Twitter} from 'react-feather';
+import {BookOpen, Codepen, Facebook, Github, Gitlab, Globe, Instagram, Linkedin, Link2, Twitter, Youtube} from 'react-feather';
 
 //Importing Images
 function importAll(r) {
@@ -75,6 +75,10 @@ const Speaker = ({details}) => {
 	let image = details.slug + '.jpg',
 		socials,
 		tagline = '';
+
+	if (images[image] == undefined) {
+		image = 'placeholder.jpg';
+	}
 	
 	if (!details.social) {
 		socials = [];
@@ -141,6 +145,9 @@ export const Socials = ({type, link}) => {
 		case 'website':
 		case 'website2':
 			icon = <Globe />;
+			break;
+		case 'youtube':
+			icon = <Youtube />;
 			break;
 		default:
 			icon = <Link2 />;
