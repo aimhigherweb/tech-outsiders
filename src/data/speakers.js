@@ -1,7 +1,10 @@
 import React, {Fragment} from 'react';
 
 export const locations = {
+    brisbane: 'Brisbane, Queensland',
+    melbourne: 'Melbourne, Victoria',
     perth: 'Perth, Western Australia',
+    sydney: 'Sydney, New South Wales',
 };
 
 const speakers = [
