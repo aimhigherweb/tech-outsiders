@@ -11,7 +11,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183623/https:/au.linkedin.com/in/alison-nicholson-msc-50ab2b22'
         },
-        talks: [],
     },
     {
         name: 'Amy Dix',
@@ -24,7 +23,6 @@ const speakers = [
             linkedin: 'https://web.archive.org/web/20180312183608/https:/au.linkedin.com/in/amy-dix-12170323',
             facebook: 'https://web.archive.org/web/20180312183608/https:/www.facebook.com/amylaurendix',
         },
-        talks: [],
     },
     {
         name: 'Amy Kapernick',
@@ -91,7 +89,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183534/https:/au.linkedin.com/in/anlepretorius',
         },
-        talks: [],
     },
     {
         name: 'Anna Burchfield',
@@ -117,7 +114,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Bhavneet Singh',
@@ -138,7 +134,6 @@ const speakers = [
                 'twitter',
             ],
         },
-        talks: [],
     },
     {
         name: 'Daniela Mattheys',
@@ -169,7 +164,6 @@ const speakers = [
             linkedin: 'https://web.archive.org/web/20180312183645/https:/au.linkedin.com/in/daniela-mattheys-6a848714',
             twitter: 'https://web.archive.org/web/20180312183645/https:/twitter.com/DMattheys',
         },
-        talks: [],
     },
     {
         name: 'Donna Edwards',
@@ -186,7 +180,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183638/https:/au.linkedin.com/in/edwardsdonna',
         },
-        talks: [],
     },
     {
         name: 'Elizabeth Wilson',
@@ -201,7 +194,6 @@ const speakers = [
         social: {
             linkedin: 'https:/au.linkedin.com/in/elizabeth-wilson-91479115',
         },
-        talks: [],
     },
     {
         name: 'Ella Ganfield',
@@ -222,7 +214,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Gry Stene',
@@ -248,7 +239,6 @@ const speakers = [
             twitter: 'https://web.archive.org/web/20180312183820/https:/twitter.com/GrooveeFreo',
             facebook: 'https://web.archive.org/web/20180312183820/https:/www.facebook.com/gry.stene',
         },
-        talks: [],
     },
     {
         name: 'Hannah Dodds',
@@ -263,7 +253,6 @@ const speakers = [
             twitter: 'http:/twitter.com/misshdodds',
             blog: 'http:/www.misshdodds.weebly.com/',
         },
-        talks: [],
     },
     {
         name: 'Jo Saunders',
@@ -290,7 +279,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Julie Grundy',
@@ -354,7 +342,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183905/https:/www.linkedin.com/in/kathy-bunce-473694a/',
         },
-        talks: [],
     },
     {
         name: 'Laura Boykin',
@@ -375,7 +362,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Mandy Michael',
@@ -507,7 +493,7 @@ const speakers = [
     },
     {
         name: 'Megan Pusey',
-        slug: '',
+        slug: 'megan-pusey',
         tagline: 'Science Ninja Gal',
         location: 'perth',
         bio: (
@@ -517,7 +503,6 @@ const speakers = [
             twitter: 'https://web.archive.org/web/20180312183508/https:/twitter.com/scienceninjagal',
             website: 'https://web.archive.org/web/20180312183508/https:/scienceninjagal.wordpress.com/',
         },
-        talks: [],
     },
     {
         name: 'Dr Michelle Ellis',
@@ -533,7 +518,6 @@ const speakers = [
             linkedin: 'https://web.archive.org/web/20180312183411/https:/www.linkedin.com/in/dr-michelle-ellis-4bb72493',
             twitter: 'https://web.archive.org/web/20180312183411/https:/twitter.com/mssgellis',
         },
-        talks: [],
     },
     {
         name: 'Michelle Sandford',
@@ -558,7 +542,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Ming Johanson',
@@ -580,7 +563,6 @@ const speakers = [
                 'facebook'
             ]
         },
-        talks: []
     },
     {
         name: 'Pia Turcinov',
@@ -596,7 +578,6 @@ const speakers = [
             linkedin: 'https://web.archive.org/web/20180319143736/https:/au.linkedin.com/in/piaturcinov',
             twitter: 'https://web.archive.org/web/20180319143736/https:/twitter.com/Pia_Turcinov'
         },
-        talks: [],
     },
     {
         name: 'Rebecca Platt',
@@ -608,7 +589,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183559/https:/au.linkedin.com/in/rebecca-platt-a886aba7',
         },
-        talks: [],
     },
     {
         name: 'Rhonda Craig',
@@ -621,7 +601,6 @@ const speakers = [
             linkedin: 'https://web.archive.org/web/20180312183339/https:/au.linkedin.com/in/rhondacraig',
             twitter: 'https://web.archive.org/web/20180312183339/https:/twitter.com/rhondajcraig',
         },
-        talks: [],
     },
     {
         name: 'Samantha Hall',
@@ -647,7 +626,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Sara Henshall',
@@ -659,7 +637,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183657/https:/au.linkedin.com/in/sarahenshall',
         },
-        talks: [],
     },
     {
         name: 'Sarah Mitchell',
@@ -683,7 +660,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Siobhan Avenell',
@@ -695,7 +671,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183547/https:/au.linkedin.com/in/siobhan-avenell-0095852b',
         },
-        talks: [],
     },
     {
         name: 'Tracey Joynson',
@@ -704,7 +679,6 @@ const speakers = [
         social: {
             linkedin: 'https://web.archive.org/web/20180312183714/https:/au.linkedin.com/in/tracey-joynson-b5930826',
         },
-        talks: [],
     },
     {
         name: 'Vee Pendergrast',
@@ -728,7 +702,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
     {
         name: 'Dr Vivienne Conway',
@@ -754,7 +727,6 @@ const speakers = [
                 'website',
             ],
         },
-        talks: [],
     },
 ];
 
