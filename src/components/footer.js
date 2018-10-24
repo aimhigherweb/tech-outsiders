@@ -1,12 +1,9 @@
 import React, {Component, Fragment} from 'react';
-import ReactSVG from 'react-svg';
-import { NavLink } from 'react-router-dom';
 
 //Resources
 import {Github, Linkedin, Twitter} from 'react-feather';
-import {legalItems} from '../app/index.js';
-import './style.scss';
-import AimHigher from '../../img/aimhigher.svg';
+// import './style.scss';
+import AimHigher from '../img/aimhigher.svg';
 
 const menuItems = [
 	{
@@ -26,34 +23,37 @@ const menuItems = [
 	},
 ];
 
-class Footer extends Component {
-    render() {
-        return (
-            <Fragment>
-				<FooterNav />
-				<FooterSocial />
-				<a href="https://aimhigherwebdesign.com.au" target="_blank" rel="nofollow" className="aimhigher" title="Made and Developed by AimHigher Web Design">
-					<ReactSVG path={AimHigher} />
-				</a>
-            </Fragment>
-        );
-    };
-};
+const legalItems = [
+	{
+	  slug: '/about',
+	  title: 'About',
+	}
+];  
+
+const Footer = () => (
+	<Fragment>
+		<FooterNav />
+		<FooterSocial />
+		<a href="https://aimhigherwebdesign.com.au" target="_blank" rel="nofollow" className="aimhigher" title="Made and Developed by AimHigher Web Design">
+			<AimHigher />
+		</a>
+	</Fragment>
+)
 
 const FooterNav = () => {
 	let legalNav = legalItems.map((legalItem) => {
 		return (
-			<NavLink key={legalItem.title} to={legalItem.slug} activeClassName="current">
+			<a key={legalItem.title} href={legalItem.slug} activeClassName="current">
 				{legalItem.title}
-			</NavLink>
+			</a>
 		);
 	});
 
 	return (
 		<nav>
-			<NavLink to="/" activeClassName="current">
+			<a href="/" activeClassName="current">
 				Home
-			</NavLink>
+			</a>
 			{legalNav}
 		</nav>
 	);
