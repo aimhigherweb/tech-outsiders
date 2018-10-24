@@ -9,10 +9,10 @@ import {Socials} from '../components/parts'
 import '../scss/home.scss';
 
 const locations = {
-    'brisbane-qld': "Brisbane, Queensland",
-    'melbourne-vic': "Melbourne, Victoria",
+    // 'brisbane-qld': "Brisbane, Queensland",
+    // 'melbourne-vic': "Melbourne, Victoria",
     'perth-wa': "Perth, Western Australia",
-    'sydney-nsw': "Sydney, New South Wales",
+    // 'sydney-nsw': "Sydney, New South Wales",
 }
 
 export default class IndexPage extends React.Component {
