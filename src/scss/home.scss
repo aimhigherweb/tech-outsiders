@@ -1,0 +1,98 @@
+@import './variables.scss';
+
+.speaker {
+    --background: #{$primary_light_10};
+    --border: #{$primary_dark_75};
+
+    background: var(--background);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    color: $neutral_light_75;
+    display: block;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+
+    img {
+        border-radius: 20px;
+        display: block;
+        max-height: unset;
+        margin: 0 auto;
+        position: relative;
+        width: 70%;
+            min-width: 150px;
+            max-width: 300px;
+    }
+
+    h2 {
+        color: $neutral_light_90;
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $neutral_light_75;
+        color: rgba($neutral, 0.6);
+        font-size: 0.9em;
+        margin: 5px;
+    }
+
+    a {
+        display: block;
+    }
+
+    svg {
+        $size: 35px;
+
+        color: var(--border);
+        height: $size;
+        width: $size;
+    }
+
+    .socials {
+        display: flex;
+            justify-content: flex-end;
+    }
+
+    &:active, &:hover, &:focus {
+        --background: #{$secondary_light_10};
+        --border: #{$secondary_dark_75};
+
+        background: var(--background);
+        border-color: var(--border);
+    }
+}
+
+.filter {
+    margin-bottom: 20px;
+    text-align: right;
+
+    label {
+        position: absolute;
+            left: -200vw;
+    }
+}
+
+@supports (grid-template-areas: none) {
+    .speakers-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 50em) {
+    .speaker {
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

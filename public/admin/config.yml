@@ -1,0 +1,93 @@
+backend:
+  name: git-gateway
+  repo: AimHigher-Web-Design/tech-outsiders
+  branch: dev
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: profile
+    label: "Speaker Profile"
+    folder: profiles
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Name
+        hint: "This is your full name, can also include any titles/qualifications (eg. Dr or Prof)"
+      - name: tagline
+        label: "Tagline"
+        widget: string
+        hint: "This can be anything you like, but keep it to between 5 and 10 words (check the profile, it's a short phrase). This will preferably be either your job title or something you're known as"
+      - name: profileImage
+        label: "Profile Image"
+        widget: image
+        hint: "Images will be used as a 300px * 300px square, they must be at least this big and if they're not square it may result in the image being squashed"
+      - name: location
+        label: Location
+        widget: select
+        options:
+          - {label: "Brisbane, Queensland", value: brisbane_qld}
+          - {label: "Melbourne, Victoria", value: melbourne_vic}
+          - {label: "Perth, Western Australia", value: perth_wa}
+          - {label: "Sydney, New South Wales", value: sydney_nsw}
+        hint: "Where you're predominantly based, if we don't have yours yet, please get in touch and we can look at adding a new one"
+      - name: body
+        label: Bio
+        widget: markdown
+        hint: "This should be not too long, probably just a few paragraphs will do."
+      - name: mentoring
+        label: Mentoring
+        widget: markdown
+        hint: "Similar to your bio, this is a good spot to highlight any mentoring that you have done or are doing."
+      - name: socials
+        label: Social Profiles
+        widget: list
+        hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo"
+        fields:
+          - {label: "Social Profile Link", name: url, widget: string}
+          - {label: "Featured Profile", name: featured, widget: boolean}
+          - label: "Custom Title"
+            name: socialTitle
+            widget: string
+            hint: "If this profile is a blog, portfolio or website you can add a custom title here (eg. My Blog)"
+            required: false
+          - label: "Profile Type"
+            name: platform
+            widget: select
+            options:
+            - {label: Facebook, value: facebook}
+            - {label: Twitter, value: twitter}
+            - {label: LinkedIn, value: linkedin}
+            - {label: Instagram, value: instagram}
+            - {label: GitHub, value: github}
+            - {label: Codepen, value: codepen}
+            - {label: Website, value: website}
+            - {label: Portfolio, value: portfolio}
+            - {label: Blog, value: blog}
+      - name: talks
+        label: Talks
+        widget: list
+        hint: "Talks that you have done previously, whether this is at a meetup event, conference or somewhere else. This should include the title of the talk (if you've done the same talk at multiple events, list them all!), the event that you did it at (Conference, meetup group, etc), the date that you did it, a link to the event (eg. Conference or Meetup Group site) and if you have it links to the slides or a video of the talk."
+        fields:
+          - label: "Talk Title"
+            name: talkTitle
+            widget: string
+            default: "The Name of My Talk"
+          - label: "Talk Link"
+            name: talkLink
+            widget: string
+            default: "https://mytalks.com.au/mytalk"
+            required: false
+          - {date: "Event Date", name: date, widget: date, format: "YYYY-MM-DD"}
+          - label: "Event Name"
+            name: event
+            widget: string
+            default: "The event I talked at"
+          - label: "Event Link"
+            name: eventLink
+            widget: string
+            default: "https://thisevent.com.au"
+            required: false
