@@ -29,6 +29,7 @@
 		"gatsby-plugin-react-svg": "^2.0.0",
 		"gatsby-plugin-sass": "^2.0.1",
 		"gatsby-plugin-sharp": "^2.0.0-rc.7",
+		"gatsby-remark-copy-linked-files": "^2.0.5",
 		"gatsby-remark-images": "^2.0.4",
 		"gatsby-source-filesystem": "^1.5.39",
 		"gatsby-transformer-remark": "^1.7.44",

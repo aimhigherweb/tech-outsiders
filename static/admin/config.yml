@@ -3,8 +3,8 @@ backend:
   repo: AimHigher-Web-Design/tech-outsiders
   branch: dev
 
-media_folder: img/profiles
-public_folder: img/profiles
+media_folder: static/img
+public_folder: /img
 
 collections:
   - name: profile

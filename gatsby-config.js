@@ -20,6 +20,20 @@ module.exports = {
               name: 'images',
             },
         },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+              plugins: [
+                {
+                  resolve: `gatsby-remark-images`,
+                  options: {
+                    maxWidth: 300
+                  }
+                },
+                "gatsby-remark-copy-linked-files",
+              ]
+            }
+        },
         'gatsby-plugin-sharp',
         'gatsby-transformer-sharp',
         {
@@ -35,21 +49,6 @@ module.exports = {
               id: "GTM-MDKC4WR",
               includeInDevelopment: true,
             },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-              plugins: [
-                {
-                    resolve: `gatsby-remark-images`,
-                    options: {
-                        showCaptions: true,
-                        maxWidth: 500,
-                        widthWebp: true,
-                    },
-                },
-              ]
-            }
         },
         'gatsby-plugin-netlify-cms'
     ],
