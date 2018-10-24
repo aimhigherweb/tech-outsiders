@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 
 
-export const SpeakerProfileTemplate = ({name}) => {
+const SpeakerProfileTemplate = ({name}) => {
 
     return (
         <article>

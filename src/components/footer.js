@@ -1,27 +1,27 @@
-import React, {Component, Fragment} from 'react';
+import React, {Fragment} from 'react';
 
 //Resources
-import {Github, Linkedin, Twitter} from 'react-feather';
+// import {Github, Linkedin, Twitter} from 'react-feather';
 // import './style.scss';
-import AimHigher from '../img/aimhigher.svg';
+// import AimHigher from '../img/aimhigher.svg';
 
-const menuItems = [
-	{
-		name: 'github',
-		icon: <Github />,
-		url: 'https://github.com/AimHigher-Web-Design/tech-outsiders',
-	},
-	{
-		name: 'linkedin',
-		icon: <Linkedin />,
-		url: 'https://www.linkedin.com/company/techoutsiders/',
-	},
-	{
-		name: 'twitter',
-		icon: <Twitter />,
-		url: 'https://twitter.com/TechOutsiders',
-	},
-];
+// const menuItems = [
+// 	{
+// 		name: 'github',
+// 		icon: <Github />,
+// 		url: 'https://github.com/AimHigher-Web-Design/tech-outsiders',
+// 	},
+// 	{
+// 		name: 'linkedin',
+// 		icon: <Linkedin />,
+// 		url: 'https://www.linkedin.com/company/techoutsiders/',
+// 	},
+// 	{
+// 		name: 'twitter',
+// 		icon: <Twitter />,
+// 		url: 'https://twitter.com/TechOutsiders',
+// 	},
+// ];
 
 const legalItems = [
 	{
@@ -32,45 +32,45 @@ const legalItems = [
 
 const Footer = () => (
 	<Fragment>
-		<FooterNav />
-		<FooterSocial />
+		{/* <FooterNav /> */}
+		{/* <FooterSocial /> */}
 		<a href="https://aimhigherwebdesign.com.au" target="_blank" rel="nofollow" className="aimhigher" title="Made and Developed by AimHigher Web Design">
-			<AimHigher />
+			{/* <AimHigher /> */}
 		</a>
 	</Fragment>
 )
 
-const FooterNav = () => {
-	let legalNav = legalItems.map((legalItem) => {
-		return (
-			<a key={legalItem.title} href={legalItem.slug} activeClassName="current">
-				{legalItem.title}
-			</a>
-		);
-	});
+// const FooterNav = () => {
+// 	let legalNav = legalItems.map((legalItem) => {
+// 		return (
+// 			<a key={legalItem.title} href={legalItem.slug} activeClassName="current">
+// 				{legalItem.title}
+// 			</a>
+// 		);
+// 	});
 
-	return (
-		<nav>
-			<a href="/" activeClassName="current">
-				Home
-			</a>
-			{legalNav}
-		</nav>
-	);
-};
+// 	return (
+// 		<nav>
+// 			<a href="/" activeClassName="current">
+// 				Home
+// 			</a>
+// 			{legalNav}
+// 		</nav>
+// 	);
+// };
 
-const FooterSocial = () => {
-	let socialNav = menuItems.map((menuItem) => {
-		return (
-			<a href={menuItem.url} key={menuItem.name} target="_blank">
-				{menuItem.icon}
-			</a>
-		);
-	});
+// const FooterSocial = () => {
+// 	let socialNav = menuItems.map((menuItem) => {
+// 		return (
+// 			<a href={menuItem.url} key={menuItem.name} target="_blank">
+// 				{menuItem.icon}
+// 			</a>
+// 		);
+// 	});
 
-	return (
-		<nav>{socialNav}</nav>
-	);
-};
+// 	return (
+// 		<nav>{socialNav}</nav>
+// 	);
+// };
 
 export default Footer;
