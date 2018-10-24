@@ -42,6 +42,7 @@ collections:
         label: Mentoring
         widget: markdown
         hint: "Similar to your bio, this is a good spot to highlight any mentoring that you have done or are doing."
+        required: false
       - name: socials
         label: Social Profiles
         widget: list
