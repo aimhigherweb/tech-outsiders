@@ -22,10 +22,10 @@ class Layout extends React.Component {
 
             console.log(this.props)
 
-        if(this.props.scrolled) {
+        if(this.props.scrolled && typeof document !== `undefined`) {
             document.getElementsByTagName('body')[0].classList.add('scrolled');
         }
-
+        
         return (
             <Fragment>
                 <Meta {...meta} />
