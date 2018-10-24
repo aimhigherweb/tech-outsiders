@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
 import Helmet from 'react-helmet'
+import Waypoint from 'react-waypoint';
+
 
 import Header from './header.js'
 import Footer from './footer.js'
@@ -9,15 +11,32 @@ import '../scss/content.scss'
 
 import Logo from '../img/logo.png'
 
+class Layout extends React.Component {
+    scrolling() {
+		document.getElementsByTagName('body')[0].classList.add('scrolled');
+    }
+    
+    render() {
+        let children = this.props.children,
+            meta = this.props.meta;
 
-const Layout = ({children, meta}) => (
-    <Fragment>
-        <Meta {...meta} />
-        <header>{<Header />}</header>
-        <main>{children}</main>
-        <footer>{<Footer />}</footer>
-    </Fragment>
-)
+            console.log(this.props)
+
+        if(this.props.scrolled) {
+            document.getElementsByTagName('body')[0].classList.add('scrolled');
+        }
+
+        return (
+            <Fragment>
+                <Meta {...meta} />
+                <header>{<Header />}</header>
+                <Waypoint onLeave={this.scrolling} />
+                <main>{children}</main>
+                <footer>{<Footer />}</footer>
+            </Fragment>
+        )
+    }
+}
 
 const Meta = ({name, description, slug, image}) => {
     let siteUrl = 'https://techoutsiders.com.au';

@@ -8,9 +8,17 @@ import {Socials} from '../components/parts'
 
 import '../scss/speaker.scss'
 
+const locations = {
+    brisbane_qld: "Brisbane, Queensland",
+    melbourne_vic: "Melbourne, Victoria",
+    perth_wa: "Perth, Western Australia",
+    sydney_nsw: "Sydney, New South Wales",
+}
+
 
 const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, mentoring, socials, talks}) => {
     let orderedTalks,
+        city = locations[location],
         socialLinks = socials.map((profile) => {
         if(profile.socialTitle) {
             return (
@@ -47,7 +55,7 @@ const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, men
                 <h1>{name}</h1>
                 <img src={profileImage} alt={'Speaker Profile Photo of ' + name} />
                 <p className="tagline">{tagline}</p>
-                <p className="location">{location}</p>
+                <p className="location">{city}</p>
                 <div className="socials">
                     {socialLinks}
                 </div>
@@ -133,7 +141,7 @@ const SpeakerProfile = ({ data }) => {
     };
 
     return (
-        <Layout meta={meta}>
+        <Layout meta={meta} scrolled>
             <SpeakerProfileTemplate {...speakerProfile} />
         </Layout>
     )
