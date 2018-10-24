@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{138:function(a){a.exports={pages:[{componentChunkName:"component---src-pages-index-js",jsonName:"index",path:"/"},{componentChunkName:"component---src-templates-speaker-profile-js",jsonName:"amy-kapernick-635",path:"/amy-kapernick/"}],dataPaths:{"amy-kapernick-635":"667/path---amy-kapernick-635-126-BnwBVlIEtJAvgJ1XysuM5qHaWQ8",index:"173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E"}}}}]);
-//# sourceMappingURL=6-9a373766b65c9ff823ed.js.map
