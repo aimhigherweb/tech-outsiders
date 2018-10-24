@@ -84,6 +84,10 @@
         }
     }
 
+    &.upcoming {
+        opacity: 0.7;
+    }
+
     .date {
         color: $neutral_light_50;
         font-size: 0.9em;

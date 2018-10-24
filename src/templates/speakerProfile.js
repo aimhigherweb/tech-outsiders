@@ -79,16 +79,20 @@ const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, men
 const Talk = ({date, event, eventLink, talkTitle, talkLink}) => {
     let today = new Date(),
         eventDate = new Date(date),
-        talk = talkTitle;
+        talk = talkTitle,
+        upcoming = '';
 
     if(eventDate < today && talkLink) {
         talk = (
             <a href={talkLink} target="_blank" title={'Link to presentation for ' + talkTitle}>{talkTitle}</a>
         );
     }
+    if(eventDate > today) {
+        upcoming = 'upcoming';
+    }
 
     return (
-        <div className="talk" key={talkTitle}>
+        <div className={'talk ' + upcoming} key={talkTitle}>
             <p className="date">{date}</p>
             <p className="event">
                 {eventLink ? 
