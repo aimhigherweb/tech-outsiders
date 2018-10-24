@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 
 //Resources
 import {Github, Linkedin, Twitter} from 'react-feather';
-// import './style.scss';
+import '../scss/footer.scss';
 import AimHigher from '../img/aimhigher.svg';
 
 const menuItems = [

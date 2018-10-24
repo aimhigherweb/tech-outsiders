@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import Header from './header.js'
 import Footer from './footer.js'
 
-// import '../scss/content.scss'
-// import '../scss/global.scss'
+import '../scss/global.scss'
+import '../scss/content.scss'
 
 import Logo from '../img/logo.png'
 
