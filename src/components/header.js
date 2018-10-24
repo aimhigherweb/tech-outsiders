@@ -1,6 +1,5 @@
 import React, {Fragment, Component} from 'react';
 import Helmet from 'react-helmet';
-import Media from 'react-media';
 
 //Resources
 // import './style.scss';

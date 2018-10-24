@@ -8,6 +8,7 @@ import Footer from './footer'
 // import '../scss/global.scss'
 
 import HeaderImage from '../img/logo.png'
+import Favicon from '../img/logo.png'
 
 
 const Layout = ({children, meta}) => (
