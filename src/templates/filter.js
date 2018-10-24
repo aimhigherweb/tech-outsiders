@@ -36,9 +36,14 @@ export default class FilteredSpeakers extends React.Component {
             description: data.site.siteMetadata.description,
             slug: data.site.siteMetadata.siteUrl,
         };
+
+        let thisUrl;
+
+        if(typeof window !== `undefined`) {
+            thisUrl = window.location.pathname;
+        }
         
-        let thisUrl = window.location.pathname,
-            speakersList = posts.map((speaker) => (
+        let speakersList = posts.map((speaker) => (
 			<Speaker speakerProfile={speaker} key={speaker.node.id} />
         )),
         cities = Object.entries(locations).map((city) => {
