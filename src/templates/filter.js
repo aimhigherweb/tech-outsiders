@@ -37,7 +37,7 @@ export default class FilteredSpeakers extends React.Component {
             slug: data.site.siteMetadata.siteUrl,
         };
 
-        let thisUrl;
+        let thisUrl = '';
 
         if(typeof window !== `undefined`) {
             thisUrl = window.location.pathname;
