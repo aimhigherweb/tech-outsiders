@@ -60,26 +60,18 @@ const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, men
                     {socialLinks}
                 </div>
             </div>
-            {bio &&
-                <Fragment>
-                    <h2>Bio</h2>
-                    <div className="bio"  dangerouslySetInnerHTML={{__html: bio}}></div>
-                </Fragment>
-            }
+            <h2>Bio</h2>
+            <div className="bio"  dangerouslySetInnerHTML={{__html: bio}}></div>
             {mentoring &&
                 <Fragment>
                     <h2>Mentoring</h2>
                     <div className="mentor">{mentoring}</div>
                 </Fragment>
             }
-            {talks &&
-                <Fragment>
-                    <h2>Speaker Experience</h2>
-                    <div className="talks">
-                        {talksList}
-                    </div>
-                </Fragment>
-            }
+            <h2>Speaker Experience</h2>
+            <div className="talks">
+                {talksList}
+            </div>
         </Fragment>
     )
 }
