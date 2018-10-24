@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: AimHigher-Web-Design/tech-outsiders
+  branch: dev
 
 media_folder: img/profiles
 public_folder: img/profiles

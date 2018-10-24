@@ -27,9 +27,9 @@ const SpeakerProfile = ({ data }) => {
     }
 
     const meta = {
-        // name: post.frontmatter.title + ' | ' + data.site.siteMetadata.title,
-        // description: post.frontmatter.description,
-        // slug: data.site.siteMetadata.siteUrl + post.fields.slug,
+        name: post.frontmatter.title + ' | ' + data.site.siteMetadata.title,
+        description: post.frontmatter.description,
+        slug: data.site.siteMetadata.siteUrl + post.fields.slug,
     };
 
     return (
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
                 slug
             }
             frontmatter {
-                name
+                title
             }
         }
     }

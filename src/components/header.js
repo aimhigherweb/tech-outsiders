@@ -13,29 +13,29 @@ import Background from '../img/hero.jpg';
 const Header = () => (
     <Fragment>
         <div className="background">
-            {/* <img src={Background} /> */}
+            <img src={Background} />
         </div>
-        {/* <SiteTitle /> */}
-        {/* <Hero /> */}
+        <SiteTitle />
+        <Hero />
     </Fragment>
 )
 
-// const SiteTitle = () => (
-//     <a className="site-logo" aria-label="Logo linked to homepage" href="/">
-//         {/* <Logo /> */}
-//     </a>
-// );
+const SiteTitle = () => (
+    <a className="site-logo" aria-label="Logo linked to homepage" href="/">
+        {/* <Logo /> */}
+    </a>
+);
 
 
-// const Hero = () => (
-//     <div className="hero">
-//         <blockquote className="full">
-//             {/* {Content.heroContent.full} */}
-//         </blockquote>
-//         <blockquote className="short">
-//             {/* {Content.heroContent.short} */}
-//         </blockquote>
-//     </div>
-// );
+const Hero = () => (
+    <div className="hero">
+        <blockquote className="full">
+            {/* {Content.heroContent.full} */}
+        </blockquote>
+        <blockquote className="short">
+            {/* {Content.heroContent.short} */}
+        </blockquote>
+    </div>
+);
 
 export default Header;
