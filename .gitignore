@@ -10,6 +10,7 @@
 /build
 /dist
 .netlify
+public/
 /src/resources/*.css
 
 # misc

@@ -2,7 +2,7 @@
 title: Amy Kapernick
 tagline: 'Front End Jedi, Tech Evangelist, Dog Lover'
 profileImage: "/img/amy-kapernick.jpg"
-location: perth_wa
+location: perth-wa
 mentoring: "Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.\r"
 socials:
   - featured: true
@@ -26,7 +26,6 @@ socials:
     url: 'https://www.linkedin.com/in/amykapernick/'
   - featured: true
     platform: twitter
-    socialTitle: ''
     url: 'https://twitter.com/amys_kapers'
   - featured: true
     platform: website
@@ -73,6 +72,6 @@ talks:
       http://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
     talkTitle: CSS Grid - What is this Magic?!
 ---
-Amy is a freelance developer, starting [her own business](https://aimhigherwebdesign.com.au/), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
+Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
 
 Amy also spends her time helping out as a co-organiser for [Fenders](https://fenders.co/) (a community group of front-end developers in Perth), other community events (such as Perth Web Girls) and works as an evangelist for YOW! Conference. She [blogs in her spare time](https://amygoestoperth.com.au/) (about tech, the web and life), and volunteers as a reviewer for the Fringe World Festival in Perth. Amy has also started [The Freelance Guide](https://thefreelance.guide/) to help other freelancers.

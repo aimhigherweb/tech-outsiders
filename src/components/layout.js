@@ -20,8 +20,6 @@ class Layout extends React.Component {
         let children = this.props.children,
             meta = this.props.meta;
 
-            console.log(this.props)
-
         if(this.props.scrolled && typeof document !== `undefined`) {
             document.getElementsByTagName('body')[0].classList.add('scrolled');
         }

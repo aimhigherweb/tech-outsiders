@@ -15,7 +15,7 @@ const locations = {
     // 'sydney-nsw': "Sydney, New South Wales",
 }
 
-export default class IndexPage extends React.Component {
+export default class FilteredSpeakers extends React.Component {
     filterLocation(event) {
 		let city = event.target.value;
 
@@ -29,20 +29,26 @@ export default class IndexPage extends React.Component {
     
     render() {        
         const { data } = this.props
+        const { city } = this.props.pageContext
         const { edges: posts } = data.allMarkdownRemark
         const meta = {
             name: data.site.siteMetadata.title,
             description: data.site.siteMetadata.description,
             slug: data.site.siteMetadata.siteUrl,
         };
-
-        let speakersList = posts.map((speaker) => (
-			<Speaker speakerProfile={speaker} key={speaker.node.id} />
-        ));
         
-        let cities = Object.entries(locations).map((city) => (
-			<option value={city[0]}>{city[1]}</option>
-		));
+        let thisUrl = window.location.pathname,
+            speakersList = posts.map((speaker) => (
+			<Speaker speakerProfile={speaker} key={speaker.node.id} />
+        )),
+        cities = Object.entries(locations).map((city) => {
+            if(thisUrl.includes(city)) {
+                return <option key={city[0]} value={city[0]} selected>{city[1]}</option>
+            }
+            else {
+                return <option key={city[0]} value={city[0]}>{city[1]}</option>
+            }
+        });
 
         return (
             <Layout meta={meta}>
@@ -92,16 +98,27 @@ const Speaker = ({speakerProfile}) => {
 	);
 };
 
-IndexPage.propTypes = {
+FilteredSpeakers.propTypes = {
+    pathContext: PropTypes.shape({
+      city: PropTypes.string.isRequired,
+    }),
     data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-            edges: PropTypes.array,
-        }),
+      allMarkdownRemark: PropTypes.shape({
+        edges: PropTypes.arrayOf(
+          PropTypes.shape({
+            node: PropTypes.shape({
+              frontmatter: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+              }),
+            }),
+          }).isRequired
+        ),
+      }),
     }),
 }
-
+  
 export const pageQuery = graphql`
-    query IndexQuery {
+    query($city: String) {
         site {
             siteMetadata {
                 title
@@ -111,6 +128,7 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { order: ASC, fields: [frontmatter___title] }
+            filter: {frontmatter: { location: {in: [$city]}}}
         ) {
             edges {
                 node {
