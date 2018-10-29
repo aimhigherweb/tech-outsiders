@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 //Resources
 import '../scss/header.scss';
 import Logo from '../img/logo.svg';
-import Background from '../img/hero.jpg';
+import Background from '../img/banner.jpg';
 
 const HeroContent = {
     short: (
