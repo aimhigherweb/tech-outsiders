@@ -27,6 +27,14 @@ const legalItems = [
 	{
 	  slug: '/about/',
 	  title: 'About',
+	},
+	{
+		slug: '/terms/',
+		title: 'Terms & Conditions'
+	},
+	{
+		slug: '/privacy/',
+		title: 'Privacy Policy'
 	}
 ];  
 

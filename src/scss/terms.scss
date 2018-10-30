@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+li {
+    font: $font_headings;
+
+    p, ol, ul, li {
+        font: $font_regular;
+    }
+}
