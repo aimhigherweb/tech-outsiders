@@ -104,7 +104,7 @@ const Speaker = ({speakerProfile}) => {
 };
 
 FilteredSpeakers.propTypes = {
-    pathContext: PropTypes.shape({
+    pageContext: PropTypes.shape({
       city: PropTypes.string.isRequired,
     }),
     data: PropTypes.shape({

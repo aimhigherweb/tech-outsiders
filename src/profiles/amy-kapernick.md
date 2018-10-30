@@ -11,7 +11,7 @@ socials:
     url: 'https://amygoestoperth.com.au/'
   - platform: blog
     socialTitle: The Freelance Guide
-    url: 'http://thefreelance.guide/'
+    url: 'https://thefreelance.guide/'
   - featured: false
     platform: codepen
     url: 'https://codepen.io/aimhigherwebdesign-amy/'
@@ -70,12 +70,12 @@ talks:
     talkTitle: Being a More Sustainable You
     event: ACS WA Diversity Dinner
     eventLink: https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
-    talkLink: http://talks.amygoestoperth.com.au/being-a-more-sustainable-you/acs-diversity-dinner.html
+    talkLink: https://talks.amygoestoperth.com.au/being-a-more-sustainable-you/acs-diversity-dinner.html
   - date: '2019-01-30'
     talkTitle: CSS Grid - What is this Magic?!
     event: NDC London
     eventLink: 'https://ndc-london.com/'
-    talkLink: http://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
+    talkLink: https://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
 

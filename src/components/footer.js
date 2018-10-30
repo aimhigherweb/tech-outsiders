@@ -25,7 +25,7 @@ const menuItems = [
 
 const legalItems = [
 	{
-	  slug: '/about',
+	  slug: '/about/',
 	  title: 'About',
 	}
 ];  

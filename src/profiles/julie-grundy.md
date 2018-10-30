@@ -20,7 +20,7 @@ socials:
 talks:
   - date: '2018-03-21'
     event: JuniorDev Melbourne
-    eventLink: 'http://juniordev.io/'
+    eventLink: 'https://juniordev.io/'
     talkLink: 'http://juliegrundy.id.au/links/basics.html'
     talkTitle: Accessiblity Basics
   - date: '2018-03-20'

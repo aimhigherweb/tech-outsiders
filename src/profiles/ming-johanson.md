@@ -10,7 +10,7 @@ mentoring: >-
 socials:
   - featured: true
     platform: twitter
-    url: 'http://twitter.com/@MingJohanson'
+    url: 'https://twitter.com/@MingJohanson'
   - featured: true
     platform: linkedin
     url: 'https://au.linkedin.com/in/mingjohanson'
@@ -18,7 +18,7 @@ socials:
     platform: facebook
     url: 'https://facebook.com/MingJohansonPage'
   - platform: instagram
-    url: 'http:/instagram.com/mingjohanson'
+    url: 'http://instagram.com/mingjohanson'
   - platform: website
     socialTitle: Ming Johanson
     url: 'https://mingjohanson.com.au/'

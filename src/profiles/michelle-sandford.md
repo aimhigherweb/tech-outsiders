@@ -7,18 +7,18 @@ mentoring: "I am a Mentor and Role Model in the [Tech Girls are Superheroes](htt
 socials:
   - platform: linkedin
     featured: true
-    url: https:/au.linkedin.com/in/michellesandford
+    url: https://au.linkedin.com/in/michellesandford
   - platform: twitter
     featured: true
-    url: https:/twitter.com/msandfor
+    url: https://twitter.com/msandfor
   - platform: facebook
-    url: https:/www.facebook.com/michellesandfordSpeaker/
+    url: https://www.facebook.com/michellesandfordSpeaker/
   - platform: instagram
-    url: https:/www.instagram.com/msandfor/
+    url: https://www.instagram.com/msandfor/
   - platform: youtube
-    url: https:/www.youtube.com/user/msandfor
+    url: https://www.youtube.com/user/msandfor
   - platform: website
-    url: http:/michellesandford.com/
+    url: http://michellesandford.com/
     featured: true
 talks:
   - date: '2018-08-04'

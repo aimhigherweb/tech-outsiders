@@ -23,12 +23,12 @@ socials:
 talks:
   - date: '2018-06-29'
     event: Ampersand
-    eventLink: 'http://ampersandconf.com'
+    eventLink: 'https://ampersandconf.com'
     talkLink: 'https://slides.com/mandymichael/creative-text-effects-with-css-7'
     talkTitle: Creative Text Effects with CSS
   - date: '2018-06-29'
     event: Ampersand
-    eventLink: 'http://ampersandconf.com'
+    eventLink: 'https://ampersandconf.com'
     talkLink: 'https://slides.com/mandymichael/creative-text-effects-with-css-7'
     talkTitle: Creative Text Effects with CSS
   -	talkTitle: 'Becoming a Front End Developer'
@@ -41,11 +41,11 @@ talks:
   -	talkTitle: 'Panel: How important are Role Models for women in STEM?'
     date: '2018-02-18'
     event: 'WiTWA'
-    eventLink: 'http://www.witwa.org.au/events/2018/2/21/techxchange-event-leadership-in-tech-the-importance-of-role-models'
+    eventLink: 'https://www.witwa.org.au/events/2018/2/21/techxchange-event-leadership-in-tech-the-importance-of-role-models'
   -	talkTitle: 'CSS is Awesome'
     date: '2018-06-29'
     event: 'DDDPerth By Night'
-    eventLink: 'http://dddperth.com/'
+    eventLink: 'https://dddperth.com/'
     talkLink: 'https://www.youtube.com/watch?v=oT7Ihsh10x4'
   -	talkTitle: 'Creative Text Effects with CSS'
     date: '2018-01-23'
@@ -73,30 +73,30 @@ talks:
   -	talkTitle: 'Sharpen Up Your Text with The Power of Three'
     date: '2017-05-08'
     event: 'Web Directions Respond Melbourne'
-    eventLink: 'http://www.webdirections.org/respond/'
+    eventLink: 'https://www.webdirections.org/respond/'
     talkLink: 'https://www.webdirections.org/blog/video-ristretto-sharpen-text-mandy-michael/'
   -	talkTitle: 'Sharpen Up Your Text with The Power of Three'
     date: '2017-05-04'
     event: 'Web Directions Respond Melbourne'
-    eventLink: 'http://www.webdirections.org/respond/'
+    eventLink: 'https://www.webdirections.org/respond/'
     talkLink: 'https://www.webdirections.org/blog/video-ristretto-sharpen-text-mandy-michael/'
   -	talkTitle: 'Google I/O Conference Download'
     date: '2016-06-21'
     event: 'Fenders'
-    eventLink: 'http://fenders.co/'
+    eventLink: 'https://fenders.co/'
   -	talkTitle: 'Animating SVG'
     date: '2015-06-28'
     event: 'Fenders'
-    eventLink: 'http://fenders.co/'
+    eventLink: 'https://fenders.co/'
   -	talkTitle: 'Introduction to Web Performance'
     date: '2015-05-14'
     event: 'Fenders'
-    eventLink: 'http://fenders.co/'
+    eventLink: 'https://fenders.co/'
   -	talkTitle: 'The Freedom and Constraints of Virtual Design'
     date: '2008-11-28'
     event: 'Australasian Virtual Worlds Workshop'
 
 ---
-Mandy is a community organiser, speaker, and developer working as a Development Manager at Seven West Media in Western Australia.  She is a co-organiser and Director of [Mixin Conf](http://mixinconf.com/), and the founder and co-organiser of [Fenders](https://fenders.co/), a local meetup for front end developers providing events, mentoring and support to the Perth web community.
+Mandy is a community organiser, speaker, and developer working as a Development Manager at Seven West Media in Western Australia.  She is a co-organiser and Director of [Mixin Conf](https://mixinconf.com/), and the founder and co-organiser of [Fenders](https://fenders.co/), a local meetup for front end developers providing events, mentoring and support to the Perth web community.
 
 Mandy’s passion is CSS, HTML and JS and hopes to inspire that passion in others. She loves the supportive and collaborative nature of the web and strives to encourage this environment through the community groups she is a part of. Her aim is to create a community of web developers who can share, mentor, learn and grow together.

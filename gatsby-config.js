@@ -50,6 +50,11 @@ module.exports = {
               includeInDevelopment: true,
             },
         },
-        'gatsby-plugin-netlify-cms'
+        'gatsby-plugin-netlify-cms',
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+            },
+        },
     ],
 }
