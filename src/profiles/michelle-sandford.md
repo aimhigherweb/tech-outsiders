@@ -2,7 +2,7 @@
 title: Michelle Sandford
 tagline: Technology Evangelist // Games Advocate // Storyteller // Chairman
 profileImage: /img/michelle-sandford.jpg
-location: perth-wa
+location: perth_wa
 mentoring: >-
   I am a Mentor and Role Model in the [Tech Girls are
   Superheroes](http://www.techgirlsaresuperheroes.org/) Program. I actively
@@ -12,21 +12,21 @@ mentoring: >-
   I am also a mentor for the Australian Computer Society, contact
   mentoring@acs.org.au for details
 socials:
-  - platform: linkedin
-    featured: true
-    url: https://au.linkedin.com/in/michellesandford
-  - platform: twitter
-    featured: true
-    url: https://twitter.com/msandfor
+  - featured: true
+    platform: linkedin
+    url: 'https://au.linkedin.com/in/michellesandford'
+  - featured: true
+    platform: twitter
+    url: 'https://twitter.com/msandfor'
   - platform: facebook
-    url: https://www.facebook.com/michellesandfordSpeaker/
+    url: 'https://www.facebook.com/michellesandfordSpeaker/'
   - platform: instagram
-    url: https://www.instagram.com/msandfor/
+    url: 'https://www.instagram.com/msandfor/'
   - platform: youtube
-    url: https://www.youtube.com/user/msandfor
-  - platform: website
-    url: http://michellesandford.com/
-    featured: true
+    url: 'https://www.youtube.com/user/msandfor'
+  - featured: true
+    platform: website
+    url: 'http://michellesandford.com/'
 talks:
   - date: '2018-08-04'
     event: DDD Perth
