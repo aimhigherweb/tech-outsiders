@@ -1,8 +1,8 @@
 ---
 title: Amy Kapernick
 tagline: 'Front End Jedi, Tech Evangelist, Dog Lover'
-profileImage: "/img/amy-kapernick.jpg"
-location: perth-wa
+profileImage: /img/amy-kapernick.jpg
+location: perth_wa
 mentoring: "Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.\r"
 socials:
   - featured: true
@@ -32,50 +32,56 @@ socials:
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
 talks:
-  - date: 2018-04-05
-    talkTitle: ACS Ethipot Panel
+  - date: 2018-04-05T00:00:00.000Z
     event: www2017
+    talkTitle: ACS Ethipot Panel
   - date: '2017-11-30'
-    talkTitle: The Art of Failure
     event: JuniorDev Perth
     eventLink: 'https://www.meetup.com/en-AU/Junior-Developers-Perth/'
     talkLink: 'https://slides.com/amykapernick/art-of-failure'
+    talkTitle: The Art of Failure
   - date: '2018-03-21'
-    talkTitle: CSS Grid - What is this Magic?!
     event: JuniorDev Melbourne
     eventLink: 'https://www.meetup.com/en-AU/Junior-Developers-Melbourne/'
     talkLink: 'https://slides.com/amykapernick/css-grid-what-is-this-magic'
+    talkTitle: CSS Grid - What is this Magic?!
   - date: '2018-06-20'
-    talkTitle: So you think you know HTML?
     event: Fenders
     eventLink: 'https://fenders.co/'
     talkLink: 'https://talks.amygoestoperth.com.au/so-you-think-you-know-html'
+    talkTitle: So you think you know HTML?
   - date: '2018-08-07'
-    talkTitle: The Art of Failure
     event: ACS Women - Ignite Talks
-    eventLink: https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRXfAAM
-  - date: 2018-08-28
-    talkTitle: Fender Lightning Round
+    eventLink: >-
+      https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRXfAAM
+    talkTitle: The Art of Failure
+  - date: 2018-08-28T00:00:00.000Z
     event: Fenders Birthday - Lightning Talks
-  - date: 2018-10-10
-    talkTitle: The Art of Failure
+    talkTitle: Fender Lightning Round
+  - date: 2018-10-10T00:00:00.000Z
     event: Fenders Mental Health Week Presentations
-    talkLink: https://talks.amygoestoperth.com.au/the-art-of-failure/fenders-mental-health-week-2018.html
-  - date: '2018-10-27'
+    talkLink: >-
+      https://talks.amygoestoperth.com.au/the-art-of-failure/fenders-mental-health-week-2018.html
     talkTitle: The Art of Failure
+  - date: '2018-10-27'
     event: Google DevFest Melbourne
     eventLink: 'https://www.gdgmelbourne.com/devfest-2018/'
-    talkLink: https://talks.amygoestoperth.com.au/the-art-of-failure/google-devfest-melbourne-2018.html
+    talkLink: >-
+      https://talks.amygoestoperth.com.au/the-art-of-failure/google-devfest-melbourne-2018.html
+    talkTitle: The Art of Failure
   - date: '2018-11-30'
-    talkTitle: Being a More Sustainable You
     event: ACS WA Diversity Dinner
-    eventLink: https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
-    talkLink: https://talks.amygoestoperth.com.au/being-a-more-sustainable-you/acs-diversity-dinner.html
+    eventLink: >-
+      https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
+    talkLink: >-
+      https://talks.amygoestoperth.com.au/being-a-more-sustainable-you/acs-diversity-dinner.html
+    talkTitle: Being a More Sustainable You
   - date: '2019-01-30'
-    talkTitle: CSS Grid - What is this Magic?!
     event: NDC London
     eventLink: 'https://ndc-london.com/'
-    talkLink: https://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
+    talkLink: >-
+      https://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
+    talkTitle: CSS Grid - What is this Magic?!
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
 
