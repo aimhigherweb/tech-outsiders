@@ -1,6 +1,8 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const remark = require('remark');
+const remarkHTML = require('remark-html');
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -77,5 +79,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+  }
+
+  if (node.frontmatter && node.frontmatter.mentoring) {
+    const mentoringMarkdown = node.frontmatter.mentoring;
+
+    node.frontmatter.mentoring = remark().use(remarkHTML).processSync(mentoringMarkdown).toString();
+    return node;
   }
 }
