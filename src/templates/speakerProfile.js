@@ -65,7 +65,7 @@ const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, men
             {mentoring &&
                 <Fragment>
                     <h2>Mentoring</h2>
-                    <div className="mentor">{mentoring}</div>
+                    <div className="mentor" dangerouslySetInnerHTML={{__html: mentoring}}></div>
                 </Fragment>
             }
             <h2>Speaker Experience</h2>
