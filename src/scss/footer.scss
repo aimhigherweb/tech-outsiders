@@ -2,8 +2,9 @@
 
 footer {
     display: flex;
-    align-items: center;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     font-size: 1.2em;
     padding: $padding_desktop;
 }
@@ -23,6 +24,7 @@ nav {
     }
 
     &.social {
+        margin-top: 10px;
         min-width: 120px;
     }
 }
@@ -47,5 +49,23 @@ nav {
     &:active, &:hover, &:focus {
         --colour1: #1c75bc;
         --colour2: #16a6b1;
+    }
+}
+
+@media (min-width: 480px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    nav {
+        &.social {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (min-width: 40em) {
+    footer {
+        flex-wrap: nowrap;
     }
 }
