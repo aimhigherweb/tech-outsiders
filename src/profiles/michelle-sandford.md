@@ -38,5 +38,10 @@ talks:
     eventLink: 'https://www.tedxperth.org/tedxperth-2014'
     talkLink: 'https://youtu.be/R6UODmQXzIs'
     talkTitle: Where Have All the Girls Gone?
+  - date: '2018-11-04'
+    event: NDC Oslo 2018
+    eventLink: www.ndcoslo.com
+    talkLink: 'https://youtu.be/W0Lui4HlHkk'
+    talkTitle: Rise of the Tech Influencer
 ---
 Tedx Speaker, Tech Girl Superhero, Microsoftie and 1 of MCV’s 100 Most Influential Women in Games 2016 – Michelle Sandford is a popular choice for speaking on diversity in Tech, women and young people into the Tech Industry, and the benefits of Games – all delivered with an inspirational and motivational flair. Michelle is the Vice Chair of the Australian Computer Society in WA, and one of their Executive Board Members. Michelle is also a member of the WAITTA Organising Committee. Her Tech Industry experience includes working for IBM Global Business Services and Microsoft.  Michelle lives life by running to stay one jump ahead of the Gameboy and by striving to think outside the Xbox. She surfs waves and webs. Michelle is the Founder and Global President of TechOutsiders.
