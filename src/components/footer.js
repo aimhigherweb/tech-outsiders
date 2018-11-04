@@ -1,24 +1,24 @@
 import React, {Fragment} from 'react';
 
 //Resources
-import {Github, Linkedin, Twitter} from 'react-feather';
+import {GitHub, Linkedin, Twitter} from 'react-feather';
 import '../scss/footer.scss';
 import AimHigher from '../img/aimhigher.svg';
 
 const menuItems = [
 	{
 		name: 'github',
-		icon: Github,
+		icon: <GitHub />,
 		url: 'https://github.com/AimHigher-Web-Design/tech-outsiders',
 	},
 	{
 		name: 'linkedin',
-		icon: Linkedin,
+		icon: <Linkedin />,
 		url: 'https://www.linkedin.com/company/techoutsiders/',
 	},
 	{
 		name: 'twitter',
-		icon: Twitter,
+		icon: <Twitter />,
 		url: 'https://twitter.com/TechOutsiders',
 	},
 ];
@@ -30,11 +30,11 @@ const legalItems = [
 	},
 	{
 		slug: '/terms/',
-		title: 'Terms & Conditions'
+		title: 'Terms'
 	},
 	{
 		slug: '/privacy/',
-		title: 'Privacy Policy'
+		title: 'Privacy'
 	}
 ];  
 
@@ -77,7 +77,7 @@ const FooterSocial = () => {
 	});
 
 	return (
-		<nav>{socialNav}</nav>
+		<nav class="social">{socialNav}</nav>
 	);
 };
 
