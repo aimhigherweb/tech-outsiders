@@ -5,7 +5,7 @@ profileImage: /img/michelle-sandford.jpg
 location: perth-wa
 mentoring: >-
   I am a Mentor and Role Model in the [Tech Girls are
-  Superheroes](http:/www.techgirlsaresuperheroes.org/) Program. I actively
+  Superheroes](http://www.techgirlsaresuperheroes.org/) Program. I actively
   encourage young women and girls to pursue careers in tech and STEM.
 
 
@@ -26,7 +26,7 @@ socials:
     url: 'https:/www.youtube.com/user/msandfor'
   - featured: true
     platform: website
-    url: 'http:/michellesandford.com/'
+    url: 'http://michellesandford.com/'
 talks:
   - date: '2018-08-04'
     event: DDD Perth
