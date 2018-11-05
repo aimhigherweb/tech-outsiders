@@ -1,9 +1,10 @@
 import React, {Fragment} from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 //Resources
 import '../scss/header.scss';
 import Logo from '../img/logo.svg';
-import Background from '../img/banner.jpg';
 
 const HeroContent = {
     short: (
@@ -19,14 +20,31 @@ const HeroContent = {
     )
 };
 
-const Header = () => (
-    <Fragment>
-        <div className="background">
-            <img src={Background} />
-        </div>
-        <SiteTitle />
-        <Hero />
-    </Fragment>
+const Header = ({data}) => (
+    <StaticQuery
+        query={graphql`
+            query {
+                file(relativePath: {eq: "banner.jpg"}) {
+                    childImageSharp {
+                        fluid(maxWidth: 3000) {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
+            }
+        `}
+        render={data => (
+            <Fragment>
+                <div className="background">
+                    <Img
+                        fluid={data.file.childImageSharp.fluid}
+                    />
+                </div>
+                <SiteTitle />
+                <Hero />
+            </Fragment>
+        )}
+    />
 )
 
 const SiteTitle = () => (

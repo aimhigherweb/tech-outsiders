@@ -77,7 +77,7 @@ const FooterSocial = () => {
 	});
 
 	return (
-		<nav class="social">{socialNav}</nav>
+		<nav className="social">{socialNav}</nav>
 	);
 };
 
