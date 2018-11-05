@@ -20,6 +20,8 @@ const About = () => (
 		<p>If you or someone you know should be on Tech Outsiders, create an account at login to <a href="https://techoutsiders.com.au/admin/" target="_blank">techoutsiders.com.au/admin</a> and create a new speaker profile. You can view the profile straight away (give or take a couple of minutes) on <a href="https://dev.techoutsiders.com.au/" target="_blank">dev.techoutsiders.com.au</a> and once the Tech Outsiders team has confirmed everything is accurate it'll appear on the live site as well.</p>
 		<h2>How can I update my Tech Outsiders profile?</h2>
 		<p>This is the same as creating a new profile. Just login to <a href="https://techoutsiders.com.au/admin/" target="_blank">techoutsiders.com.au/admin</a> and edit your speaker profile. We'll check the information again and make them available on the live site.</p>
+		<h2>Any Questions or Issues?</h2>
+		<p>Get in touch with us on <a href="https://twitter.com/TechOutsiders" target="_blank">Twitter</a> or lodge an issue on <a href="https://github.com/AimHigher-Web-Design/tech-outsiders" target="_blank">Github</a> if something isn't working properly.</p>
 	</Layout>
 )
 
