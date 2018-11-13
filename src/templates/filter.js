@@ -10,7 +10,7 @@ import '../scss/home.scss';
 
 const locations = {
     // 'brisbane-qld': "Brisbane, Queensland",
-    // 'melbourne-vic': "Melbourne, Victoria",
+    'melbourne-vic': "Melbourne, Victoria",
     'perth-wa': "Perth, Western Australia",
     // 'sydney-nsw': "Sydney, New South Wales",
 }
