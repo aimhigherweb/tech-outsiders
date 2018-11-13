@@ -4,8 +4,8 @@ tagline: Mother of Unicorns + Social Nerd
 profileImage: /img/ming-johanson.jpg
 location: perth_wa
 mentoring: >-
-  I am a Mentor at Startup Weekends a  Model in  in the Women In Technology WA
-  Techtrails rogram and I ctively encourage young women and girls to pursue
+  I am a Mentor at Startup Weekends a role odel in the Women In Technology WA
+  Techtrails program and I actively encourage young women and girls to pursue
   careers in tech and STEM.
 socials:
   - featured: true
