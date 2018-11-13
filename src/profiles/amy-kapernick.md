@@ -48,7 +48,7 @@ talks:
   - date: '2018-06-20'
     event: Fenders
     eventLink: 'https://fenders.co/'
-    talkLink: 'https://talks.amygoestoperth.com.au/so-you-think-you-know-html'
+    talkLink: 'https://www.youtube.com/watch?v=SGKUHyds7uA'
     talkTitle: So you think you know HTML?
   - date: '2018-08-07'
     event: ACS Women - Ignite Talks
@@ -60,8 +60,7 @@ talks:
     talkTitle: Fender Lightning Round
   - date: 2018-10-10T00:00:00.000Z
     event: Fenders Mental Health Week Presentations
-    talkLink: >-
-      https://talks.amygoestoperth.com.au/the-art-of-failure/fenders-mental-health-week-2018.html
+    talkLink: 'https://www.youtube.com/watch?v=bLAlVkLLoIM'
     talkTitle: The Art of Failure
   - date: '2018-10-27'
     event: Google DevFest Melbourne
