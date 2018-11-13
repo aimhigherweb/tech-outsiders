@@ -48,8 +48,8 @@ collections:
         widget: list
         hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo"
         fields:
-          - {label: "Social Profile Link", name: url, widget: string}
-          - {label: "Featured Profile", name: featured, widget: boolean}
+          - {label: "Social Profile Link", name: url, widget: string, required: true}
+          - {label: "Featured Profile", name: featured, widget: boolean, required: true}
           - label: "Custom Title"
             name: socialTitle
             widget: string
