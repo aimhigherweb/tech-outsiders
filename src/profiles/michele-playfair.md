@@ -4,8 +4,12 @@ tagline: 'Catalyst, glube, connection maker. '
 profileImage: /img/me_2018.jpg
 location: melbourne_vic
 socials:
-  - platform: twitter
-    url: '@micheleplayfair'
+  - featured: true
+    platform: twitter
+    url: 'https://twitter.com/MichelePlayfair'
+  - featured: true
+    platform: linkedin
+    url: 'https://www.linkedin.com/in/micheleplayfair/'
 talks:
   - date: '2016-05-10'
     event: Australian Testing Days 2016
