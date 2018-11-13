@@ -6,9 +6,11 @@ tagline: >-
 profileImage: /img/me.jpg
 location: melbourne_vic
 socials:
-  - platform: linkedin
+  - featured: true
+    platform: linkedin
     url: 'https://www.linkedin.com/in/rachaelgoodenough/   '
-  - platform: twitter
+  - featured: true
+    platform: twitter
     url: 'https://twitter.com/RacheGoodo'
 talks:
   - date: '2018-11-13'
