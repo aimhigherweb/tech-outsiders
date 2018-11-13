@@ -12,18 +12,18 @@ socials:
     url: 'https://www.linkedin.com/in/micheleplayfair/'
 talks:
   - date: '2016-05-10'
-    event: Australian Testing Days 2016
+    event: Australian Testing Days
     eventLink: 'http://www.australiantestingdays.com/austd16/'
     talkLink: 'https://www.slideshare.net/MicheleCross/transforming-an-offshore-qa-team'
     talkTitle: Transforming an Offshore QA Team
   - date: '2016-06-30'
-    event: 'LAST Conference Melbourne, 30 Jun and 1 July 2016. '
+    event: LAST Conference Melbourne
     eventLink: 'https://www.lastconference.com/'
     talkLink: >-
       https://www.slideshare.net/MicheleCross/were-here-and-our-testers-are-there-63764836
     talkTitle: We're here... and our testers are there
   - date: '2016-11-18'
-    event: CukeUp AU 2016
+    event: CukeUp AU
     eventLink: 'https://cucumber.io/events/cukeup-au-2016'
     talkLink: 'https://youtu.be/CJr-UgdY5Ho'
     talkTitle: Amigos Apart!
