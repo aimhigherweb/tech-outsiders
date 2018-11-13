@@ -6,9 +6,8 @@ tagline: >-
 profileImage: /img/me.jpg
 location: melbourne_vic
 socials:
-  - url: >-
-      https://www.linkedin.com/in/rachaelgoodenough/  
-      https://twitter.com/RacheGoodo
+  - url: 'https://www.linkedin.com/in/rachaelgoodenough/   '
+  - url: 'https://twitter.com/RacheGoodo'
 talks:
   - date: '2018-11-13'
     talkLink: 'https://www.meetup.com/en-AU/Brisbane-Tech-Newbies/events/gwddfpyxfbcc/'
