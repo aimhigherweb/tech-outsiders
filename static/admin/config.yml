@@ -28,6 +28,7 @@ collections:
       - name: location
         label: Location
         widget: select
+        required: true
         options:
           - {label: "Brisbane, Queensland", value: brisbane_qld}
           - {label: "Melbourne, Victoria", value: melbourne_vic}
