@@ -20,6 +20,7 @@ collections:
       - name: tagline
         label: "Tagline"
         widget: string
+        pattern: [".{0,70}", "No more than 70 characters"]
         hint: "This can be anything you like, but keep it to between 5 and 10 words (check the profile, it's a short phrase). This will preferably be either your job title or something you're known as"
       - name: profileImage
         label: "Profile Image"
