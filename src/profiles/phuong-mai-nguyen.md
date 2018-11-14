@@ -15,9 +15,11 @@ socials:
     platform: linkedin
     socialTitle: ''
     url: 'https://www.linkedin.com/in/mai-isthebest/'
-  - platform: twitter
+  - featured: true
+    platform: twitter
     url: 'https://twitter.com/mai_isthebest'
-  - platform: instagram
+  - featured: true
+    platform: instagram
     socialTitle: Mai lovely photos
     url: 'https://www.instagram.com/mai_isthebest/'
 talks:
