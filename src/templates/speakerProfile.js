@@ -9,10 +9,10 @@ import {Socials} from '../components/parts'
 import '../scss/speaker.scss'
 
 const locations = {
-    brisbane_qld: "Brisbane, Queensland",
-    melbourne_vic: "Melbourne, Victoria",
-    perth_wa: "Perth, Western Australia",
-    sydney_nsw: "Sydney, New South Wales",
+    'brisbane_qld': "Brisbane, Queensland",
+    'melbourne_vic': "Melbourne, Victoria",
+    'perth_wa': "Perth, Western Australia",
+    'sydney_nsw': "Sydney, New South Wales",
 }
 
 
@@ -68,10 +68,15 @@ const SpeakerProfileTemplate = ({name, tagline, profileImage, location, bio, men
                     <div className="mentor" dangerouslySetInnerHTML={{__html: mentoring}}></div>
                 </Fragment>
             }
-            <h2>Speaker Experience</h2>
-            <div className="talks">
-                {talksList}
-            </div>
+
+            {talks &&
+                <Fragment>
+                    <h2>Speaker Experience</h2>
+                    <div className="talks">
+                        {talksList}
+                    </div>
+                </Fragment>
+            } 
         </Fragment>
     )
 }

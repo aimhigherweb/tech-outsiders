@@ -20,6 +20,7 @@ collections:
       - name: tagline
         label: "Tagline"
         widget: string
+        pattern: [".{0,70}", "No more than 70 characters"]
         hint: "This can be anything you like, but keep it to between 5 and 10 words (check the profile, it's a short phrase). This will preferably be either your job title or something you're known as"
       - name: profileImage
         label: "Profile Image"
@@ -28,6 +29,7 @@ collections:
       - name: location
         label: Location
         widget: select
+        required: true
         options:
           - {label: "Brisbane, Queensland", value: brisbane_qld}
           - {label: "Melbourne, Victoria", value: melbourne_vic}
@@ -46,10 +48,14 @@ collections:
       - name: socials
         label: Social Profiles
         widget: list
-        hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo"
+        hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo. Make sure you select the kind of social profile you're listing (eg. Twitter), otherwise your profile won't work."
         fields:
-          - {label: "Social Profile Link", name: url, widget: string, required: true}
-          - {label: "Featured Profile", name: featured, widget: boolean, required: true}
+          - label: "Social Profile Link"
+            name: url
+            widget: string
+            required: true
+            hint: "This needs to be the full URL, not just your username/handle"
+          - {label: "Featured Profile", name: featured, widget: boolean}
           - label: "Custom Title"
             name: socialTitle
             widget: string
@@ -57,6 +63,7 @@ collections:
             required: false
           - label: "Profile Type"
             name: platform
+            required: true
             widget: select
             options:
             - {label: Facebook, value: facebook}
@@ -71,7 +78,7 @@ collections:
       - name: talks
         label: Talks
         widget: list
-        hint: "Talks that you have done previously, whether this is at a meetup event, conference or somewhere else. This should include the title of the talk (if you've done the same talk at multiple events, list them all!), the event that you did it at (Conference, meetup group, etc), the date that you did it, a link to the event (eg. Conference or Meetup Group site) and if you have it links to the slides or a video of the talk."
+        hint: "Talks that you have done previously, whether this is at a meetup event, conference or somewhere else. This should include the title of the talk (if you've done the same talk at multiple events, list them all!), the event that you did it at (Conference, meetup group, etc), the date that you did it, a link to the event (eg. Conference or Meetup Group site) and if you have it links to the slides or a video of the talk. If you have future talks coming up, feel free to add them too, we just won't allow people to click on your slides until after you've finished the talk"
         fields:
           - label: "Talk Title"
             name: talkTitle
