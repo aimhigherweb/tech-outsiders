@@ -16,7 +16,7 @@ socials:
     url: 'https://www.linkedin.com/in/edwardsdonna/'
   - featured: true
     platform: twitter
-    url: '@Don_IsGood'
+    url: 'https://twitter.com/Don_IsGood'
 talks:
   - date: '2018-09-20'
     event: NDC Sydney

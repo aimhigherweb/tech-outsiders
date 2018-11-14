@@ -9,10 +9,10 @@ import {Socials} from '../components/parts'
 import '../scss/home.scss';
 
 const locations = {
-    // 'brisbane-qld': "Brisbane, Queensland",
-    'melbourne-vic': "Melbourne, Victoria",
-    'perth-wa': "Perth, Western Australia",
-    // 'sydney-nsw': "Sydney, New South Wales",
+    // 'brisbane_qld': "Brisbane, Queensland",
+    'melbourne_vic': "Melbourne, Victoria",
+    'perth_wa': "Perth, Western Australia",
+    // 'sydney_nsw': "Sydney, New South Wales",
 }
 
 export default class FilteredSpeakers extends React.Component {

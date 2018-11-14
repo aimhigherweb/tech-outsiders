@@ -5,9 +5,9 @@ profileImage: /img/donna_bio_feb16_300.jpg
 location: melbourne_vic
 socials:
   - platform: twitter
-    socialTitle: ''
     url: 'https://twitter.com/maadonna'
-  - featured: true
+  - platform: linkedin
+    featured: true
     url: 'https://www.linkedin.com/in/donna-spencer/'
 talks:
   - date: '2018-11-14'
