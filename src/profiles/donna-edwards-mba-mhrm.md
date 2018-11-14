@@ -11,7 +11,12 @@ mentoring: >-
   personally had both formal and informal mentors. She is always looking for
   opportunities to both learn from others and add value to others.
 socials:
-  - url: 'https://www.linkedin.com/in/edwardsdonna/'
+  - featured: true
+    platform: linkedin
+    url: 'https://www.linkedin.com/in/edwardsdonna/'
+  - featured: true
+    platform: twitter
+    url: '@Don_IsGood'
 talks:
   - date: '2018-09-20'
     event: NDC Sydney
