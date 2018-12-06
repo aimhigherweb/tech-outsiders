@@ -1,6 +1,6 @@
 ---
 title: Chris Williams
-tagline: 'IT Project Manager '
+tagline: 'Tech Project Manager '
 profileImage: /img/chriswilliams.png
 location: perth_wa
 socials:
