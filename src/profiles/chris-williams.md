@@ -7,9 +7,7 @@ socials:
   - featured: true
     platform: linkedin
     url: 'https://www.linkedin.com/in/chris-williams-14409a136/'
-talks:
-  - date: Invalid date
-    talkTitle: '"Why IT projects fail" (internal talk whilst working at Ernst and Young)'
+talks: []
 ---
 I'm an IT Project Manager with over a decade of experience. I have worked for some very large organisations, such as SAP and FMG, and have made a bit of a sea change to work for a not-for-profit, where I get to do a bit of everything. 
 
