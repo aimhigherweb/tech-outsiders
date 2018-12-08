@@ -48,7 +48,7 @@ talks:
   - date: '2018-06-20'
     event: Fenders
     eventLink: 'https://fenders.co/'
-    talkLink: 'https://www.youtube.com/watch?v=SGKUHyds7uA'
+    talkLink: 'https://noti.st/amyskapers/paw5Vb/so-you-think-you-know-html'
     talkTitle: So you think you know HTML?
   - date: '2018-08-07'
     event: ACS Women - Ignite Talks
@@ -60,20 +60,18 @@ talks:
     talkTitle: Fender Lightning Round
   - date: 2018-10-10T00:00:00.000Z
     event: Fenders Mental Health Week Presentations
-    talkLink: 'https://www.youtube.com/watch?v=bLAlVkLLoIM'
+    talkLink: 'https://noti.st/amyskapers/DHDHdC/the-art-of-failure'
     talkTitle: The Art of Failure
   - date: '2018-10-27'
     event: Google DevFest Melbourne
     eventLink: 'https://www.gdgmelbourne.com/devfest-2018/'
-    talkLink: >-
-      https://talks.amygoestoperth.com.au/the-art-of-failure/google-devfest-melbourne-2018.html
+    talkLink: 'https://noti.st/amyskapers/ydlfsO/the-art-of-failure'
     talkTitle: The Art of Failure
   - date: '2018-11-30'
     event: ACS WA Diversity Dinner
     eventLink: >-
       https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
-    talkLink: >-
-      https://talks.amygoestoperth.com.au/being-a-more-sustainable-you/acs-diversity-dinner.html
+    talkLink: 'https://noti.st/events/mz1rIY/acs-diversity-dinner-2018'
     talkTitle: Being a More Sustainable You
   - date: '2019-01-30'
     event: NDC London
