@@ -71,7 +71,7 @@ talks:
     event: ACS WA Diversity Dinner
     eventLink: >-
       https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
-    talkLink: 'https://noti.st/events/mz1rIY/acs-diversity-dinner-2018'
+    talkLink: 'https://noti.st/amyskapers/axUTkn/being-a-more-sustainable-you'
     talkTitle: Being a More Sustainable You
   - date: '2019-01-30'
     event: NDC London
