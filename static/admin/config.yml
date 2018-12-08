@@ -89,7 +89,11 @@ collections:
             widget: string
             default: "https://mytalks.com.au/mytalk"
             required: false
-          - {date: "Event Date", name: date, widget: date, format: "YYYY-MM-DD"}
+          - label: "Event Date"
+            name: date
+            widget: date
+            format: "YYYY-MM-DD"
+            required: true
           - label: "Event Name"
             name: event
             widget: string
