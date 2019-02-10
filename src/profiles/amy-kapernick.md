@@ -33,7 +33,7 @@ socials:
     url: 'https://aimhigherweb.design/'
   - platform: website
     socialTitle: Notist
-    url: 'https://noti.st/amyskapers'
+    url: 'https://speaking.amyskapers.tech'
 talks:
   - date: 2018-04-05T00:00:00.000Z
     event: www2017
