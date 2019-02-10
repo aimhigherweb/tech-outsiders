@@ -79,6 +79,10 @@ talks:
     talkLink: >-
       https://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
     talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-02-01'
+    event: PubConf London
+    eventLink: 'https://pubconf.io/'
+    talkTitle: The Need for PageSpeed
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
 
