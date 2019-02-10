@@ -31,6 +31,9 @@ socials:
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
+  - platform: website
+    socialTitle: Notist
+    url: 'https://noti.st/amyskapers'
 talks:
   - date: 2018-04-05T00:00:00.000Z
     event: www2017
@@ -76,8 +79,16 @@ talks:
   - date: '2019-01-30'
     event: NDC London
     eventLink: 'https://ndc-london.com/'
-    talkLink: >-
-      https://talks.amygoestoperth.com.au/css-grid-what-is-this-magic/ndc-london.html
+    talkLink: 'https://noti.st/amyskapers/relpir/css-grid-what-is-this-magic'
+    talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-02-01'
+    event: PubConf London
+    eventLink: 'https://pubconf.io/'
+    talkTitle: The Need for PageSpeed
+  - date: '2019-05-09'
+    event: NDC Minnesota
+    eventLink: 'https://ndcminnesota.com/'
+    talkLink: 'https://noti.st/amyskapers/TyUdbG/css-grid-what-is-this-magic'
     talkTitle: CSS Grid - What is this Magic?!
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
