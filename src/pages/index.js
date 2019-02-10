@@ -121,7 +121,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         title
                         tagline
-                        profileImage
+                        profileImage 
                         socials {
                             featured
                             platform
