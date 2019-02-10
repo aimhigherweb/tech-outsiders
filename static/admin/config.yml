@@ -55,7 +55,7 @@ collections:
             widget: string
             required: true
             hint: "This needs to be the full URL, not just your username/handle"
-          - {label: "Featured Profile", name: featured, widget: boolean}
+          - {label: "Featured Profile", name: featured, widget: boolean, required: false}
           - label: "Custom Title"
             name: socialTitle
             widget: string
