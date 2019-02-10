@@ -27,11 +27,12 @@ socials:
   - featured: true
     platform: twitter
     url: 'https://twitter.com/amys_kapers'
-  - featured: true
+  - featured: false
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
-  - platform: website
+  - featured: true
+    platform: website
     socialTitle: Notist
     url: 'https://speaking.amyskapers.tech'
 talks:
