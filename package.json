@@ -21,7 +21,7 @@
 	},
 	"homepage": "https://github.com/AimHigher-Web-Design/tech-outsiders#readme",
 	"dependencies": {
-		"gatsby": "2.0.17",
+		"gatsby": "^2.0.118",
 		"gatsby-image": "^2.0.19",
 		"gatsby-plugin-google-tagmanager": "^2.0.6",
 		"gatsby-plugin-netlify": "^2.0.3",
@@ -44,5 +44,8 @@
 		"react-waypoint": "^8.0.3",
 		"remark": "^10.0.0",
 		"remark-html": "^8.0.0"
+	},
+	"resolutions": {
+		"ajv": "6.8.1"
 	}
 }
