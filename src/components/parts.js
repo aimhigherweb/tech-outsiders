@@ -41,6 +41,7 @@ export const Socials = ({platform, socialTitle, url}) => {
 			break;
 		case 'notist':
 			icon = <Notist />;
+			break;
 		default:
 			icon = <Link2 />;
 	}
