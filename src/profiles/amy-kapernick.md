@@ -31,7 +31,7 @@ socials:
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
-  - platform: website
+  - platform: notist
     socialTitle: Notist
     url: 'https://noti.st/amyskapers'
 talks:

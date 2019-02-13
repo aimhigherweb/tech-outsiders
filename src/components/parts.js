@@ -2,6 +2,8 @@ import React from 'react'
 
 import {BookOpen, Codepen, Facebook, Github, Gitlab, Globe, Instagram, Linkedin, Link2, Twitter, Youtube} from 'react-feather';
 
+import Notist from '../img/notist.svg'
+
 export const Socials = ({platform, socialTitle, url}) => {
 	let icon,
         linkTitle = platform.charAt(0).toUpperCase() + platform.slice(1) + ' profile';
@@ -19,7 +21,7 @@ export const Socials = ({platform, socialTitle, url}) => {
 		case 'github':
 			icon = Github;
 			break;
-		case 'Gitlab':
+		case 'gitlab':
 			icon = <Gitlab />
 			break;
 		case 'instagram':
@@ -37,6 +39,8 @@ export const Socials = ({platform, socialTitle, url}) => {
 		case 'youtube':
 			icon = <Youtube />;
 			break;
+		case 'notist':
+			icon = <Notist />;
 		default:
 			icon = <Link2 />;
 	}
