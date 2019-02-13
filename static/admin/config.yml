@@ -71,7 +71,9 @@ collections:
             - {label: LinkedIn, value: linkedin}
             - {label: Instagram, value: instagram}
             - {label: GitHub, value: github}
+            - {label: GitLab, value: gitlab}
             - {label: Codepen, value: codepen}
+            - {label: Notist, value: notist}
             - {label: Website, value: website}
             - {label: Portfolio, value: portfolio}
             - {label: Blog, value: blog}

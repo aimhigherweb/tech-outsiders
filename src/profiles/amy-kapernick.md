@@ -27,13 +27,14 @@ socials:
   - featured: true
     platform: twitter
     url: 'https://twitter.com/amys_kapers'
-  - featured: true
+  - featured: false
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
-  - platform: website
+  - platform: notist
+    featured: true
     socialTitle: Notist
-    url: 'https://noti.st/amyskapers'
+    url: 'https://speaking.amyskapers.tech'
 talks:
   - date: 2018-04-05T00:00:00.000Z
     event: www2017
@@ -41,17 +42,17 @@ talks:
   - date: '2017-11-30'
     event: JuniorDev Perth
     eventLink: 'https://www.meetup.com/en-AU/Junior-Developers-Perth/'
-    talkLink: 'https://slides.com/amykapernick/art-of-failure'
+    talkLink: 'https://speaking.amyskapers.tech/a0Sw9B/the-art-of-failure'
     talkTitle: The Art of Failure
   - date: '2018-03-21'
     event: JuniorDev Melbourne
     eventLink: 'https://www.meetup.com/en-AU/Junior-Developers-Melbourne/'
-    talkLink: 'https://slides.com/amykapernick/css-grid-what-is-this-magic'
+    talkLink: 'https://speaking.amyskapers.tech/CKBk1a/css-grid-what-is-this-magic'
     talkTitle: CSS Grid - What is this Magic?!
   - date: '2018-06-20'
     event: Fenders
     eventLink: 'https://fenders.co/'
-    talkLink: 'https://noti.st/amyskapers/paw5Vb/so-you-think-you-know-html'
+    talkLink: 'https://speaking.amyskapers.tech/paw5Vb/so-you-think-you-know-html'
     talkTitle: So you think you know HTML?
   - date: '2018-08-07'
     event: ACS Women - Ignite Talks
@@ -63,23 +64,23 @@ talks:
     talkTitle: Fender Lightning Round
   - date: 2018-10-10T00:00:00.000Z
     event: Fenders Mental Health Week Presentations
-    talkLink: 'https://noti.st/amyskapers/DHDHdC/the-art-of-failure'
+    talkLink: 'https://speaking.amyskapers.tech/DHDHdC/the-art-of-failure'
     talkTitle: The Art of Failure
   - date: '2018-10-27'
     event: Google DevFest Melbourne
     eventLink: 'https://www.gdgmelbourne.com/devfest-2018/'
-    talkLink: 'https://noti.st/amyskapers/ydlfsO/the-art-of-failure'
+    talkLink: 'https://speaking.amyskapers.tech/ydlfsO/the-art-of-failure'
     talkTitle: The Art of Failure
   - date: '2018-11-30'
     event: ACS WA Diversity Dinner
     eventLink: >-
       https://www.acs.org.au/cpd-education/event-detail.html?eventId=70190000001tRYnAAM
-    talkLink: 'https://noti.st/amyskapers/axUTkn/being-a-more-sustainable-you'
+    talkLink: 'https://speaking.amyskapers.tech/axUTkn/being-a-more-sustainable-you'
     talkTitle: Being a More Sustainable You
   - date: '2019-01-30'
     event: NDC London
     eventLink: 'https://ndc-london.com/'
-    talkLink: 'https://noti.st/amyskapers/relpir/css-grid-what-is-this-magic'
+    talkLink: 'https://speaking.amyskapers.tech/relpir/css-grid-what-is-this-magic'
     talkTitle: CSS Grid - What is this Magic?!
   - date: '2019-02-01'
     event: PubConf London
@@ -88,7 +89,7 @@ talks:
   - date: '2019-05-09'
     event: NDC Minnesota
     eventLink: 'https://ndcminnesota.com/'
-    talkLink: 'https://noti.st/amyskapers/TyUdbG/css-grid-what-is-this-magic'
+    talkLink: 'https://speaking.amyskapers.tech/TyUdbG/css-grid-what-is-this-magic'
     talkTitle: CSS Grid - What is this Magic?!
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
