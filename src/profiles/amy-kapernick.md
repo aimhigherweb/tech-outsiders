@@ -31,8 +31,8 @@ socials:
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
-  - platform: notist
-    featured: true
+  - featured: true
+    platform: notist
     socialTitle: Notist
     url: 'https://speaking.amyskapers.tech'
 talks:
@@ -86,10 +86,19 @@ talks:
     event: PubConf London
     eventLink: 'https://pubconf.io/'
     talkTitle: The Need for PageSpeed
+  - date: '2019-03-02'
+    event: .Net Rocks!
+    eventLink: 'https://www.dotnetrocks.com'
+    talkLink: 'https://www.dotnetrocks.com/?show=1624'
+    talkTitle: Podcast - CSS Grid with Amy Kapernick
   - date: '2019-05-09'
     event: NDC Minnesota
     eventLink: 'https://ndcminnesota.com/'
     talkLink: 'https://speaking.amyskapers.tech/TyUdbG/css-grid-what-is-this-magic'
+    talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-06-19'
+    event: NDC Oslo
+    eventLink: 'https://ndcoslo.com/'
     talkTitle: CSS Grid - What is this Magic?!
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
