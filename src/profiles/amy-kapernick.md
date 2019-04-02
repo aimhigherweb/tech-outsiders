@@ -1,7 +1,7 @@
 ---
 title: Amy Kapernick
 tagline: 'Front End Jedi, Tech Evangelist, Dog Lover'
-profileImage: /img/amy-kapernick.jpg
+profileImage: /img/fenders_small.jpg
 location: perth_wa
 mentoring: "Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.\r"
 socials:
@@ -91,6 +91,11 @@ talks:
     eventLink: 'https://www.dotnetrocks.com'
     talkLink: 'https://www.dotnetrocks.com/?show=1624'
     talkTitle: Podcast - CSS Grid with Amy Kapernick
+  - date: '2019-04-02'
+    event: ACS WA Diversity and Inclusion
+    eventLink: >-
+      https://www.acs.org.au/cpd-education/event-detail.html?eventId=7010o000001eWEAAA2
+    talkTitle: How to Start Speaking at Conferences
   - date: '2019-05-09'
     event: NDC Minnesota
     eventLink: 'https://ndcminnesota.com/'
