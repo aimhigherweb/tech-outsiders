@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
-import { format } from 'date-fns'
 
 import Layout from '../components/layout'
 
@@ -23,7 +22,7 @@ export default class BlogPost extends Component {
 					<header>
 						<h1>{post.frontmatter.title}</h1>
 						<time datetime={post.frontmatter.publishDate}>
-							{format(new Date(post.frontmatter.publishDate), 'DD MMM YYYY')}
+							{post.frontmatter.publishDate}
 						</time>
 					</header>
 					<div className="author">
