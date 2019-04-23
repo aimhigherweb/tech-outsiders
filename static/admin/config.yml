@@ -3,7 +3,7 @@ backend:
     repo: AimHigher-Web-Design/tech-outsiders
     branch: dev
 
-media_folder: static/img
+media_folder: src/profiles/img
 public_folder: /img
 
 collections:

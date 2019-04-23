@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
 import {
 	BookOpen,
@@ -97,7 +98,12 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 
 	return (
 		<Link to={speakerProfile.node.fields.slug} className="speaker">
-			<img src={details.profileImage} alt={'Speaker Profile Photo of ' + details.title} />
+			<Img
+				fixed={details.profileImage.childImageSharp.fixed}
+				alt={'Speaker Profile Photo of ' + details.title}
+				style={{ width: '90%', height: 'auto', minHeight: '150px', display: 'block' }}
+				imgStyle={{ width: '100%', position: 'none', height: 'auto' }}
+			/>
 			<h2>{details.title}</h2>
 			{tagline}
 			<div className="socials">{socialLinks}</div>

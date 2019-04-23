@@ -1,7 +1,7 @@
 ---
 title: Donna Spencer
 tagline: UX designer
-profileImage: /img/donna_bio_feb16_300.jpg
+profileImage: ./img/donna_bio_feb16_300.jpg
 location: Melbourne
 socials:
     - platform: twitter

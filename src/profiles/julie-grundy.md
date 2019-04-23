@@ -1,7 +1,7 @@
 ---
 title: Julie Grundy
 tagline: Accessibility Consultant
-profileImage: /img/julie-grundy.jpg
+profileImage: ./img/julie-grundy.jpg
 location: Perth
 socials:
     - platform: codepen

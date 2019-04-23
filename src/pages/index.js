@@ -114,7 +114,13 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						tagline
-						profileImage
+						profileImage {
+							childImageSharp {
+								fixed(width: 300) {
+									...GatsbyImageSharpFixed_withWebp
+								}
+							}
+						}
 						socials {
 							featured
 							platform

@@ -1,7 +1,7 @@
 ---
 title: Ming Johanson
 tagline: Mother of Unicorns + Social Nerd
-profileImage: /img/ming-johanson.jpg
+profileImage: ./img/ming-johanson.jpg
 location: Perth
 mentoring: >-
     I am a Mentor at Startup Weekends a role model in the Women In Technology WA

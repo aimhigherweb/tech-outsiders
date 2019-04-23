@@ -1,7 +1,7 @@
 ---
 title: Vee Pendergrast
 tagline: VR/AR/Serious Games Consultant and Video Game Industry Advocate
-profileImage: /img/veeworking.jpg
+profileImage: ./img/veeworking.jpg
 location: Perth
 mentoring: 'Video game industry, grants in technology sectors, tech careers'
 socials:
