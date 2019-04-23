@@ -1,7 +1,7 @@
 ---
 title: Amy Kapernick
 tagline: 'Front End Jedi, Tech Evangelist, Dog Lover'
-profileImage: /img/amy-kapernick.jpg
+profileImage: /img/fenders_small.jpg
 location: perth_wa
 mentoring: "Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.\r"
 socials:
@@ -31,8 +31,8 @@ socials:
     platform: website
     socialTitle: AimHigher Web Design
     url: 'https://aimhigherweb.design/'
-  - platform: notist
-    featured: true
+  - featured: true
+    platform: notist
     socialTitle: Notist
     url: 'https://speaking.amyskapers.tech'
 talks:
@@ -86,10 +86,24 @@ talks:
     event: PubConf London
     eventLink: 'https://pubconf.io/'
     talkTitle: The Need for PageSpeed
+  - date: '2019-03-02'
+    event: .Net Rocks!
+    eventLink: 'https://www.dotnetrocks.com'
+    talkLink: 'https://www.dotnetrocks.com/?show=1624'
+    talkTitle: Podcast - CSS Grid with Amy Kapernick
+  - date: '2019-04-02'
+    event: ACS WA Diversity and Inclusion
+    eventLink: >-
+      https://www.acs.org.au/cpd-education/event-detail.html?eventId=7010o000001eWEAAA2
+    talkTitle: How to Start Speaking at Conferences
   - date: '2019-05-09'
     event: NDC Minnesota
     eventLink: 'https://ndcminnesota.com/'
     talkLink: 'https://speaking.amyskapers.tech/TyUdbG/css-grid-what-is-this-magic'
+    talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-06-19'
+    event: NDC Oslo
+    eventLink: 'https://ndcoslo.com/'
     talkTitle: CSS Grid - What is this Magic?!
 ---
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
