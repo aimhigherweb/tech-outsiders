@@ -1,0 +1,124 @@
+@import './variables.scss';
+
+.article-feed {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 20px 15px;
+}
+
+.feed-article {
+	background: rgba($primary_light_25, 0.3);
+	border-radius: 10px;
+	display: block;
+	padding: 20px 20px 40px;
+	position: relative;
+	max-width: 300px;
+
+	header {
+		position: relative;
+		width: 100%;
+		z-index: -1;
+	}
+
+	.author {
+		width: auto;
+	}
+
+	h2,
+	h5,
+	h6 {
+		margin: 0;
+	}
+
+	&:active,
+	&:hover,
+	&:focus {
+		background: $secondary_light_50;
+		background: rgba($secondary, 0.3);
+
+		.image-feature {
+			opacity: 1;
+		}
+	}
+}
+
+.image-feature {
+	height: 15vh * 2;
+	max-height: 300px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	opacity: 0.4;
+	text-align: center;
+	max-width: 100%;
+
+	img {
+		height: 100%;
+		max-height: 100%;
+		width: auto;
+		max-width: unset;
+	}
+}
+
+.image-profile {
+	height: 45px;
+	opacity: 0.4;
+	width: 45px;
+
+	&:active,
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+
+	.gatsby-image-wrapper {
+		border: 2px solid $primary_dark_75;
+		margin: 10px 10px 10px -20px;
+	}
+}
+
+.author {
+	float: right;
+	text-align: right;
+
+	a {
+		&:hover,
+		&:focus {
+			background: transparent;
+
+			.gatsby-image-wrapper {
+				border-color: $secondary;
+			}
+		}
+	}
+}
+
+.article-title {
+	font-size: 1.1em;
+	padding-right: 50px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h6.date {
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.excerpt {
+	font-size: 0.8em;
+}
+
+.share-icons {
+	font-size: 30px;
+	margin-top: -30px;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+
+	.share-link {
+		padding: 5px;
+	}
+}

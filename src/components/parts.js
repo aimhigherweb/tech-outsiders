@@ -1,64 +1,112 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
-import {BookOpen, Codepen, Facebook, Github, Gitlab, Globe, Instagram, Linkedin, Link2, Twitter, Youtube} from 'react-feather';
+import {
+	BookOpen,
+	Codepen,
+	Facebook,
+	Github,
+	Gitlab,
+	Globe,
+	Instagram,
+	Linkedin,
+	Link2,
+	Twitter,
+	Youtube,
+} from 'react-feather'
 
 import Notist from '../img/notist.svg'
 
-export const Socials = ({platform, socialTitle, url}) => {
+export const Socials = ({ platform, socialTitle, url }) => {
 	let icon,
-        linkTitle = platform.charAt(0).toUpperCase() + platform.slice(1) + ' profile';
-	
+		linkTitle = platform.charAt(0).toUpperCase() + platform.slice(1) + ' profile'
+
 	switch (platform) {
 		case 'blog':
-			icon = <BookOpen /> ;
-			break;
+			icon = <BookOpen />
+			break
 		case 'codepen':
 			icon = <Codepen />
-			break;
+			break
 		case 'facebook':
-			icon = <Facebook />;
-			break;
+			icon = <Facebook />
+			break
 		case 'github':
-			icon = Github;
-			break;
+			icon = Github
+			break
 		case 'gitlab':
 			icon = <Gitlab />
-			break;
+			break
 		case 'instagram':
-			icon = <Instagram />;
-			break;
+			icon = <Instagram />
+			break
 		case 'linkedin':
-			icon = <Linkedin />;
-			break;
+			icon = <Linkedin />
+			break
 		case 'twitter':
-			icon = <Twitter />;
-			break;
+			icon = <Twitter />
+			break
 		case 'website':
-			icon = <Globe />;
-			break;
+			icon = <Globe />
+			break
 		case 'youtube':
-			icon = <Youtube />;
-			break;
+			icon = <Youtube />
+			break
 		case 'notist':
-			icon = <Notist />;
-			break;
+			icon = <Notist />
+			break
 		default:
-			icon = <Link2 />;
+			icon = <Link2 />
 	}
 
-	if(socialTitle) {
-		linkTitle = socialTitle;
-	} 
-	else if(platform.includes('website')) {
-		linkTitle = 'website';
-	}
-	else if(platform.includes('blog')) {
-		linkTitle = 'blog';
+	if (socialTitle) {
+		linkTitle = socialTitle
+	} else if (platform.includes('website')) {
+		linkTitle = 'website'
+	} else if (platform.includes('blog')) {
+		linkTitle = 'blog'
 	}
 
 	return (
 		<a href={url} className="social-link" target="_blank" title={'Link to ' + linkTitle}>
 			{icon}
 		</a>
-	);
-};
+	)
+}
+
+export const SpeakerBlock = ({ speakerProfile }) => {
+	let details = speakerProfile.node.frontmatter,
+		tagline = <p className="tagline">{details.tagline}</p>
+
+	let socialLinks = details.socials.map(profile => {
+		if (profile.featured) {
+			if (profile.socialTitle) {
+				return (
+					<Socials
+						platform={profile.platform}
+						url={profile.url}
+						key={profile.url}
+						socialTitle={profile.socialTitle}
+					/>
+				)
+			} else {
+				return <Socials platform={profile.platform} url={profile.url} key={profile.url} />
+			}
+		}
+	})
+
+	return (
+		<Link to={speakerProfile.node.fields.slug} className="speaker">
+			<Img
+				fixed={details.profileImage.childImageSharp.fixed}
+				alt={'Speaker Profile Photo of ' + details.title}
+				style={{ width: '90%', height: 'auto', minHeight: '150px', display: 'block' }}
+				imgStyle={{ width: '100%', position: 'none', height: 'auto' }}
+			/>
+			<h2>{details.title}</h2>
+			{tagline}
+			<div className="socials">{socialLinks}</div>
+		</Link>
+	)
+}
