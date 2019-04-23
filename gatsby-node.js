@@ -5,10 +5,10 @@ const remark = require('remark')
 const remarkHTML = require('remark-html')
 
 exports.createPages = ({ actions, graphql }) => {
-	const { createPage } = actions
-
-	const speakerTemplate = path.resolve('src/templates/speakerProfile.js')
-	const filterTemplate = path.resolve('src/templates/filter.js')
+	const { createPage } = actions,
+		speakerTemplate = path.resolve('src/templates/speakerProfile.js'),
+		filterTemplate = path.resolve('src/templates/filter.js')
+	blogTemplate = path.resolve('src/templates/blogTemplate.js')
 
 	return graphql(`
 		{
@@ -23,6 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
 						frontmatter {
 							title
 							location
+							author
 						}
 					}
 				}
@@ -54,6 +55,14 @@ exports.createPages = ({ actions, graphql }) => {
 					component: filterTemplate,
 					context: {
 						city: edge.node.frontmatter.title,
+					},
+				})
+			} else if (RegExp('.*src/blog/.*').test(edge.node.fileAbsolutePath)) {
+				createPage({
+					path: edge.node.fields.slug,
+					component: blogTemplate,
+					context: {
+						author: edge.node.frontmatter.author,
 					},
 				})
 			}
