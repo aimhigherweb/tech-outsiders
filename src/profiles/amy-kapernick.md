@@ -3,6 +3,7 @@ title: Amy Kapernick
 tagline: 'Front End Jedi, Tech Evangelist, Dog Lover'
 profileImage: /img/fenders_small.jpg
 location: perth_wa
+newlocation: Perth
 mentoring: "Amy believes in giving back to the community and helps out as a mentor at a variety of different events including Perth Web Girls and Node Girls Perth. She's also spoken at multiple JuniorDev meetups and enjoys spending time encouraging new and junior developers.\r"
 socials:
   - featured: true
