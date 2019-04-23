@@ -76,6 +76,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/blog`,
+				name: 'posts',
+			},
+		},
+		{
 			resolve: `gatsby-plugin-google-tagmanager`,
 			options: {
 				id: 'GTM-MXRQ3BP',
