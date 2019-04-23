@@ -59,9 +59,10 @@ exports.createPages = ({ actions, graphql }) => {
 				})
 			} else if (RegExp('.*src/blog/.*').test(edge.node.fileAbsolutePath)) {
 				createPage({
-					path: edge.node.fields.slug,
+					path: `/blog${edge.node.fields.slug}`,
 					component: blogTemplate,
 					context: {
+						id,
 						author: edge.node.frontmatter.author,
 					},
 				})

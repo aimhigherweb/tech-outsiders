@@ -34,6 +34,9 @@ module.exports = {
 				plugins: [
 					{
 						resolve: `@raae/gatsby-remark-oembed`,
+						providers: {
+							include: ['Twitter', 'YouTube'],
+						},
 					},
 					{
 						resolve: `gatsby-remark-prettier`,

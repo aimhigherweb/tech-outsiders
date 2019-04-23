@@ -1,8 +1,80 @@
 @import './variables.scss';
 
 main {
-    margin: 20px auto;
-    min-height: 50vh;
-    width: 95%;
-        max-width: 1400px;
+	margin: 20px auto;
+	min-height: 50vh;
+	width: 95%;
+	max-width: 1400px;
+}
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+
+	header {
+		display: block;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2em;
+		border-bottom: 3px solid $primary;
+	}
+
+	time {
+		display: block;
+		margin-left: 2em;
+	}
+
+	.author {
+		margin-left: auto;
+		text-align: center;
+		width: 50%;
+
+		.gatsby-image-wrapper {
+			border-radius: 20px;
+			float: none;
+		}
+
+		a {
+			display: inline-block;
+			margin: 1em 0;
+			padding: 0.5em 1em;
+			text-align: center;
+			width: auto;
+		}
+	}
+
+	.gatsby-image-wrapper {
+		// float: left;
+		// margin: 1em 20px 1em -40px;
+	}
+
+	main {
+		clear: both;
+	}
+
+	iframe {
+		clear: both;
+		display: block;
+		margin: 20px auto;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 35em) {
+	article {
+		header {
+			width: 80%;
+		}
+
+		.author {
+			width: 20%;
+		}
+
+		.gatsby-image-wrapper {
+			float: left;
+			margin: 1em 20px 1em -40px;
+		}
+	}
 }
