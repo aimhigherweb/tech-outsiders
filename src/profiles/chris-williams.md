@@ -3,6 +3,7 @@ title: Chris Williams
 tagline: 'Tech Project Manager '
 profileImage: /img/chriswilliams.png
 location: perth_wa
+newLocation: Perth
 socials:
   - featured: true
     platform: linkedin

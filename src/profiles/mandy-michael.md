@@ -3,6 +3,7 @@ title: Mandy Michael
 tagline: 'Front End Developer, Manager and Speaker'
 profileImage: /img/mandy-michael.jpg
 location: perth_wa
+newLocation: Perth
 mentoring: >-
   Ultimately Mandy believes the best way to contribute to the web is by helping
   and supporting others. Through Fenders Mandy provides opportunities,

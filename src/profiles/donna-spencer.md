@@ -3,6 +3,7 @@ title: Donna Spencer
 tagline: UX designer
 profileImage: /img/donna_bio_feb16_300.jpg
 location: melbourne_vic
+newLocation: Melbourne
 socials:
   - platform: twitter
     url: 'https://twitter.com/maadonna'

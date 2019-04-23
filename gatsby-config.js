@@ -41,9 +41,16 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/src/profiles`,
-                name: "markdown-pages",
+                name: "profiles",
             },
         },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+              path: `${__dirname}/src/locations`,
+              name: "locations",
+          },
+      },
         {
             resolve: `gatsby-plugin-google-tagmanager`,
             options: {

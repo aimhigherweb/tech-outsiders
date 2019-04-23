@@ -1,136 +1,151 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import {Socials} from '../components/parts'
+import { Socials, SpeakerBlock } from '../components/parts'
 
-import '../scss/home.scss';
-
-const locations = {
-    // 'brisbane_qld': "Brisbane, Queensland",
-    'melbourne_vic': "Melbourne, Victoria",
-    'perth_wa': "Perth, Western Australia",
-    // 'sydney_nsw': "Sydney, New South Wales",
-}
+import '../scss/home.scss'
 
 export default class IndexPage extends React.Component {
-    filterLocation(event) {
-		let city = event.target.value;
+	filterLocation(event) {
+		let city = event.target.value
 
-		if(city != '') {
-			window.location = "/" + city;
+		if (city != '') {
+			window.location = '/' + city
+		} else {
+			window.location = ''
 		}
-		else {
-			window.location = '';
-		}
-    }
-    
-    render() {        
-        const { data } = this.props
-        const { edges: posts } = data.allMarkdownRemark
-        const meta = {
-            name: data.site.siteMetadata.title,
-            description: data.site.siteMetadata.description,
-            slug: data.site.siteMetadata.siteUrl,
-        };
+	}
 
-        let speakersList = posts.map((speaker) => (
-			<Speaker speakerProfile={speaker} key={speaker.node.id} />
-        ));
-        
-        let cities = Object.entries(locations).map((city) => (
-			<option value={city[0]}>{city[1]}</option>
-		));
+	render() {
+		const { data } = this.props,
+			{ edges: profiles } = data.profiles,
+			{ edges: locations } = data.locations,
+			meta = {
+				name: data.site.siteMetadata.title,
+				description: data.site.siteMetadata.description,
+				slug: data.site.siteMetadata.siteUrl,
+			},
+			shuffle = function(o) {
+				for (
+					var j, x, i = o.length;
+					i;
+					j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x
+				);
+				return o
+			},
+			speakersList = shuffle(profiles)
 
-        return (
-            <Layout meta={meta}>
-               <div className="filter">
+		let locationList = [],
+			includedCountries = []
+
+		locations.forEach(city => {
+			if (includedCountries.includes(city.node.frontmatter.country)) {
+				locationList.some(country => {
+					if (country.country == city.node.frontmatter.country) {
+						country.cities.push({
+							name: city.node.frontmatter.title,
+							state: city.node.frontmatter.state,
+							slug: city.node.fields.slug.replace(/\//g, ''),
+						})
+					}
+				})
+			} else {
+				locationList.push({
+					country: city.node.frontmatter.country,
+					cities: [
+						{
+							name: city.node.frontmatter.title,
+							state: city.node.frontmatter.state,
+							slug: city.node.fields.slug.replace(/\//g, ''),
+						},
+					],
+				})
+				includedCountries.push(city.node.frontmatter.country)
+			}
+		})
+
+		return (
+			<Layout meta={meta}>
+				<div className="filter">
 					<label htmlFor="locations">Filter by Location</label>
 					<select id="locations" onChange={this.filterLocation}>
 						<option value="">Filter by Location</option>
-						{cities}
+						{locationList.map(country => (
+							<optgroup label={country.country}>
+								{country.cities.map(city => (
+									<option value={city.slug}>{`${city.name}, ${
+										city.state
+									}`}</option>
+								))}
+							</optgroup>
+						))}
 					</select>
 				</div>
 				<div className="speakers-list">
-					{speakersList}
+					{speakersList.map(speaker => (
+						<SpeakerBlock speakerProfile={speaker} key={speaker.node.id} />
+					))}
 				</div>
-            </Layout>
-        )
-    }
-}
-
-const Speaker = ({speakerProfile}) => {
-    let details = speakerProfile.node.frontmatter,
-		tagline = (<p className="tagline">{details.tagline}</p>);
-
-    let socialLinks = details.socials.map((profile) => {
-        if(profile.featured) {
-            if(profile.socialTitle) {
-                return (
-                    <Socials platform={profile.platform} url={profile.url} key={profile.url} socialTitle={profile.socialTitle} />
-                );
-            }
-            else {
-                return (
-                    <Socials platform={profile.platform} url={profile.url} key={profile.url} />
-                );
-            }
-        }
-    })
-
-	return (
-		<Link to={speakerProfile.node.fields.slug} className="speaker">
-			<img src={details.profileImage} alt={'Speaker Profile Photo of ' + details.title} />
-			<h2>{details.title}</h2>
-			{tagline}
-			<div className="socials">
-				{socialLinks}
-			</div>
-		</Link>
-	);
-};
-
-IndexPage.propTypes = {
-    data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-            edges: PropTypes.array,
-        }),
-    }),
+			</Layout>
+		)
+	}
 }
 
 export const pageQuery = graphql`
-    query IndexQuery {
-        site {
-            siteMetadata {
-                title
-                description
-                siteUrl
-            }
-        }
-        allMarkdownRemark(
-            sort: { order: ASC, fields: [frontmatter___title] }
-        ) {
-            edges {
-                node {
-                    id
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        title
-                        tagline
-                        profileImage 
-                        socials {
-                            featured
-                            platform
-                            socialTitle
-                            url
-                        }
-                    }
-                }
-            }
-        }
-    }
+	query IndexQuery {
+		site {
+			siteMetadata {
+				title
+				description
+				siteUrl
+			}
+		}
+		profiles: allMarkdownRemark(
+			sort: { order: ASC, fields: [frontmatter___title] }
+			filter: { fileAbsolutePath: { regex: "/src/profiles//" } }
+		) {
+			edges {
+				node {
+					id
+					fields {
+						slug
+					}
+					frontmatter {
+						title
+						tagline
+						profileImage
+						socials {
+							featured
+							platform
+							socialTitle
+							url
+						}
+					}
+				}
+			}
+		}
+		locations: allMarkdownRemark(
+			filter: { fileAbsolutePath: { regex: "/src/locations//" } }
+			sort: {
+				order: ASC
+				fields: [frontmatter___country, frontmatter___state, frontmatter___title]
+			}
+		) {
+			edges {
+				node {
+					fields {
+						slug
+					}
+					fileAbsolutePath
+					frontmatter {
+						title
+						country
+						state
+					}
+				}
+			}
+		}
+	}
 `

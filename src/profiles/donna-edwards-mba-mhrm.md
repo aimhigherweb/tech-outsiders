@@ -5,6 +5,7 @@ tagline: >-
   in Tech organiser
 profileImage: /img/donna-speaker-pic.jpg
 location: melbourne_vic
+newLocation: Melbourne
 mentoring: >-
   Donna has mentored formally for AHRI (Australian HR Institute) and Beacon
   Foundation. She has informally mentored throughout her career and has

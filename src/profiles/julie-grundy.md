@@ -3,6 +3,7 @@ title: Julie Grundy
 tagline: Accessibility Consultant
 profileImage: /img/julie-grundy.jpg
 location: perth_wa
+newLocation: Perth
 socials:
   - platform: codepen
     url: 'https://codepen.io/stringyland/'

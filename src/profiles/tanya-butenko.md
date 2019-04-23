@@ -3,6 +3,7 @@ title: Tanya Butenko
 tagline: Software engineer @ Hireup | Founder and CEO @ Muses Code JS
 profileImage: /img/img_3401.jpg
 location: sydney_nsw
+newLocation: Sydney
 mentoring: 'Do mentoring on public speaking, getting a first job as a software engineer.'
 socials:
   - featured: true

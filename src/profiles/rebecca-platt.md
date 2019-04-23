@@ -3,6 +3,7 @@ title: Rebecca Platt
 tagline: IT Specialist • Business Owner • Avid Learner
 profileImage: /img/rebecca-platt.jpg
 location: perth_wa
+newLocation: Perth
 socials:
   - featured: true
     platform: twitter

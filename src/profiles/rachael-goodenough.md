@@ -5,6 +5,7 @@ tagline: >-
   Organiser
 profileImage: /img/me.jpg
 location: melbourne_vic
+newLocation: Melbourne
 socials:
   - featured: true
     platform: linkedin

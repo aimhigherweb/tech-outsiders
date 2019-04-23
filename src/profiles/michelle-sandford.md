@@ -3,6 +3,7 @@ title: Michelle Sandford
 tagline: Technology Evangelist // Games Advocate // Storyteller // Chairman
 profileImage: /img/michelle-sandford.jpg
 location: perth_wa
+newLocation: Perth
 mentoring: >-
   I am a Mentor and Role Model in the [Tech Girls are
   Superheroes](http://www.techgirlsaresuperheroes.org/) Program. I actively
