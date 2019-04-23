@@ -41,7 +41,7 @@ collections:
         widget: relation
         collection: locations
         searchFields: ["title", "country"]
-        valueField: slug
+        valueField: {{slug}}
         displayFields: ["title", "country"]
       - name: body
         label: Bio
