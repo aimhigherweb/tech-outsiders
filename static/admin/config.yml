@@ -119,18 +119,18 @@ collections:
       folder: src/blog
       create: true
       editor:
-        preview: false
+          preview: false
       fields:
-        - { name: title, label: Title }
-        - { name: publishDate, label: "Publish Date", widget: date, format: "YYYY-MM-DD" }
-        - { name: description, label: "Meta Description", widget: text }
-        - name: author
+          - { name: title, label: Title }
+          - { name: publishDate, label: 'Publish Date', widget: date, format: 'YYYY-MM-DD' }
+          - { name: description, label: 'Meta Description', widget: text }
+          - name: author
             label: Author
             widget: relation
             collection: profile
             searchFields: ['title']
             valueField: title
             displayFields: ['title']
-        - { name: tags, label: Tags, widget: list }
-        - { name: featuredImage, label: Featured Image, widget: image }
-        - { name: body, label: Body, widget: markdown}
+          - { name: tags, label: Tags, widget: list }
+          - { name: featuredImage, label: Featured Image, widget: image }
+          - { name: body, label: Body, widget: markdown }

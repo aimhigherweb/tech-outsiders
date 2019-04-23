@@ -31,11 +31,6 @@ talks:
       eventLink: 'https://ampersandconf.com'
       talkLink: 'https://slides.com/mandymichael/creative-text-effects-with-css-7'
       talkTitle: Creative Text Effects with CSS
-    - date: '2018-06-29'
-      event: Ampersand
-      eventLink: 'https://ampersandconf.com'
-      talkLink: 'https://slides.com/mandymichael/creative-text-effects-with-css-7'
-      talkTitle: Creative Text Effects with CSS
     - date: '2018-05-26'
       event: Bankwest Code Orange
       talkTitle: Becoming a Front End Developer
