@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { graphql, Link } from 'gatsby'
+import React, { Component } from './node_modules/react'
+import { graphql, Link } from './node_modules/gatsby'
 
 import Layout from '../components/layout'
 import { SpeakerBlock } from '../components/parts'

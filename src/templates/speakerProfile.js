@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import React, { Fragment } from './node_modules/react'
+import { graphql } from './node_modules/gatsby'
+import Img from './node_modules/gatsby-image'
 
 import Layout from '../components/layout'
 import { Socials } from '../components/parts'

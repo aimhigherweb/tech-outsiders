@@ -1,7 +1,7 @@
 ---
 title: Phuong Mai Nguyen
 tagline: I love helping people empowered to enter tech
-profileImage: ./img/codelikeagirl_portraits_highres_053.jpg
+profileImage: ../img/uploads/codelikeagirl_portraits_highres_053.jpg
 location: Melbourne
 mentoring: >-
     I always love helping people to feel motivated to enter the tech industry. I

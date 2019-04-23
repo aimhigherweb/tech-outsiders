@@ -24,8 +24,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/profiles/img`,
-				name: 'profile-images',
+				path: `${__dirname}/src/img/uploads`,
+				name: 'uploaded-images',
 			},
 		},
 		{
@@ -33,13 +33,29 @@ module.exports = {
 			options: {
 				plugins: [
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: `@raae/gatsby-remark-oembed`,
+					},
+					{
+						resolve: `gatsby-remark-prettier`,
 						options: {
-							maxWidth: 300,
-							withWebp: true,
+							usePrettierrc: true,
+						},
+					},
+					{
+						resolve: `gatsby-remark-figure-caption`,
+						options: {
+							figureClassName: 'image',
 						},
 					},
 					'gatsby-remark-copy-linked-files',
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							showCaptions: true,
+							maxWidth: 1000,
+							widthWebp: true,
+						},
+					},
 				],
 			},
 		},

@@ -3,7 +3,7 @@ title: 'Donna Edwards MBA, MHRM'
 tagline: >-
     State Delivery Manager @ Readify | CEO @ SHOUTOUT | Conference Speaker | Women
     in Tech organiser
-profileImage: ./img/donna-speaker-pic.jpg
+profileImage: ../img/uploads/donna-speaker-pic.jpg
 location: Melbourne
 mentoring: >-
     Donna has mentored formally for AHRI (Australian HR Institute) and Beacon
