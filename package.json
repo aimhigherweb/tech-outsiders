@@ -49,6 +49,7 @@
 		"gatsby-transformer-sharp": "^2.1.18",
 		"netlify-cms": "^2.1.1",
 		"node-sass": "^4.9.3",
+		"prettier": "^1.17.0",
 		"react": "^16.4.2",
 		"react-dom": "^16.4.2",
 		"react-feather": "^1.1.3",
