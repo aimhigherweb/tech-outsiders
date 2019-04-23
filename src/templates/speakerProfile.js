@@ -131,8 +131,6 @@ const SpeakerProfile = ({ data }) => {
 			talks: profile.frontmatter.talks,
 		}
 
-	console.log(`${city.title}, ${city.state}`)
-
 	const meta = {
 		name: profile.frontmatter.title + ' | ' + site.siteMetadata.title,
 		description: 'The profile page of ' + profile.frontmatter.title,
