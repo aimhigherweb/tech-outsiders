@@ -1,19 +1,11 @@
 import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { Socials } from '../components/parts'
 
 import '../scss/speaker.scss'
-
-const locations = {
-	brisbane_qld: 'Brisbane, Queensland',
-	melbourne_vic: 'Melbourne, Victoria',
-	perth_wa: 'Perth, Western Australia',
-	sydney_nsw: 'Sydney, New South Wales',
-}
 
 const SpeakerProfileTemplate = ({
 	name,
@@ -58,7 +50,11 @@ const SpeakerProfileTemplate = ({
 		<Fragment>
 			<div className="details">
 				<h1>{name}</h1>
-				<img src={profileImage} alt={'Speaker Profile Photo of ' + name} />
+				<Img
+					fixed={profileImage.childImageSharp.fixed}
+					alt={'Speaker Profile Photo of ' + name}
+					style={{ display: 'block' }}
+				/>
 				<p className="tagline">{tagline}</p>
 				<p className="location">{location}</p>
 				<div className="socials">{socialLinks}</div>
