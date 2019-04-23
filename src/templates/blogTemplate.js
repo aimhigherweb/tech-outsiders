@@ -28,7 +28,6 @@ export default class BlogPost extends Component {
 					<div className="author">
 						<Img
 							fixed={author.frontmatter.profileImage.childImageSharp.fixed}
-							alt={'Speaker Profile Photo of ' + name}
 							style={{
 								display: 'block',
 								margin: '0 auto',
