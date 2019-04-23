@@ -3,7 +3,7 @@ backend:
     repo: AimHigher-Web-Design/tech-outsiders
     branch: dev
 
-media_folder: src/profiles/img
+media_folder: ./img
 public_folder: /img
 
 collections:
@@ -114,3 +114,23 @@ collections:
           - { name: title, label: City, widget: string }
           - { name: state, label: 'State/Province', widget: string, required: false }
           - { name: country, label: Country, widget: string }
+    - name: blog
+      label: Blog
+      folder: src/blog
+      create: true
+      editor:
+        preview: false
+      fields:
+        - { name: title, label: Title }
+        - { name: publishDate, label: "Publish Date", widget: date, format: "YYYY-MM-DD" }
+        - { name: description, label: "Meta Description", widget: text }
+        - name: author
+            label: Author
+            widget: relation
+            collection: profile
+            searchFields: ['title']
+            valueField: title
+            displayFields: ['title']
+        - { name: tags, label: Tags, widget: list }
+        - { name: featuredImage, label: Featured Image, widget: image }
+        - { name: body, label: Body, widget: markdown}
