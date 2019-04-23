@@ -36,6 +36,13 @@ collections:
           - {label: "Perth, Western Australia", value: perth_wa}
           - {label: "Sydney, New South Wales", value: sydney_nsw}
         hint: "Where you're predominantly based, if we don't have yours yet, please get in touch and we can look at adding a new one"
+      - name: newlocation
+        label: Location
+        widget: relation
+        collection: locations
+        searchFields: ["title", "country"]
+        valueField: title
+        displayFields: ["title", "country"]
       - name: body
         label: Bio
         widget: markdown
@@ -105,3 +112,14 @@ collections:
             widget: string
             default: "https://thisevent.com.au"
             required: false
+  - label: "Locations"
+    name: "locations"
+    folder: src/locations
+    slug: "{{slug}}_{{fields.state}}_{{fields.country}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {name: title, label: City, widget: string}
+      - {name: state, label: "State/Province", widget: string, required: false}
+      - {name: country, label: Country, widget: string}
