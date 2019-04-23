@@ -57,7 +57,7 @@ const Footer = () => (
 const FooterNav = () => {
 	let legalNav = legalItems.map(legalItem => {
 		return (
-			<a key={legalItem.title} href={legalItem.slug} activeClassName="current">
+			<a key={legalItem.title} href={legalItem.slug} activeclassname="current">
 				{legalItem.title}
 			</a>
 		)

@@ -1,19 +1,10 @@
-import React, { Component, Fragment } from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
+import React, { Component } from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import { Socials, SpeakerBlock } from '../components/parts'
+import { SpeakerBlock } from '../components/parts'
 
 import '../scss/home.scss'
-
-const oldLocations = {
-	// 'brisbane_qld': "Brisbane, Queensland",
-	melbourne_vic: 'Melbourne, Victoria',
-	perth_wa: 'Perth, Western Australia',
-	// 'sydney_nsw': "Sydney, New South Wales",
-}
 
 export default class FilteredSpeakers extends Component {
 	filterLocation(event) {
@@ -129,7 +120,7 @@ export const pageQuery = graphql`
 		profiles: allMarkdownRemark(
 			sort: { order: ASC, fields: [frontmatter___title] }
 			filter: {
-				frontmatter: { newLocation: { eq: $city } }
+				frontmatter: { location: { eq: $city } }
 				fileAbsolutePath: { regex: "/src/profiles//" }
 			}
 		) {

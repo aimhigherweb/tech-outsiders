@@ -22,6 +22,7 @@ exports.createPages = ({ actions, graphql }) => {
 						fileAbsolutePath
 						frontmatter {
 							title
+							location
 						}
 					}
 				}
@@ -44,6 +45,7 @@ exports.createPages = ({ actions, graphql }) => {
 					// additional data can be passed via context
 					context: {
 						id,
+						city: edge.node.frontmatter.location,
 					},
 				})
 			} else if (RegExp('.*src/locations/.*').test(edge.node.fileAbsolutePath)) {
