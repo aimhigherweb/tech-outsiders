@@ -27,10 +27,19 @@ socials:
     socialTitle: mandy.dev
     url: 'https://mandy.dev'
 talks:
+  - date: '2019-04-30'
+    event: Smashing TV
+    eventLink: 'https://www.smashingmagazine.com/smashing-tv/semantic-html-mandy-michael/'
+    talkTitle: The Forgotten Power of Semantic HTML
   - date: '2019-04-02'
     event: 'PerfMatters, California'
     eventLink: 'https://perfmattersconf.com'
     talkTitle: Performance Benefits of Variable Fonts
+  - date: '2019-05-10'
+    event: 'Mozilla View Source, London'
+    eventLink: 'https://events.mozilla.org/viewsource2018'
+    talkLink: 'https://www.youtube.com/watch?v=5qgUC_z8syw'
+    talkTitle: Creative CSS Effects
   - date: '2018-11-07'
     event: 'DotCSS, Paris'
     eventLink: 'https://www.dotcss.io/'
