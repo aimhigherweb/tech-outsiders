@@ -11,18 +11,17 @@ mentoring: >-
   organising and mentoring at events including Perth&#123;Web&#125;Girls.
 socials:
   - featured: true
-    platform: blog
-    url: 'https://medium.com/@mandy.michael'
+    platform: twitter
+    url: 'https://twitter.com/mandy_kerr'
   - featured: true
     platform: codepen
     url: 'https://codepen.io/mandymichael/'
-  - platform: instagram
-    url: 'https://www.instagram.com/batmandy/'
-  - platform: linkedin
-    url: 'https://www.linkedin.com/in/mandykerr/'
   - featured: true
-    platform: twitter
-    url: 'https://twitter.com/mandy_kerr'
+    platform: blog
+    url: 'https://medium.com/@mandy.michael'
+  - featured: false
+    platform: linkedin
+    url: 'https://www.linkedin.com/in/mandykerr/'
   - platform: website
     socialTitle: mandy.dev
     url: 'https://mandy.dev'
