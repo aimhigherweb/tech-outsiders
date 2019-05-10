@@ -1,6 +1,6 @@
 ---
 title: Mandy Michael
-tagline: 'Front End Developer, Manager and Speaker'
+tagline: 'Front End Developer, Manager, Speaker and Writer'
 profileImage: ../img/uploads/mandy-michael.jpg
 location: Perth
 mentoring: >-
