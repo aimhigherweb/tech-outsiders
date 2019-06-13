@@ -30,6 +30,7 @@ collections:
             label: Location
             widget: relation
             collection: locations
+            required: false
             searchFields: ['title', 'country']
             valueField: title
             displayFields: ['title', 'country']
@@ -112,7 +113,11 @@ collections:
           preview: false
       fields:
           - { name: title, label: City, widget: string }
-          - { name: state, label: 'State/Province', widget: string, required: false }
+          - name: state
+            label: 'State/Province'
+            widget: string
+            required: false
+            hint: 'Make sure you write the full thing, eg. Western Australia, Minnesota, East Sussex'
           - { name: country, label: Country, widget: string }
     - name: blog
       label: Blog

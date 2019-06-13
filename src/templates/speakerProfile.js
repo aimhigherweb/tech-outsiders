@@ -56,7 +56,7 @@ const SpeakerProfileTemplate = ({
 					style={{ display: 'block' }}
 				/>
 				<p className="tagline">{tagline}</p>
-				<p className="location">{location}</p>
+				{location && <p className="location">{`${location.title}, ${location.state}`}</p>}
 				<div className="socials">{socialLinks}</div>
 			</div>
 			<h2>Bio</h2>
@@ -118,13 +118,13 @@ const Talk = ({ date, event, eventLink, talkTitle, talkLink }) => {
 
 const SpeakerProfile = ({ data }) => {
 	const profile = data.profile,
-		city = data.city.frontmatter,
+		city = data.city && data.city.frontmatter,
 		site = data.site,
 		speakerProfile = {
 			name: profile.frontmatter.title,
 			tagline: profile.frontmatter.tagline,
 			profileImage: profile.frontmatter.profileImage,
-			location: `${city.title}, ${city.state}`,
+			location: city,
 			bio: profile.html,
 			mentoring: profile.frontmatter.mentoring,
 			socials: profile.frontmatter.socials,

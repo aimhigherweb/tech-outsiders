@@ -40,13 +40,15 @@ exports.createPages = ({ actions, graphql }) => {
 		posts.forEach(edge => {
 			const id = edge.node.id
 			if (RegExp('.*src/profiles/.*').test(edge.node.fileAbsolutePath)) {
+				console.log(edge.node.frontmatter.title)
+				console.log(edge.node.frontmatter.location)
 				createPage({
 					path: edge.node.fields.slug,
 					component: speakerTemplate,
 					// additional data can be passed via context
 					context: {
 						id,
-						city: edge.node.frontmatter.location,
+						city: edge.node.frontmatter.location ? edge.node.frontmatter.location : '',
 					},
 				})
 			} else if (RegExp('.*src/locations/.*').test(edge.node.fileAbsolutePath)) {
