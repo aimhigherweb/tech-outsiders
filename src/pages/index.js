@@ -72,9 +72,9 @@ export default class IndexPage extends React.Component {
 					<select id="locations" onChange={this.filterLocation}>
 						<option value="">Filter by Location</option>
 						{locationList.map(country => (
-							<optgroup label={country.country}>
+							<optgroup key={country.country} label={country.country}>
 								{country.cities.map(city => (
-									<option value={city.slug}>{`${city.name}, ${
+									<option key={city.slug} value={city.slug}>{`${city.name}, ${
 										city.state
 									}`}</option>
 								))}
