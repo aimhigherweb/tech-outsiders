@@ -110,10 +110,17 @@ talks:
     event: NDC Oslo
     eventLink: 'https://ndcoslo.com/'
     talkTitle: Pokémon or Programming
+  - date: '2019-06-29'
+    event: code_systers
+    talkTitle: Intro to HTML
   - date: '2019-08-03'
     event: DDD Perth
     eventLink: 'https://dddperth.com/'
-    talkTitle: CSS Grid - What is this Magic?!d
+    talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-10-18'
+    event: NDC Sydney
+    eventLink: 'https://ndcsydney.com/'
+    talkTitle: CSS Grid - What is this Magic?!
 ---
 
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
