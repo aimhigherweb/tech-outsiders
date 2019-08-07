@@ -116,7 +116,12 @@ talks:
   - date: '2019-08-03'
     event: DDD Perth
     eventLink: 'https://dddperth.com/'
+    talkLink: 'https://speaking.amyskapers.tech/utJG7g/css-grid-what-is-this-magic'
     talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-08-03'
+    event: PubConf Perth
+    eventLink: 'https://pubconf.io/events/2019/perth'
+    talkTitle: So You Think You Know HTML?
   - date: '2019-10-18'
     event: NDC Sydney
     eventLink: 'https://ndcsydney.com/'
