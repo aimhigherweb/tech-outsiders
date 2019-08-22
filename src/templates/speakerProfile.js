@@ -59,7 +59,7 @@ const SpeakerProfileTemplate = ({
 				{location && (
 					<p className="location">
 						{location.title}
-						{location.state && `, ${location.state}`}
+						{location.state ? `, ${location.state}` : `, ${location.country}`}
 					</p>
 				)}
 				<div className="socials">{socialLinks}</div>
@@ -194,6 +194,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 				state
+				country
 			}
 		}
 	}
