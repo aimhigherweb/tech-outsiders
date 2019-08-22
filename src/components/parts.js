@@ -96,6 +96,10 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 		}
 	})
 
+	if (details.profileImage == null) {
+		console.log(details)
+	}
+
 	return (
 		<Link to={speakerProfile.node.fields.slug} className="speaker">
 			<Img
