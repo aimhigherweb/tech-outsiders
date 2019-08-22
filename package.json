@@ -16,10 +16,6 @@
 	},
 	"author": "AimHigher Web Design",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/AimHigher-Web-Design/tech-outsiders/issues"
-	},
-	"homepage": "https://github.com/AimHigher-Web-Design/tech-outsiders#readme",
 	"dependencies": {
 		"@raae/gatsby-remark-oembed": "^0.0.6",
 		"babel-eslint": "^10.0.1",
