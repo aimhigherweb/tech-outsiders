@@ -56,7 +56,12 @@ const SpeakerProfileTemplate = ({
 					style={{ display: 'block' }}
 				/>
 				<p className="tagline">{tagline}</p>
-				{location && <p className="location">{`${location.title}, ${location.state}`}</p>}
+				{location && (
+					<p className="location">
+						{location.title}
+						{location.state && `, ${location.state}`}
+					</p>
+				)}
 				<div className="socials">{socialLinks}</div>
 			</div>
 			<h2>Bio</h2>
