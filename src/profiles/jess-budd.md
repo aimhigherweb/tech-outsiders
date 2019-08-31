@@ -19,4 +19,4 @@ socials:
     url: 'https://jessbudd.com/'
 talks: []
 ---
-Jess is an experienced front-end developer and web accessibility consultant, working as a Digital Producer at Australia's second largest not-for-profit health fund [HBF](https://hbf.com.au). She is a co-organiser of [Fenders Perth](https://fenders.co/), a local meetup for front-end developers providing events, mentoring and support to the web community.
+Jess is an experienced front-end developer and web accessibility consultant, working as a Digital Producer at Australia's second largest not-for-profit health fund. She is co-organiser of [Fenders Perth](https://fenders.co/), a meetup for front-end developers providing events, mentoring and support to the web community.
