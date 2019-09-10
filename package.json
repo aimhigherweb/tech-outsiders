@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"start": "npm run develop",
-		"develop": "gatsby develop",
+		"develop": "gatsby develop --https",
 		"build": "gatsby build",
 		"serve": "gatsby serve",
 		"clean": "rm -rf .cache/ public/"
