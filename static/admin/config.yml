@@ -4,6 +4,7 @@ backend:
     branch: dev
 
 media_folder: src/img/uploads
+public_folder: '../img/uploads'
 
 collections:
     - name: profile
