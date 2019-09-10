@@ -122,9 +122,22 @@ talks:
     event: PubConf Perth
     eventLink: 'https://pubconf.io/events/2019/perth'
     talkTitle: So You Think You Know HTML?
+  - date: '2019-09-06'
+    event: >-
+      Bodies of Information: Marketing and Leadership the Library and Records
+      Way
+    eventLink: >-
+      https://www.rimpa.com.au/eventdetails/4251/bodies-of-information-marketing-and-leadership-the-library-and-records-way
+    talkLink: ''
+    talkTitle: The Art of Failure
   - date: '2019-10-18'
     event: NDC Sydney
     eventLink: 'https://ndcsydney.com/'
+    talkTitle: CSS Grid - What is this Magic?!
+  - date: '2019-10-31'
+    event: Laracon AU
+    eventLink: 'https://laracon.com.au'
+    talkLink: ''
     talkTitle: CSS Grid - What is this Magic?!
 ---
 
