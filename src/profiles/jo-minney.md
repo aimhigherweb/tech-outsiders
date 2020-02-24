@@ -1,7 +1,7 @@
 ---
 title: Jo Minney
 tagline: 'WordPress Evangelist, mentor, speaker and volunteer. Cat person.'
-profileImage: /../img/uploads/d9ca3c59-068e-46c7-b4f4-d377480f650e.png
+profileImage: ../img/uploads/d9ca3c59-068e-46c7-b4f4-d377480f650e.png
 location: Perth
 mentoring: >-
   Long time mentor for SheCodes Australia (formerly Perth{web}Girls for which Jo
