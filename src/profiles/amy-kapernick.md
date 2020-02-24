@@ -150,7 +150,8 @@ talks:
       https://speaking.amyskapers.dev/cZxwo9/wait-i-have-to-test-the-front-end-too
     talkTitle: 'Wait, I have to test the front end too?'
 ---
+Amy [wears many hats](https://amyskapers.dev) as a freelance developer, business owner and conference addict. She regularly shares her knowledge with her peers and the next generation of developers by mentoring, coaching, teaching and feeding into the tech community in many ways.
 
-Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
+Amy can be found volunteering her time with [Fenders](https://www.fenders.co), [ACS](https://www.acs.org.au), [SheCodes](https://shecodes.com.au) (formerly Perth Web Girls) and [MusesJS](https://musescodejs.org) (formerly NodeGirls). She also works as an evangelist for [YOW! Conferences](https://yowconference.com), is a [Twilio Champion](https://www.twilio.com/champions), [Microsoft MVP](https://mvp.microsoft.com/en-us/PublicProfile/5003595?fullName=Amy%20Kapernick) and has been nominated for the [WiTWA awards](https://www.witwa.org.au/tech-plus-20-awards) for the last 2 years.
 
-Amy also spends her time helping out as a co-organiser for [Fenders](https://fenders.co/) (a community group of front-end developers in Perth), other community events (such as Perth Web Girls) and works as an evangelist for YOW! Conference. She [blogs in her spare time](https://amygoestoperth.com.au/) (about tech, the web and life), and volunteers as a reviewer for the Fringe World Festival in Perth. Amy has also started [The Freelance Guide](https://thefreelance.guide/) to help other freelancers.
+In her spare time Amy shares her knowledge and experience on her [blogs](https://amygoestoperth.com.au) and speaking at conferences. She has previously given keynotes at multiple events as well as speaking at several international conferences in the US and Europe.
