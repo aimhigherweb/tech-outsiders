@@ -1,0 +1,6 @@
+backend: {name: github, repo: aimhigherweb/tech-outsiders}
+
+media_folder: src/img/uploads
+
+collections:
+	- {name: profile, label: Speaker Profile, folder: src/profiles, create: true, fields: [{name: title, label: Name}]}
