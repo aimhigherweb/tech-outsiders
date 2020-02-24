@@ -143,6 +143,12 @@ talks:
     eventLink: 'https://laracon.com.au'
     talkLink: ''
     talkTitle: CSS Grid - What is this Magic?!
+  - date: '2020-01-30'
+    event: NDC London 2020
+    eventLink: ndc-london.com/
+    talkLink: >-
+      https://speaking.amyskapers.dev/cZxwo9/wait-i-have-to-test-the-front-end-too
+    talkTitle: 'Wait, I have to test the front end too?'
 ---
 
 Amy is a freelance developer, starting [her own business](https://aimhigherweb.design), working with other freelancers and learning everything she can about the web. She’s been a freelancer on the side for 4 years, and most recently worked at an agency in Subiaco.
