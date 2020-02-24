@@ -31,7 +31,15 @@ const SpeakerProfileTemplate = ({
 			} else {
 				return <Socials platform={profile.platform} url={profile.url} key={profile.url} />
 			}
-		})
+		}),
+		image = true
+
+	if (profileImage == null) {
+		image = false
+	}
+	else if (profileImage && !profileImage.childImageSharp) {
+		image = false
+	}
 
 	orderedTalks = talks.sort((a, b) => {
 		let dateA = new Date(a.date),
@@ -50,11 +58,11 @@ const SpeakerProfileTemplate = ({
 		<Fragment>
 			<div className="details">
 				<h1>{name}</h1>
-				<Img
+				{image && <Img
 					fixed={profileImage.childImageSharp.fixed}
 					alt={'Speaker Profile Photo of ' + name}
 					style={{ display: 'block' }}
-				/>
+				/>}
 				<p className="tagline">{tagline}</p>
 				{location && (
 					<p className="location">
@@ -168,7 +176,13 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 				tagline
-
+				profileImage {
+					childImageSharp {
+						fixed(width: 300) {
+							...GatsbyImageSharpFixed_withWebp
+						}
+					}
+				}
 				mentoring
 				socials {
 					platform
@@ -194,10 +208,4 @@ export const pageQuery = graphql`
 	}
 `
 
-// profileImage {
-// 	childImageSharp {
-// 		fixed(width: 300) {
-// 			...GatsbyImageSharpFixed_withWebp
-// 		}
-// 	}
-// }
+
