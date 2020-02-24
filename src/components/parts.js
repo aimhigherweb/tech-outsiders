@@ -97,7 +97,6 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 		image = true
 
 	if (details.profileImage == null) {
-		console.log(details)
 		image = false
 	}
 	else if (details.profileImage && !details.profileImage.childImageSharp) {

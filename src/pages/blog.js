@@ -47,7 +47,6 @@ const Blog = pageInfo => {
 						}
 					})
 
-					console.log(author)
 
 					return (
 						<article id={post.id} key={post.id} className="feed-article">
