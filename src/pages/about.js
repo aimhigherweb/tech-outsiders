@@ -36,8 +36,8 @@ const About = () => (
 			</a>{' '}
 			and create a new speaker profile. You can view the profile straight away (give or take a
 			couple of minutes) on{' '}
-			<a href="https://dev.techoutsiders.com.au/" target="_blank">
-				dev.techoutsiders.com.au
+			<a href="https://preview.techoutsiders.com.au/" target="_blank">
+				preview.techoutsiders.com.au
 			</a>{' '}
 			and once the Tech Outsiders team has confirmed everything is accurate it'll appear on
 			the live site as well.

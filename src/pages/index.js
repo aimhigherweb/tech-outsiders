@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
 				);
 				return o
 			},
-			speakersList = shuffle(profiles)
+			speakersList = profiles
 
 		let locationList = [],
 			includedCountries = []
