@@ -77,9 +77,8 @@ export const Socials = ({ platform, socialTitle, url }) => {
 
 export const SpeakerBlock = ({ speakerProfile }) => {
 	let details = speakerProfile.node.frontmatter,
-		tagline = <p className="tagline">{details.tagline}</p>
-
-	let socialLinks = details.socials.map(profile => {
+		tagline = <p className="tagline">{details.tagline}</p>,
+		socialLinks = details.socials.map(profile => {
 		if (profile.featured) {
 			if (profile.socialTitle) {
 				return (
@@ -94,20 +93,25 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 				return <Socials platform={profile.platform} url={profile.url} key={profile.url} />
 			}
 		}
-	})
+		}),
+		image = true
 
 	if (details.profileImage == null) {
 		console.log(details)
+		image = false
+	}
+	else if (details.profileImage && !details.profileImage.childImageSharp) {
+		image = false
 	}
 
 	return (
 		<div  className="speaker">
-			{/* <Img
+			{image && <Img
 				fixed={details.profileImage.childImageSharp.fixed}
 				alt={'Speaker Profile Photo of ' + details.title}
 				style={{ width: '90%', height: 'auto', minHeight: '150px', display: 'block' }}
 				imgStyle={{ width: '100%', position: 'none', height: 'auto' }}
-			/> */}
+			/>}
 			<h2><Link to={speakerProfile.node.fields.slug}>{details.title}</Link></h2>
 			{tagline}
 			<div className="socials">{socialLinks}</div>

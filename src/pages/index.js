@@ -115,7 +115,13 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						tagline
-
+						profileImage {
+							childImageSharp {
+								fixed(width: 250) {
+									...GatsbyImageSharpFixed_withWebp
+								}
+							}
+						}
 						socials {
 							featured
 							platform
@@ -149,10 +155,4 @@ export const pageQuery = graphql`
 		}
 	}
 `
-// profileImage {
-// 	childImageSharp {
-// 		fixed(width: 250) {
-// 			...GatsbyImageSharpFixed_withWebp
-// 		}
-// 	}
-// }
+
