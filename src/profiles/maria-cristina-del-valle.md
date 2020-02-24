@@ -1,7 +1,7 @@
 ---
 title: Maria Cristina Del Valle
 tagline: 'Developer, artist, Renaissance women'
-profileImage: ../img/uploads/maria-cristina-del-valle.jpg
+profileImage: /../img/uploads/maria-cristina-del-valle.jpg
 location: Boston
 socials:
     - platform: twitter

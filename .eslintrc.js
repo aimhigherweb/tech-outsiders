@@ -1,6 +1,6 @@
 module.exports = {
-	extends: ['standard', 'prettier'],
-	plugins: ['standard', 'react'],
+	extends: ['standard'],
+	plugins: ['standard', 'react', 'prettier', 'cypress/recommended'],
 	rules: {
 		'no-var': 'error', // optional, recommended when using es6+
 		'no-unused-vars': 1, // recommended
@@ -17,11 +17,10 @@ module.exports = {
 				functions: 'never',
 			},
 		],
-		eqeqeq: false,
 
 		// options to emulate prettier setup
 		semi: ['error', 'never'],
-		'template-curly-spacing': ['error', 'always'],
+		'template-curly-spacing': ['error', 'never'],
 		'arrow-parens': ['error', 'as-needed'],
 
 		// standard.js
@@ -41,7 +40,5 @@ module.exports = {
 	parser: 'babel-eslint',
 	parserOptions: {
 		ecmaVersion: 8, // optional, recommended 6+
-		jsx: true,
-		modules: true,
 	},
 }

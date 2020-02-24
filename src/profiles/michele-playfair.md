@@ -1,7 +1,7 @@
 ---
 title: Michele Playfair
 tagline: 'Catalyst, glube, connection maker. '
-profileImage: ../img/uploads/me_2018.jpg
+profileImage: /../img/uploads/me_2018.jpg
 location: Melbourne
 socials:
     - featured: true

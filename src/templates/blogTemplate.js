@@ -88,14 +88,14 @@ export const pageQuery = graphql`
 			}
 			frontmatter {
 				title
-				profileImage {
-					childImageSharp {
-						fixed(width: 100) {
-							...GatsbyImageSharpFixed_withWebp
-						}
-					}
-				}
 			}
 		}
 	}
 `
+// profileImage {
+// 	childImageSharp {
+// 		fixed(width: 100) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }

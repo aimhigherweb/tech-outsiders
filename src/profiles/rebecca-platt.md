@@ -1,20 +1,20 @@
 ---
 title: Rebecca Platt
 tagline: IT Specialist • Business Owner • Avid Learner
-profileImage: ../img/uploads/rebecca-platt.jpg
+profileImage: /../img/uploads/rebecca-platt.jpg
 location: Perth
 socials:
-  - featured: true
-    platform: twitter
-    url: 'https://twitter.com/ItsTechBec'
-  - featured: true
-    platform: linkedin
-    url: 'https://www.linkedin.com/in/rebecca-platt/'
+    - featured: true
+      platform: twitter
+      url: 'https://twitter.com/ItsTechBec'
+    - featured: true
+      platform: linkedin
+      url: 'https://www.linkedin.com/in/rebecca-platt/'
 talks:
-  - date: '2019-09-02'
-    event: /dev/world/
-    eventLink: 'https://devworld.com.au/'
-    talkTitle: '210 x 297: UX Design In The Physical World'
+    - date: '2019-09-02'
+      event: /dev/world/
+      eventLink: 'https://devworld.com.au/'
+      talkTitle: '210 x 297: UX Design In The Physical World'
 ---
 
 Rebecca is a full stack developer working in the finance industry.

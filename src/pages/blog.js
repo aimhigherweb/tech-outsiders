@@ -120,13 +120,6 @@ export const blogQuery = graphql`
 					}
 					frontmatter {
 						title
-						profileImage {
-							childImageSharp {
-								fixed(width: 50) {
-									...GatsbyImageSharpFixed_withWebp
-								}
-							}
-						}
 					}
 				}
 			}
@@ -159,3 +152,10 @@ export const blogQuery = graphql`
 		}
 	}
 `
+// profileImage {
+// 	childImageSharp {
+// 		fixed(width: 50) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }

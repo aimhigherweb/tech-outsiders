@@ -6,7 +6,7 @@ import {
 	BookOpen,
 	Codepen,
 	Facebook,
-	Github,
+	GitHub,
 	Gitlab,
 	Globe,
 	Instagram,
@@ -33,7 +33,7 @@ export const Socials = ({ platform, socialTitle, url }) => {
 			icon = <Facebook />
 			break
 		case 'github':
-			icon = Github
+			icon = <GitHub />
 			break
 		case 'gitlab':
 			icon = <Gitlab />
@@ -102,12 +102,12 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 
 	return (
 		<Link to={speakerProfile.node.fields.slug} className="speaker">
-			<Img
+			{/* <Img
 				fixed={details.profileImage.childImageSharp.fixed}
 				alt={'Speaker Profile Photo of ' + details.title}
 				style={{ width: '90%', height: 'auto', minHeight: '150px', display: 'block' }}
 				imgStyle={{ width: '100%', position: 'none', height: 'auto' }}
-			/>
+			/> */}
 			<h2>{details.title}</h2>
 			{tagline}
 			<div className="socials">{socialLinks}</div>

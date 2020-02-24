@@ -74,9 +74,10 @@ export default class IndexPage extends React.Component {
 						{locationList.map(country => (
 							<optgroup key={country.country} label={country.country}>
 								{country.cities.map(city => (
-									<option key={city.slug} value={city.slug}>{`${city.name}, ${
-										city.state
-									}`}</option>
+									<option
+										key={city.slug}
+										value={city.slug}
+									>{`${city.name}, ${city.state}`}</option>
 								))}
 							</optgroup>
 						))}
@@ -114,13 +115,7 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						tagline
-						profileImage {
-							childImageSharp {
-								fixed(width: 250) {
-									...GatsbyImageSharpFixed_withWebp
-								}
-							}
-						}
+
 						socials {
 							featured
 							platform
@@ -154,3 +149,10 @@ export const pageQuery = graphql`
 		}
 	}
 `
+// profileImage {
+// 	childImageSharp {
+// 		fixed(width: 250) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }

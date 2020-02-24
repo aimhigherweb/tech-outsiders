@@ -81,9 +81,10 @@ export default class FilteredSpeakers extends Component {
 										: currentCity
 
 									return (
-										<option selected={selected} value={city.slug}>{`${
-											city.name
-										}, ${city.state}`}</option>
+										<option
+											selected={selected}
+											value={city.slug}
+										>{`${city.name}, ${city.state}`}</option>
 									)
 								})}
 							</optgroup>
@@ -133,13 +134,7 @@ export const pageQuery = graphql`
 					frontmatter {
 						title
 						tagline
-						profileImage {
-							childImageSharp {
-								fixed(width: 250) {
-									...GatsbyImageSharpFixed_withWebp
-								}
-							}
-						}
+
 						socials {
 							featured
 							platform
@@ -173,3 +168,11 @@ export const pageQuery = graphql`
 		}
 	}
 `
+
+// profileImage {
+// 	childImageSharp {
+// 		fixed(width: 250) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }

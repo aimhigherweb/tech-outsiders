@@ -168,13 +168,7 @@ export const pageQuery = graphql`
 			frontmatter {
 				title
 				tagline
-				profileImage {
-					childImageSharp {
-						fixed(width: 300) {
-							...GatsbyImageSharpFixed_withWebp
-						}
-					}
-				}
+
 				mentoring
 				socials {
 					platform
@@ -199,3 +193,11 @@ export const pageQuery = graphql`
 		}
 	}
 `
+
+// profileImage {
+// 	childImageSharp {
+// 		fixed(width: 300) {
+// 			...GatsbyImageSharpFixed_withWebp
+// 		}
+// 	}
+// }

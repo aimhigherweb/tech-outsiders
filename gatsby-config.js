@@ -17,14 +17,14 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/img`,
+				path: `./src/img`,
 				name: 'images',
 			},
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				path: `${__dirname}/src/img/uploads`,
+				path: `./src/img/uploads`,
 				name: 'uploaded-images',
 			},
 		},
@@ -92,7 +92,6 @@ module.exports = {
 				includeInDevelopment: true,
 			},
 		},
-		'gatsby-plugin-netlify-cms',
 		{
 			resolve: `gatsby-plugin-netlify`,
 			options: {},
