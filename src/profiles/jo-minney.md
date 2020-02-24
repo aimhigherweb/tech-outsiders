@@ -9,12 +9,6 @@ mentoring: >-
   to Port Hedland. Member of the WordPress Open Source training team and lead
   organiser of WordPress Perth. Advisor for the Australian Small Business
   Advisory Service.
-talks:
-  - date: '2019-09-12'
-    event: The event I talked at
-    eventLink: 'https://thisevent.com.au'
-    talkLink: 'https://mytalks.com.au/mytalk'
-    talkTitle: The Name of My Talk
 ---
 Jjo is the founder of House Digital, a boutique web agency that focuses on customisation, automation and integrations. With a background in process engineering and data science, Jo is passionate about making data driven decisions to achieve outrageous results.
 

@@ -17,7 +17,7 @@ socials:
       url: 'https://codepen.io/aimhigherwebdesign-amy/'
     - platform: facebook
       url: 'https://www.facebook.com/aimhigherwebdesign'
-    - featured: true
+    - featured: false
       platform: github
       url: 'https://github.com/amykapernick'
     - platform: instagram
@@ -30,11 +30,15 @@ socials:
     - featured: false
       platform: website
       socialTitle: AimHigher Web Design
-      url: 'https://aimhigherweb.design/'
+      url: 'https://aimhigherweb.design'
     - featured: true
       platform: notist
       socialTitle: Notist
-      url: 'https://speaking.amyskapers.tech'
+      url: 'https://speaking.amyskapers.dev'
+    - featured: true
+      platform: website
+      socialTitle: Personal Website
+      url: 'https://amyskapers.dev'
 talks:
     - date: 2018-04-05T00:00:00.000Z
       event: www2017

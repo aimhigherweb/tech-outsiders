@@ -18,7 +18,7 @@ const SpeakerProfileTemplate = ({
 	talks,
 }) => {
 	let orderedTalks,
-		socialLinks = socials.map(profile => {
+		socialLinks = socials && socials.map(profile => {
 			if (profile.socialTitle) {
 				return (
 					<Socials
@@ -41,7 +41,7 @@ const SpeakerProfileTemplate = ({
 		image = false
 	}
 
-	orderedTalks = talks.sort((a, b) => {
+	orderedTalks = talks && talks.sort((a, b) => {
 		let dateA = new Date(a.date),
 			dateB = new Date(b.date)
 

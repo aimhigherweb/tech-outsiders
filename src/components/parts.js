@@ -78,7 +78,7 @@ export const Socials = ({ platform, socialTitle, url }) => {
 export const SpeakerBlock = ({ speakerProfile }) => {
 	let details = speakerProfile.node.frontmatter,
 		tagline = <p className="tagline">{details.tagline}</p>,
-		socialLinks = details.socials.map(profile => {
+		socialLinks = details.socials && details.socials.map(profile => {
 		if (profile.featured) {
 			if (profile.socialTitle) {
 				return (
