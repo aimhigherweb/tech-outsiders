@@ -27,7 +27,7 @@ export default class IndexPage extends React.Component {
 				slug: data.site.siteMetadata.siteUrl,
 			},
 			shuffle = (array) => {return array.sort(() => Math.random() - 0.5)},
-			speakersList = shuffle(profiles)
+			speakersList = profiles
 
 		let locationList = [],
 			includedCountries = []
