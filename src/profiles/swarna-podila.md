@@ -1,7 +1,7 @@
 ---
 title: Swarna Podila
 tagline: Community Manager
-profileImage: /../img/uploads/swarna-headshot-9.46.13-am.jpg
+profileImage: ../img/uploads/swarna-headshot-9.46.13-am.jpg
 location: San Francisco
 socials:
     - platform: twitter

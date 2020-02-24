@@ -1,7 +1,7 @@
 ---
 title: Jess Budd
 tagline: 'UI Developer, Accessibility Consultant, Digital Producer'
-profileImage: /../img/uploads/jess-budd-bio-lg-sq.jpg
+profileImage: ../img/uploads/jess-budd-bio-lg-sq.jpg
 location: Perth
 mentoring: >-
     Jess is passionate about giving back to the web community and regularly

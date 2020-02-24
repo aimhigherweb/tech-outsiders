@@ -3,7 +3,7 @@ title: Rachael Goodenough
 tagline: >-
     Talent Acquisition Manager @ Readify | Women Who Code Organiser | Node Girls
     Organiser
-profileImage: /../img/uploads/me.jpg
+profileImage: ../img/uploads/me.jpg
 location: Melbourne
 socials:
     - featured: true

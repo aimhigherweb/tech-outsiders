@@ -1,7 +1,7 @@
 ---
 title: Mandy Michael
 tagline: 'Front End Developer, Manager, Speaker and Writer'
-profileImage: /../img/uploads/mandy-michael.jpg
+profileImage: ../img/uploads/mandy-michael.jpg
 location: Perth
 mentoring: >-
     Ultimately Mandy believes the best way to contribute to the web is by helping

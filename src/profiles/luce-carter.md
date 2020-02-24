@@ -1,7 +1,7 @@
 ---
 title: Luce Carter
 tagline: Xamarin loving community ninja
-profileImage: /../img/uploads/lucecarter.jpg
+profileImage: ../img/uploads/lucecarter.jpg
 location: Manchester
 socials:
     - featured: true
