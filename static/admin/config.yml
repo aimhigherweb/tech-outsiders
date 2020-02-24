@@ -1,4 +1,4 @@
-backend: {name: github, repo: aimhigherweb/tech-outsiders, branch: dev}
+backend: {name: github, repo: aimhigherweb/tech-outsiders}
 
 media_folder: src/img/uploads
 
