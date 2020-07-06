@@ -149,6 +149,11 @@ talks:
     talkLink: >-
       https://speaking.amyskapers.dev/cZxwo9/wait-i-have-to-test-the-front-end-too
     talkTitle: 'Wait, I have to test the front end too?'
+  - date: 2020-05-21
+    event: Microsoft Build
+    eventLink: 'https://mybuild.microsoft.com/'
+    talkLink: 'https://mybuild.microsoft.com/sessions/7339f17c-f455-4862-83cc-220e14510261?source=sessions'
+    talkTitle: 'Where would you host a Quokkabot?'
 ---
 Amy [wears many hats](https://amyskapers.dev) as a freelance developer, business owner and conference addict. She regularly shares her knowledge with her peers and the next generation of developers by mentoring, coaching, teaching and feeding into the tech community in many ways.
 
