@@ -17,6 +17,7 @@ import {
 } from 'react-feather'
 
 import Notist from '../img/notist.svg'
+import Twitch from '../img/twitch.svg'
 
 export const Socials = ({ platform, socialTitle, url }) => {
 	let icon,
@@ -56,6 +57,9 @@ export const Socials = ({ platform, socialTitle, url }) => {
 		case 'notist':
 			icon = <Notist />
 			break
+		case 'twitch':
+			icon = <Twitch />
+			break
 		default:
 			icon = <Link2 />
 	}
@@ -79,20 +83,20 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 	let details = speakerProfile.node.frontmatter,
 		tagline = <p className="tagline">{details.tagline}</p>,
 		socialLinks = details.socials && details.socials.map(profile => {
-		if (profile.featured) {
-			if (profile.socialTitle) {
-				return (
-					<Socials
-						platform={profile.platform}
-						url={profile.url}
-						key={profile.url}
-						socialTitle={profile.socialTitle}
-					/>
-				)
-			} else {
-				return <Socials platform={profile.platform} url={profile.url} key={profile.url} />
+			if (profile.featured) {
+				if (profile.socialTitle) {
+					return (
+						<Socials
+							platform={profile.platform}
+							url={profile.url}
+							key={profile.url}
+							socialTitle={profile.socialTitle}
+						/>
+					)
+				} else {
+					return <Socials platform={profile.platform} url={profile.url} key={profile.url} />
+				}
 			}
-		}
 		}),
 		image = true
 
@@ -104,7 +108,7 @@ export const SpeakerBlock = ({ speakerProfile }) => {
 	}
 
 	return (
-		<div  className="speaker">
+		<div className="speaker">
 			{image && <Img
 				fixed={details.profileImage.childImageSharp.fixed}
 				alt={'Speaker Profile Photo of ' + details.title}

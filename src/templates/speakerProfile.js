@@ -4,6 +4,12 @@ import Img from 'gatsby-image'
 
 import Layout from '../components/layout'
 import { Socials } from '../components/parts'
+import Conference from '../img/conference.svg'
+import Keynote from '../img/keynote.svg'
+import Meetup from '../img/meetup.svg'
+import Panel from '../img/panel.svg'
+import Podcast from '../img/podcast.svg'
+import Workshop from '../img/workshop.svg'
 
 import '../scss/speaker.scss'
 
@@ -95,11 +101,12 @@ const SpeakerProfileTemplate = ({
 	)
 }
 
-const Talk = ({ date, event, eventLink, talkTitle, talkLink }) => {
+const Talk = ({ date, event, eventLink, talkTitle, talkLink, eventType }) => {
 	let today = new Date(),
 		eventDate = new Date(date),
 		talk = talkTitle,
-		upcoming = ''
+		upcoming = '',
+		Icon = false
 
 	if (eventDate < today && talkLink) {
 		talk = (
@@ -112,19 +119,43 @@ const Talk = ({ date, event, eventLink, talkTitle, talkLink }) => {
 		upcoming = 'upcoming'
 	}
 
+	switch (eventType) {
+		case 'Conference':
+			Icon = Conference
+			break;
+		case 'Workshop':
+			Icon = Workshop
+			break;
+		case 'Keynote':
+			Icon = Keynote
+			break;
+		case 'Meetup':
+			Icon = Meetup
+			break;
+		case 'Panel':
+			Icon = Panel
+			break;
+		case 'Podcast':
+			Icon = Podcast
+			break;
+		default:
+			break;
+	}
+
 	return (
 		<div className={'talk ' + upcoming} key={talkTitle}>
 			<p className="date">{date}</p>
+			{Icon && <p className="type">{<Icon />}<span>{eventType}</span></p>}
+			<p className="title">{talk}</p>
 			<p className="event">
 				{eventLink ? (
 					<a href={eventLink} target="_blank" title={'Link to ' + event}>
 						{event}
 					</a>
 				) : (
-					event
-				)}
+						event
+					)}
 			</p>
-			<p className="title">{talk}</p>
 		</div>
 	)
 }
@@ -193,6 +224,7 @@ export const pageQuery = graphql`
 					date(formatString: "DD MMM YYYY")
 					event
 					eventLink
+					eventType
 					talkTitle
 					talkLink
 				}

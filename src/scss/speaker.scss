@@ -106,6 +106,40 @@
 		width: calc(100% - 14ch);
 	}
 
+	.type {
+		grid-area: type;
+		justify-self: end;
+		opacity: 0.6;
+		position: relative;
+
+		span {
+			display: block;
+			font-size: 0.8em;
+			padding: 5px;
+			background: $neutral_light_75;
+			color: #fff;
+			position: absolute;
+			right: -200vw;
+		}
+
+		svg {
+			border: none;
+			padding: 0;
+			height: 25px;
+			max-height: unset;
+
+			&:active, &:hover, &:focus {
+				border: none;
+			}
+		}
+
+		&:hover {
+			span {
+				right: 0;
+			}
+		}
+	}
+
 	.event,
 	.title {
 		color: var(--border);
@@ -147,25 +181,37 @@ h2 {
 	.talk {
 		display: grid;
 		grid-gap: 5px;
-		grid-template-columns: auto 1fr;
-		grid-template-rows: auto 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 'date type' 'title title' 'event event';
 
 		p {
 			margin: 0;
 		}
 
 		.date {
+			grid-area: date;
 			width: auto;
 		}
 
+		.type {
+			grid-area: type;
+			justify-self: end;
+		}
+
 		.event {
-			justify-content: end;
+			font-size: 0.9em;
+			grid-area: event;
 			width: auto;
+
+			a {
+				color: $neutral;
+			}
 		}
 
 		.title {
 			align-self: center;
-			grid-column: span 2;
+			grid-area: title;
 			margin-top: 0;
 		}
 	}

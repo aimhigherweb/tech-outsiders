@@ -7,7 +7,12 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-sass',
+		{
+			resolve: 'gatsby-plugin-sass',
+			options: {
+				implementation: require('sass')
+			}
+		},
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {

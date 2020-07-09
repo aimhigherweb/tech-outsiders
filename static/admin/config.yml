@@ -1,201 +1,198 @@
+---
 backend:
-  { name: git-gateway, repo: aimhigherweb/tech-outsiders, branch: preview }
+  name: git-gateway
+  repo: aimhigherweb/tech-outsiders
+  branch: preview
+
+local_backend: true
 
 media_folder: src/img/uploads
 
 collections:
-  [
-    {
-      name: profile,
-      label: Speaker Profile,
-      folder: src/profiles,
-      create: true,
-      editor: { preview: false },
-      fields:
-        [
-          {
-            name: title,
-            label: Name,
-            hint: "This is your full name, can also include any titles/qualifications (eg. Dr or Prof)",
-          },
-          {
-            name: tagline,
-            label: Tagline,
-            widget: string,
-            pattern: [".{0,70}", No more than 70 characters],
-            hint: "This can be anything you like, but keep it to between 5 and 10 words (check the profile, it's a short phrase). This will preferably be either your job title or something you're known as",
-          },
-          {
-            name: profileImage,
-            label: Profile Image,
-            widget: image,
-            hint: "Images will be used as a 300px * 300px square, they must be at least this big and if they're not square it may result in the image being squashed",
-          },
-          {
-            name: location,
-            label: Location,
-            widget: relation,
-            collection: locations,
-            required: false,
-            searchFields: [title, country],
-            valueField: title,
-            displayFields: [title, country],
-            hint: "Where you're predominantly based, if we don't have yours yet, go back to the main admin page and select *Locations* to add a new one.",
-          },
-          {
-            name: body,
-            label: Bio,
-            widget: markdown,
-            hint: "This should be not too long, probably just a few paragraphs will do.",
-          },
-          {
-            name: mentoring,
-            label: Mentoring,
-            widget: markdown,
-            hint: "Similar to your bio, this is a good spot to highlight any mentoring that you have done or are doing.",
-            required: false,
-          },
-          {
-            name: socials,
-            label: Social Profiles,
-            widget: list,
-            hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo. Make sure you select the kind of social profile you're listing (eg. Twitter), otherwise your profile won't work.",
-            fields:
+  - name: profile
+    label: Speaker Profile
+    folder: src/profiles
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Name
+        hint: "This is your full name, can also include any titles/qualifications (eg. Dr or Prof)"
+      - name: tagline
+        label: Tagline
+        widget: string
+        pattern:
+          - ".{0,70}"
+          - No more than 70 characters
+        hint: "This can be anything you like, but keep it to between 5 and 10 words (check the profile, it's a short phrase). This will preferably be either your job title or something you're known as"
+      - name: profileImage
+        label: Profile Image
+        widget: image
+        hint: "Images will be used as a 300px * 300px square, they must be at least this big and if they're not square it may result in the image being squashed"
+      - name: location
+        label: Location
+        widget: relation
+        collection: locations
+        required: false
+        searchFields:
+          - title
+          - country
+        valueField: title
+        displayFields:
+          - title
+          - country
+        hint: "Where you're predominantly based, if we don't have yours yet, go back to the main admin page and select *Locations* to add a new one."
+      - name: body
+        label: Bio
+        widget: markdown
+        hint: "This should be not too long, probably just a few paragraphs will do."
+      - name: mentoring
+        label: Mentoring
+        widget: markdown
+        hint: "Similar to your bio, this is a good spot to highlight any mentoring that you have done or are doing."
+        required: false
+      - name: socials
+        label: Social Profiles
+        widget: list
+        hint: "Links to various profiles, websites or blogs On the homepage, only 3 links will be featured on the profile cards, if you have more than 3 cards, tick the boxes for the profiles you want to feature. If you would like to provide a different link, submit a feature request on our github repo. Make sure you select the kind of social profile you're listing (eg. Twitter), otherwise your profile won't work."
+        fields:
+          - label: Social Profile Link
+            name: url
+            widget: string
+            required: true
+            hint: "This needs to be the full URL, not just your username/handle"
+          - label: Featured Profile
+            name: featured
+            widget: boolean
+            required: false
+          - label: Custom Title
+            name: socialTitle
+            widget: string
+            hint: "If this profile is a blog, portfolio or website you can add a custom title here (eg. My Blog)"
+            required: false
+          - label: Profile Type
+            name: platform
+            required: true
+            widget: select
+            options:
+              - label: Facebook
+                value: facebook
+              - label: Twitter
+                value: twitter
+              - label: LinkedIn
+                value: linkedin
+              - label: Instagram
+                value: instagram
+              - label: GitHub
+                value: github
+              - label: GitLab
+                value: gitlab
+              - label: Codepen
+                value: codepen
+              - label: Notist
+                value: notist
+              - label: Website
+                value: website
+              - label: Portfolio
+                value: portfolio
+              - label: Blog
+                value: blog
+              - label: Twitch
+                value: twitch
+      - name: talks
+        label: Talks
+        widget: list
+        hint: >-
+          Talks that you have done previously, whether this is at a meetup event, conference or somewhere else. This should include the title of the talk (if you've done the same talk at multiple events, list them all!), the event that you did it at (Conference, meetup group, etc), the date that you did it, a link to the event (eg. Conference or Meetup Group site) and if you have it links to the slides or a video of the talk. If you have future talks coming up, feel free to add them too, we just
+          won't allow people to click on your slides until after you've finished the talk
+        fields:
+          - label: Talk Title
+            name: talkTitle
+            widget: string
+            default: The Name of My Talk
+          - label: Talk Link
+            name: talkLink
+            widget: string
+            default: "https://mytalks.com.au/mytalk"
+            required: false
+          - label: Event Date
+            name: date
+            widget: date
+            format: YYYY-MM-DD
+            required: true
+          - label: Event Name
+            name: event
+            widget: string
+            default: The event I talked at
+          - label: Event Type
+            name: eventType
+            required: false
+            widget: select
+            options:
               [
-                {
-                  label: Social Profile Link,
-                  name: url,
-                  widget: string,
-                  required: true,
-                  hint: "This needs to be the full URL, not just your username/handle",
-                },
-                {
-                  label: Featured Profile,
-                  name: featured,
-                  widget: boolean,
-                  required: false,
-                },
-                {
-                  label: Custom Title,
-                  name: socialTitle,
-                  widget: string,
-                  hint: "If this profile is a blog, portfolio or website you can add a custom title here (eg. My Blog)",
-                  required: false,
-                },
-                {
-                  label: Profile Type,
-                  name: platform,
-                  required: true,
-                  widget: select,
-                  options:
-                    [
-                      { label: Facebook, value: facebook },
-                      { label: Twitter, value: twitter },
-                      { label: LinkedIn, value: linkedin },
-                      { label: Instagram, value: instagram },
-                      { label: GitHub, value: github },
-                      { label: GitLab, value: gitlab },
-                      { label: Codepen, value: codepen },
-                      { label: Notist, value: notist },
-                      { label: Website, value: website },
-                      { label: Portfolio, value: portfolio },
-                      { label: Blog, value: blog },
-                    ],
-                },
-              ],
-          },
-          {
-            name: talks,
-            label: Talks,
-            widget: list,
-            hint: "Talks that you have done previously, whether this is at a meetup event, conference or somewhere else. This should include the title of the talk (if you've done the same talk at multiple events, list them all!), the event that you did it at (Conference, meetup group, etc), the date that you did it, a link to the event (eg. Conference or Meetup Group site) and if you have it links to the slides or a video of the talk. If you have future talks coming up, feel free to add them too, we just won't allow people to click on your slides until after you've finished the talk",
-            fields:
-              [
-                {
-                  label: Talk Title,
-                  name: talkTitle,
-                  widget: string,
-                  default: The Name of My Talk,
-                },
-                {
-                  label: Talk Link,
-                  name: talkLink,
-                  widget: string,
-                  default: "https://mytalks.com.au/mytalk",
-                  required: false,
-                },
-                {
-                  label: Event Date,
-                  name: date,
-                  widget: date,
-                  format: YYYY-MM-DD,
-                  required: true,
-                },
-                {
-                  label: Event Name,
-                  name: event,
-                  widget: string,
-                  default: The event I talked at,
-                },
-                {
-                  label: Event Link,
-                  name: eventLink,
-                  widget: string,
-                  default: "https://thisevent.com.au",
-                  required: false,
-                },
-              ],
-          },
-        ],
-    },
-    {
-      label: Locations,
-      name: locations,
-      folder: src/locations,
-      slug: "{{slug}}_{{fields.state}}_{{fields.country}}",
-      create: true,
-      editor: { preview: false },
-      fields:
-        [
-          { name: title, label: City, widget: string },
-          {
-            name: state,
-            label: State/Province,
-            widget: string,
-            required: false,
-            hint: "Make sure you write the full thing, eg. Western Australia, Minnesota, East Sussex",
-          },
-          { name: country, label: Country, widget: string },
-        ],
-    },
-    {
-      name: blog,
-      label: Blog,
-      folder: src/blog,
-      create: true,
-      editor: { preview: false },
-      fields:
-        [
-          { name: title, label: Title },
-          {
-            name: publishDate,
-            label: Publish Date,
-            widget: date,
-            format: YYYY-MM-DD,
-          },
-          { name: description, label: Meta Description, widget: text },
-          {
-            name: author,
-            label: Author,
-            widget: relation,
-            collection: profile,
-            searchFields: [title],
-            valueField: title,
-            displayFields: [title],
-          },
-          { name: tags, label: Tags, widget: list },
-          { name: featuredImage, label: Featured Image, widget: image },
-          { name: body, label: Body, widget: markdown },
-        ],
-    },
-  ]
+                "Conference",
+                "Meetup",
+                "Panel",
+                "Podcast",
+                "Workshop",
+                "Keynote",
+              ]
+          - label: Event Link
+            name: eventLink
+            widget: string
+            default: "https://thisevent.com.au"
+            required: false
+  - label: Locations
+    name: locations
+    folder: src/locations
+    slug: "{{slug}}_{{fields.state}}_{{fields.country}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: City
+        widget: string
+      - name: state
+        label: State/Province
+        widget: string
+        required: false
+        hint: "Make sure you write the full thing, eg. Western Australia, Minnesota, East Sussex"
+      - name: country
+        label: Country
+        widget: string
+  - name: blog
+    label: Blog
+    folder: src/blog
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+      - name: publishDate
+        label: Publish Date
+        widget: date
+        format: YYYY-MM-DD
+      - name: description
+        label: Meta Description
+        widget: text
+      - name: author
+        label: Author
+        widget: relation
+        collection: profile
+        searchFields:
+          - title
+        valueField: title
+        displayFields:
+          - title
+      - name: tags
+        label: Tags
+        widget: list
+      - name: featuredImage
+        label: Featured Image
+        widget: image
+      - name: body
+        label: Body
+        widget: markdown
