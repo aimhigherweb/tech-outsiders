@@ -23,9 +23,6 @@ socials:
     url: https://www.instagram.com/msandfor/
   - platform: youtube
     url: https://www.youtube.com/user/msandfor
-  - featured: true
-    platform: website
-    url: http://michellesandford.com/
   - url: https://github.com/msandfor
     socialTitle: ""
     platform: github
