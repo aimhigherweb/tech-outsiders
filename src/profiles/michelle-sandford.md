@@ -23,12 +23,12 @@ socials:
     url: https://www.instagram.com/msandfor/
   - platform: youtube
     url: https://www.youtube.com/user/msandfor
-  - featured: true
-    platform: website
-    url: http://michellesandford.com/
+  - url: https://github.com/msandfor
+    socialTitle: ""
+    platform: github
 talks:
   - date: 2018-08-04
-    event: DDD Perth
+    event: DDDPerth 2018
     eventLink: https://dddperth.com/
     talkLink: https://www.youtube.com/watch?v=e_ATZWVWJzU
     talkTitle: Rise of the Tech Influencer
@@ -74,6 +74,24 @@ talks:
     event: DevTalks Romania
     eventLink: https://www.devtalks.ro/
     date: 2020-06-10
+    eventType: Conference
+  - talkTitle: Good Bots v Bad Bots - What We Can Do To Stop The Dark Side From Winning
+    talkLink: https://www.devtalks.ro/speakers/
+    event: DevTalks Romania
+    eventLink: https://www.devtalks.ro/
+    date: 2020-06-10
+    eventType: Keynote
+  - talkTitle: Tales from the Corporate Ladder
+    talkLink: https://youtu.be/QNqR3GbRIeE
+    event: REgarding 365
+    eventLink: https://www.youtube.com/channel/UCl56lPpWFMDKOY0kNSLTAcw
+    date: 2020-05-07
+    eventType: Panel
+  - talkTitle: "How to Raise a Robot Army over #100DaysofCode"
+    talkLink: https://youtu.be/Sj9ZAq2D3AU
+    event: DDDPerth 2019
+    eventLink: https://dddperth.com/agenda/2019?sessionId=94a2f4b3-bd6e-4eb6-9917-baa3bcb3d41f
+    date: 2020-07-13
     eventType: Conference
 ---
 
