@@ -1,7 +1,7 @@
 ---
 title: Michelle Sandford
 tagline: Technology Evangelist // Games Advocate // Storyteller // Chairman
-profileImage: ../img/uploads/img_8987.jpg
+profileImage: /src/img/uploads/img_8987.jpg
 location: Perth
 mentoring: >-
   I am a Mentor and Role Model in the [Tech Girls are
@@ -93,6 +93,18 @@ talks:
     eventLink: https://dddperth.com/agenda/2019?sessionId=94a2f4b3-bd6e-4eb6-9917-baa3bcb3d41f
     date: 2020-07-13
     eventType: Conference
+  - talkTitle: When I Grow Up I Can Be Anything
+    talkLink: https://youtu.be/pZPK5wSfWLc
+    event: Halogen Foundation - The National Young Leaders Day
+    eventLink: https://www.halogen.org.au/
+    date: 2020-07-13
+    eventType: Panel
+  - talkTitle: Dux Quax
+    talkLink: https://youtu.be/57-CgWf2sdE
+    event: Ignite Australia 2017
+    eventLink: https://channel9.msdn.com/Events/Ignite/Australia-2017
+    date: 2020-07-13
+    eventType: Podcast
 ---
 
 Tedx Speaker, Tech Girl Superhero, Microsoftie and 1 of MCV’s 100 Most Influential Women in Games 2016 – Michelle Sandford is a popular choice for speaking on diversity in Tech, women and young people into the Tech Industry, and the benefits of Games – all delivered with an inspirational and motivational flair. Michelle is the Vice Chair of the Australian Computer Society in WA, and one of their Executive Board Members. Michelle is also a member of the WAITTA Organising Committee. Her Tech Industry experience includes working for IBM Global Business Services and Microsoft. Michelle lives life by running to stay one jump ahead of the Gameboy and by striving to think outside the Xbox. She surfs waves and webs. Michelle is the Founder and Global President of TechOutsiders.
