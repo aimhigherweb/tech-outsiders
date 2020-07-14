@@ -4,11 +4,6 @@ tagline: IT Girl | Tech Optimiser
 profileImage: /src/img/uploads/jia-2-.jpg
 location: Perth
 talks:
-  - talkTitle: The Name of My Talk
-    talkLink: https://mytalks.com.au/mytalk
-    event: The event I talked at
-    eventLink: https://thisevent.com.au
-    date: 2020-07-13
   - talkTitle: "Everyone should become a Tech Optimiser "
     talkLink: https://www.youtube.com/watch?v=N37KhnBMCDU
     event: TEDxModena
