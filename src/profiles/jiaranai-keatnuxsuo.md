@@ -3,6 +3,13 @@ title: Jiaranai Keatnuxsuo
 tagline: IT Girl | Tech Optimiser
 profileImage: /src/img/uploads/jia-2-.jpg
 location: Perth
+socials:
+  - url: https://www.linkedin.com/in/keatnuxsuo/
+    featured: false
+    platform: linkedin
+  - url: https://twitter.com/jkeatnuxsuo
+    featured: false
+    platform: twitter
 talks:
   - talkTitle: "Everyone should become a Tech Optimiser "
     talkLink: https://www.youtube.com/watch?v=N37KhnBMCDU
