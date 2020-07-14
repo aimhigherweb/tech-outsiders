@@ -1,7 +1,7 @@
 ---
 title: Jiaranai Keatnuxsuo
 tagline: IT Girl | Tech Optimiser
-profileImage: /src/img/uploads/jia-2-.jpg
+profileImage: ../img/uploads/jia-2-.jpg
 location: Perth
 socials:
   - url: https://www.linkedin.com/in/keatnuxsuo/
